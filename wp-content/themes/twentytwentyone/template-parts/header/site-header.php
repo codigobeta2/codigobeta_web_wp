@@ -24,7 +24,7 @@ $home_url = esc_url( pll_home_url() );
 					<div class="header__desktop-container-fixed-left">
 						<span class="logo"><a href="<?php echo $home_url; ?>"></a></span>
 						<span class="close js-close-menu">
-							<img src="https://www.codigobetadaniel.es/wp-content/uploads/2024/08/icon-close.svg" alt="">
+							<img src="https://www.codigobeta.es/wp-content/uploads/2024/08/icon-close.svg" alt="">
 						</span>
 					</div>
 					<div class="header__desktop-container-fixed-right">
