@@ -1,0 +1,314 @@
+
+
+.btn{
+    border-radius: 50px;
+}
+
+.header{
+
+    &__desktop{
+
+        nav{
+            ul{
+                li{
+                    &.button{
+                        a{
+                            border-radius: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.image{
+
+    img{
+        border-radius: 32px;
+    }
+}
+
+
+
+.box-images{
+
+    &__element{
+
+        img{
+            border-radius: 24px;
+        }
+    }
+}
+
+.card{
+
+    &__image{
+
+        .main-img{
+            border-radius: 24px;
+        }
+
+        .card-label{
+            border-radius: 70px;
+        }
+    }
+}
+
+.image-text{
+
+    &__right{
+
+        img{
+            border-radius: 24px;
+        }
+    }
+}
+
+.timeline{
+
+    &__element{
+
+        &-center{
+
+            span{
+
+                &.square{
+                    border-radius: 14px;
+                }
+            }
+        }
+    }
+}
+
+.slick-slide{
+
+    img{
+        border-radius: 24px ;
+        
+    }
+}
+.msv1-custom--container{
+
+    .slick-slide{
+
+        img{
+            margin: 0 10px;
+            
+        }
+    }
+
+    .slick-list{
+        margin:0 -10px;
+    }
+}
+.slider-v3-box,
+.slider-v4-box{
+    img{
+        border-radius: 24px !important;
+    }
+}
+
+.form{
+
+    &__text-up{
+
+        input{
+            border-radius: 50px;
+        }
+    }
+
+    &__textarea-up{
+
+        textarea{
+            border-radius: 24px;
+        }
+    }
+
+    &__select-up{
+
+        select{
+            border-radius: 24px;
+        }
+    }
+
+    &__checkbox{
+
+        label{
+
+            &:before{
+                border-radius: 4px;
+            }
+        }
+    }
+
+    &__calendar{
+
+        input{
+            border-radius: 50px;
+        }
+    }
+}
+
+.gallery-fullscreen{
+
+    &__element{
+
+        img{
+            border-radius: 24px;
+        }
+        
+    }
+}
+
+.accordion{
+
+    &-item{
+
+        &:first-child{
+            border-radius: 24px 24px 0 0;
+        }
+
+        &:last-child{
+            border-radius: 0 0 24px 24px;
+        }
+    }
+}
+
+
+.load-cta{
+
+    &__elements{
+
+        border-radius: 24px;
+    }
+}
+
+
+
+.masonry-fullscreen{
+
+    &__element{
+
+        img{
+            border-radius:24px;
+        }
+    }
+}
+
+
+.box{
+
+    border-radius:24px;
+}
+
+.popup{
+
+    &__content{
+        border-radius: 24px;
+    }
+
+    &__closeDiv{
+        top: 15px;
+        right: 15px;
+    }
+}
+
+.tabs-horizontal{
+
+    &__content{
+
+        border-radius: 0 0 24px 24px;
+    }
+
+    &__header{
+
+        &-element{
+
+            &:first-child{
+                border-radius: 24px 0 0 0;
+            }
+
+            &:last-child{
+                border-radius: 0 24px 0 0;
+            }
+        }
+    }
+}
+
+.tabs-vertical{
+
+    &__container{
+
+        &-element{
+
+            border-radius: 0 24px 24px 0;
+        }
+    }
+
+    &__header{
+
+        &-element{
+
+            &:first-child{
+                border-radius: 24px 0 0 0;
+            }
+
+            &:last-child{
+                border-radius: 0 0 0 24px;
+            }
+        }
+    }
+}
+
+
+.mg-custom--flex{
+
+    .grid-col-image{
+
+        img{
+            border-radius: 32px 0 0 32px;
+        }
+    }
+}
+
+
+.dropdown{
+
+    &__submenu{
+
+        border-radius: 16px;
+
+        &:after{
+            border-bottom: 26px solid #fff;
+            border-radius: 0 0 16px 16px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+//////////////////
+// CONTAINER FLUID
+
+.container-fluid{
+
+    .image{
+
+        img{
+            border-radius: 0;
+        }
+    }
+
+    .slick-slide{
+
+        img{
+            border-radius: 0;
+        }
+    }
+}

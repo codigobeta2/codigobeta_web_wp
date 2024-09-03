@@ -1,0 +1,227 @@
+.card{
+
+    
+
+    &__image{
+
+        position:relative;
+        height:250px;
+
+        .main-img{
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+
+        .card-label{
+            background-color: $coral;
+            color: white;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            top: -16px;
+            right: 16px;
+            position: absolute;
+            height: 48px;
+            width: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media(min-width:769px){
+                height: 70px;
+                width: 70px;
+                top: -24px;
+                right: 24px;
+            }
+        }
+
+        & + .card__info{
+            margin: 16px 0 0 0;
+
+            @media(min-width:769px){
+                margin: 16px 0 0 0;
+            }
+        }
+
+    }
+
+    &__info{
+
+        padding: 0 16px;
+
+        & > div{
+
+            margin: 8px 0 0 0;
+
+            @media(min-width:769px){
+                margin: 16px 0 0 0;
+            }
+
+            &:first-child{
+                margin: 0;
+            }
+        }
+
+        &-header{
+            display:flex;
+            justify-content: space-between;
+
+            & > div{
+                width: 100%;
+            }
+        }
+    
+        &-title{
+        }
+    
+        &-description{
+
+            &.custom-scrollbar{
+                max-height: 148px;
+                overflow: auto;
+                padding: 0 16px 0 0;
+            }
+        }
+ 
+        .btn{
+            margin:24px 0 0 0;
+            //width:90%;
+            justify-content:center;
+
+            @media(min-width:600px){
+                //width:100%;
+            }
+        }
+    }  
+
+    &-group{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        gap: 32px;
+
+        @media(min-width:769px){
+            gap: 48px;
+        }
+
+        .card{
+            width: 100%;
+            margin: 0 0 32px 0;
+
+            @media(min-width:600px){
+                width: calc(100%/2 - 24px);
+                margin: 0 0 24px 0;
+            }
+
+            @media(min-width:992px){
+                width: calc(100%/3 - 32px);
+            }
+
+        
+            &:last-child{ // Elegimos los 3 últimos items
+                margin: 0;
+            }
+
+            @media(min-width:600px){
+                &:nth-last-child(-n+2){ // Elegimos los 3 últimos items
+                    margin: 0;
+                }
+            }
+
+            @media(min-width:992px){
+                &:nth-last-child(-n+3){ // Elegimos los 3 últimos items
+                    margin: 0 0 0 0;
+                }
+            }
+
+            
+        }
+
+        &--icon{
+
+            .card__image{
+
+                height: 150px;
+
+                @media(min-width:992px){
+                    height: 160px;
+                }
+
+                .main-img{
+                    object-fit: contain;
+                }
+            }
+
+            .card__info{
+                padding: 0;
+            }
+        }
+
+        &--4col{
+
+            .card{
+                width: 100%;
+
+                @media(min-width:600px){
+                    width: calc(100%/3 - 16px);
+                }
+    
+                @media(min-width:992px){
+                    width: calc(100%/4 - 24px);
+                }
+            }
+            
+
+        }
+
+        &--5col{
+
+            .card{
+                width: 100%;
+
+                @media(min-width:600px){
+                    width: calc(100%/3 - 16px);
+                }
+    
+                @media(min-width:992px){
+                    width: calc(100%/5 - 26px);
+                }
+            }
+            
+        }
+    }
+
+    &--center{
+        text-align:center;
+    }
+}
+
+// CUSTOM
+
+.mc-custom--height-description{
+
+    .card__info-description{
+        overflow: auto;
+        height: 148px;
+        padding: 0 16px 0 0;
+    }
+}
+
+
+.mc-custom--extra-image{
+
+    .card__image{
+
+        height: 300px;
+
+        @media(min-height: 769px){
+
+            height: 380px;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,41 @@
+.page-404{
+
+    &__content{
+
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 64px 0 0 0;
+
+        @media(min-width:769px){
+            height: calc(100vh - 578px);
+            margin: 0 0 0 0;
+        }
+
+        &-title{
+            display: flex;
+            flex-direction: column-reverse;
+            font-size: 110px;
+            line-height: 110px;
+
+            @media(min-width:769px){
+                font-size: 200px;
+                line-height: 200px;
+            }
+        }
+
+        &-subtitle{
+            font-size: 19px;
+            margin: 8px 0 0 0;
+
+            @media(min-width:769px){
+                font-size: 26px;
+                margin: 24px 0 0 0;
+            }
+        }
+    }
+
+}

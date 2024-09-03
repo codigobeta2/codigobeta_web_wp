@@ -1,0 +1,180 @@
+.outstanding-header{
+
+    height: 55vh;
+    position:relative;
+    top:-90px;
+    margin:0 0 -90px 0;
+
+    @media(min-width:992px){
+        top:-120px;
+        margin:0 0 -120px 0;
+        height: 70vh;
+    }
+
+    &__content{
+
+        height:55vh;
+        width:100%;
+        position:relative;
+
+        @media(min-width:992px){
+            height:70vh;
+        }
+
+        &-box{
+            position:absolute;
+            top: 120px;
+            left:0;
+            height: calc(55vh - 120px);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            z-index: 1;
+
+            @media(min-width:992px){
+                height: calc(70vh - 120px);
+            }
+
+            &-title{
+                font-size: 68px;
+                line-height: 62px;
+                letter-spacing: -7px;
+                font-weight: 400;
+
+                @media(min-width:992px){
+                    font-size: 160px;
+                    line-height: 122px;
+                    letter-spacing: -15px;
+        
+                   
+                }
+            }
+        }
+ 
+        &-image{
+            object-fit: cover;
+            position:absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &--slider{
+
+        .container-fluid{
+            width: 100%;
+        }
+
+        .outstanding-header__content-box{
+            height: 100vh;
+            top:0;
+        }
+
+        .slider-v1-box{
+            height: 100vh;
+        }
+    }
+
+    &:before{
+        content: '';
+        height: 35px;
+        background-color: #252525;
+        width: 100%;
+        position: absolute;
+        top: -35px;
+        left: 0;
+    }
+}
+
+
+// CONTROLAMOS EL MODO DE COLOR DEL HEADER
+
+.is-dark-header{
+
+
+    .breadcrumbs {
+        color: #cbcbcb;
+    }
+
+    .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper{
+        @media(min-width:992px){
+            color: white;
+        }
+    }
+
+    .sticky .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper{
+        color: black;
+    }
+
+    .header__desktop-container-fixed-left .logo a{
+        @media(min-width:992px){
+            background-image: url('https://www.portfoliodaniel.es/wp-content/uploads/2024/08/logo-codigobeta-white.png');
+        }
+    }
+
+    .header__mobile-container-center span.mobile-logo{
+        background-image: url('https://www.portfoliodaniel.es/wp-content/uploads/2024/08/logo-codigobeta-white.png');
+    }
+
+    .header__mobile-container-left span.icon-menu{
+        background-image: url('https://www.portfoliodaniel.es/wp-content/uploads/2024/08/arrow-menu-black.svg');
+    }
+
+    .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-item a:after,
+    .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-item:after{
+        border-bottom: 2px solid white !important;
+    }
+
+    .sticky .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-item a:after{
+        border-bottom: 2px solid black !important;
+    }
+
+    .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper .menu-item-has-children .icon-minus{
+        background-image: url('https://www.portfoliodaniel.es/wp-content/uploads/2024/08/arrow-menu-white.svg');
+    }
+
+    .outstanding-header{
+
+        .btn{
+            border: 1px solid white;
+
+            &:hover{
+                border: 1px solid white;
+                background-color: white;
+                color: black;
+            } 
+        }
+
+        .custom-buttons button.next,
+        .custom-buttons button.prev{
+            background-image: url('https://www.portfoliodaniel.es/wp-content/uploads/2024/08/arrow-right-white.svg') !important;
+        }
+
+        .custom-buttons button:hover{
+            opacity: 0.6;
+        }
+
+        .slick-dots li.slick-active button:before {
+            opacity: 1;
+            color: white;
+        }
+        
+        .slick-dots li button:before{
+            color: white;
+        }
+    }
+
+    &:before{
+
+        content:'';
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        z-index: -1;
+    }
+}
+
+

@@ -1,0 +1,42 @@
+.text-block{
+
+    @media(max-width:768px){
+        text-align:center;
+    }
+
+    & > *{
+
+        margin: 16px 0 0 0;
+
+        &:first-child{
+            margin: 0;
+        }
+
+        & + .btn{
+            margin: 24px 0 0 0;
+
+            @media(max-width:768px){
+                width:90%;
+            }
+        }
+    }
+
+    &__description{
+
+        p{
+            & + p{
+                margin: 8px 0 0 0;
+            }
+        }
+    }
+
+    &--center{
+        text-align: center;
+    }
+
+    &--right{
+        
+        text-align: right;
+    }
+}
+

@@ -1,0 +1,81 @@
+.text-size--3xs {
+    font-size: 12px;
+    line-height: 16px; /* Aproximadamente 1.33x el tamaño de fuente */
+  }
+  
+  .text-size--2xs {
+    font-size: 15px;
+    line-height: 20px; /* Aproximadamente 1.33x el tamaño de fuente */
+  }
+  
+  .text-size--xs {
+    font-size: 19px;
+    line-height: 24px; /* Aproximadamente 1.26x el tamaño de fuente */
+  }
+  
+  .text-size--s {
+    font-size: 24px;
+    line-height: 30px; /* Aproximadamente 1.25x el tamaño de fuente */
+  }
+  
+  .text-size--m {
+    font-size: 30px;
+    line-height: 38px; /* Aproximadamente 1.27x el tamaño de fuente */
+  }
+  
+  .text-size--l {
+    font-size: 38px;
+    line-height: 48px; /* Aproximadamente 1.26x el tamaño de fuente */
+  }
+  
+  .text-size--xl {
+    font-size: 47px;
+    line-height: 60px; /* Aproximadamente 1.28x el tamaño de fuente */
+  }
+  
+  .text-size--2xl {
+    font-size: 59px;
+    line-height: 75px; /* Aproximadamente 1.27x el tamaño de fuente */
+  }
+  
+  .text-size--3xl {
+    font-size: 74px;
+    line-height: 90px; /* Aproximadamente 1.22x el tamaño de fuente */
+  }
+  
+  @media (max-width: 992px) {
+
+
+    
+  
+    .text-size--l {
+      font-size: 30px;
+      line-height: 38px; /* Mismos valores ajustados en la vista móvil */
+    }
+  
+    .text-size--xl {
+      font-size: 38px;
+      line-height: 48px; /* Mismos valores ajustados en la vista móvil */
+    }
+  
+    .text-size--2xl {
+      font-size: 47px;
+      line-height: 60px; /* Mismos valores ajustados en la vista móvil */
+    }
+  
+    .text-size--3xl {
+      font-size: 59px;
+      line-height: 75px; /* Mismos valores ajustados en la vista móvil */
+    }
+  }
+  
+  
+  .text{
+  
+      &-style{
+        
+          &--underline{
+            text-decoration: underline;
+          }
+      }
+  }

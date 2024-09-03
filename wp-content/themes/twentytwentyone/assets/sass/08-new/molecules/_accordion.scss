@@ -1,0 +1,130 @@
+.accordion {
+
+    &-item {
+      border: 1px solid black;
+      margin-bottom: -1px;
+
+      &:first-child {
+        .accordion-content {
+          display: block;
+        }
+      }
+      
+      &.active {
+        .accordion-content {
+          display: block;
+        }
+        
+        .accordion-title {
+          padding: 16px;
+
+          @media(min-width:769px){
+            padding: 24px;
+          }
+          
+          .arrow {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+
+    &-title {
+      padding: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      position: relative;
+      font-size: 19px;
+      line-height: 26px;
+
+      @media(min-width:769px){
+        font-size: 24px;
+        line-height: 30px;
+        padding: 16px 24px;
+      }
+      
+      .arrow {
+        height: 15px;
+        position: absolute;
+        right: 0;
+        top:7px;
+      }
+    }
+
+    &-content {
+      padding: 0 16px 16px 16px;
+      display: none; // Contenido oculto por defecto
+
+      @media(min-width:769px){
+        padding: 0 24px 24px 24px;
+      }
+
+      
+
+
+    }
+}
+
+
+.accordion{
+
+  &-item{
+
+      border: 0;
+
+      &:last-child{
+
+        .accordion-content{
+          padding: 0;
+        }
+      }
+  }
+
+  &-title{
+
+    padding: 0 32px 24px 0 !important;
+    cursor: pointer;
+
+    @media(min-width:769px){
+      cursor: auto;
+      pointer-events: none;
+    }
+
+    .arrow{
+      display: block;
+
+      @media(min-width:769px){
+        display: none;
+      }
+    }
+  }
+
+  &-content{
+
+    display: none;
+    padding: 0 0 32px 0;
+
+    @media(min-width:769px){
+      display: block;
+      padding: 0 0 48px 0;
+    }
+
+    li{
+      position:relative;
+      padding: 0 0 8px 24px;
+
+      &:before{
+        content:'';
+        position: absolute;
+        width:20px;
+        height:20px;
+        background-image: url('https://www.portfoliodaniel.es/wp-content/uploads/2024/08/check.svg');
+        background-size: 18px;
+        background-repeat: no-repeat;
+        left:0;
+        top: 4px;
+      }
+    }
+  }
+}

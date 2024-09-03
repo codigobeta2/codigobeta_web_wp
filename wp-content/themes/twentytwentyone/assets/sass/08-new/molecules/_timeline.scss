@@ -1,0 +1,87 @@
+.timeline{
+
+    &__element{
+
+        display:flex;
+        width:100%;
+        margin:0 auto;
+
+        &-left{
+            
+            width:0;
+            font-size: 30px;
+            line-height: 38px;
+            position: relative;
+            left: 42px;
+
+            @media(min-width:769px){
+                width:130px;
+                left: 0;
+            }
+        }
+
+        &-center{
+
+            width:45px;
+            position:relative;
+
+            @media(min-width:769px){
+                width:50px;
+            }
+
+            span.square{
+                background-color:black;
+                width:10px;
+                height:10px;
+                display:block;    
+                margin: 14px 0 0 14px;
+
+                @media(min-width:769px){
+                    width:14px;
+                    height:14px;
+                    margin: 14px 0 0 0;
+                }
+            }
+
+            &:before{
+                content: "";
+                border-left: 1px solid #000;
+                height: 100%;
+                position: absolute;
+                left: 19px;
+                top: 16px;
+
+                @media(min-width:769px){
+                    border-left: 2px solid #000;
+                    left: 6px;
+                }
+            }
+        }
+
+        &-right{
+            width:calc(100% - 45px);
+            padding: 48px 24px 48px 0;
+
+            @media(min-width:769px){
+                width:calc(100% - 180px);
+                padding: 2px 0 64px 0;
+            }
+            
+        }
+
+        &:last-child{
+
+            .timeline__element-center:before{
+                display: none;
+            }
+
+            .timeline__element-right{
+                padding: 48px 24px 0 0;
+
+                @media(min-width:769px){
+                    padding: 2px 0 0 0;
+                }
+            }
+        }
+    }
+}

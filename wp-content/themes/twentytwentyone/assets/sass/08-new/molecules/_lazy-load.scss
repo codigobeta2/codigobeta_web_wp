@@ -1,0 +1,23 @@
+.lazy{
+
+    $self: &;
+
+    width: 100%;
+    height: auto;
+    display: block;
+    visibility: hidden;
+
+    &-container{
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    &.loading{
+        width: auto !important;
+        object-fit: contain!important; 
+        margin: 0 auto!important;
+        max-width: 200px!important;
+        max-height: 200px!important;
+        visibility: visible;
+    }
+}

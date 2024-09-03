@@ -1,0 +1,476 @@
+.form{
+
+   
+
+    &__text{
+
+        &-up{
+
+            position: relative;
+
+            input{
+                width: calc(100% - 49px);
+                border: 1px solid #000;
+                font-size: 16px;
+                background-color: transparent !important;
+                height: 45px;
+                padding: 0 24px;
+                outline: none;
+                border-radius: 0;
+
+                @media(min-width:769px){
+                    height: 48px;
+                }
+
+                &:focus + label,
+                &:not(:placeholder-shown) + label {
+
+                    top: -10px;
+                    left: 15px;
+                    font-size: 12px;
+                    color: black;
+                    transform: none;
+                }
+            }
+
+            label{
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                transform: translateY(-50%);
+                transition: all 0.2s ease;
+                pointer-events: none;
+                background: white;
+                padding: 0 10px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                color: gray;
+                font-size: 16px;
+                z-index: 1;
+            }
+        }
+    }
+
+    &__textarea {
+
+        &-up {
+            position: relative;
+    
+            textarea {
+                width: 100%;
+                padding: 24px;
+                font-size: 16px;
+                box-sizing: border-box;
+                border: 1px solid #000;
+                resize: none;
+                height: 150px;
+                outline: none;
+                font-family: inherit;
+                margin: 0 0 -7px 0;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                border-radius: 0; /* Para eliminar los bordes redondeados */
+    
+                &:focus + label,
+                &:not(:placeholder-shown) + label {
+                    top: -7px;
+                    left: 15px;
+                    font-size: 12px;
+                    color: #000;
+                    background-color: white;
+                    padding: 0 10px;
+                }
+            }
+    
+            label {
+                position: absolute;
+                top: 20px;
+                left: 10px;
+                color: gray;
+                font-size: 16px;
+                pointer-events: none;
+                transition: all 0.2s ease-out;
+                background-color: white;
+                padding: 0 10px;
+                margin: 0;
+            }
+        }
+    }    
+
+    &__select{
+
+        &-up{
+
+            position: relative;
+
+            select{
+                width: 100%;
+                border: 1px solid #000;
+                font-size: 16px;
+                background-color: #fff;
+                appearance: none;
+                background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Arrow-down.svg/800px-Arrow-down.svg.png');
+                background-size: 20px;
+                background-repeat: no-repeat;
+                background-position: right 10px center;
+                height: 47px;
+                padding: 0 24px; 
+                outline: none;
+                color: inherit;
+
+                @media(min-width:769px){
+                    height: 50px;
+                }
+
+                option[value=""] {
+                    display: none;
+                }
+            }
+
+            label{
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                transition: all 0.2s ease;
+                pointer-events: none;
+                background: white;
+                padding: 0 10px;
+                color: gray;
+                font-size: 16px;
+                z-index: 1;
+                display: flex;
+                align-items: center;
+                height: 20px;
+            }
+        }
+    }
+
+    &__radiobutton{
+
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &-group{
+
+            display: flex;
+            flex-direction: column;
+            gap:16px;
+
+            @media(min-width:769px){
+                flex-direction: row;
+                gap:32px;
+            }
+        }
+
+        input{
+
+            display: none;
+
+            &:checked{
+
+                & + label::after {
+                    opacity: 1;
+                }
+
+                & + label::before {
+                    background: #000000;
+                    border-color: #000000;
+                }
+            }
+        }
+
+        label{
+
+            position: relative;
+            padding-left: 32px;
+            cursor: pointer;
+            user-select: none;
+
+            &:before{
+
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 20px;
+                height: 20px;
+                border: 1px solid #000;
+                border-radius: 50%;
+                background: #fff;
+                transition: all 0.3s ease;
+            }
+
+            &:after{
+
+                content: "";
+                position: absolute;
+                left: 7px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: #fff;
+                opacity: 0;
+                transition: all .3s ease;
+            }
+
+            
+        }
+
+    }
+
+    &__checkbox{
+
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin: 0 0 16px 0;
+
+        &:last-child{
+            margin: 0 0 0 0;
+        }
+
+        input{
+
+            display: none;
+
+            &:checked + label::before {
+                background: #000000;
+                border-color: #000000;
+            }
+
+            &:checked + label::after {
+                opacity: 1;
+            }
+        }
+
+        label{
+
+            position: relative;
+            padding-left: 32px;
+            cursor: pointer;
+            user-select: none;
+
+            &:before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 15px;
+                transform: translateY(-50%);
+                width: 20px;
+                height: 20px;
+                border: 1px solid #000000;
+                background: #fff;
+                transition: all 0.3s ease;
+            }
+
+            &:after{
+                content: "";
+                position: absolute;
+                left: 7px;
+                top: 13px;
+                transform: translateY(-50%) rotate(45deg);
+                width: 6px;
+                height: 12px;
+                border: solid #fff;
+                border-width: 0 2px 2px 0;
+                opacity: 0;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+
+    &__upload{
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @media(min-width:769px){
+            flex-direction: row;
+            align-items: center;
+        }
+
+        input{
+            display: none;
+        }
+
+        // label{
+        //     padding: 10px 20px;
+        //     background-color: #3498db;
+        //     color: white;
+        //     cursor: pointer;
+        //     border-radius: 4px;
+        //     transition: background-color 0.3s ease;
+        //     user-select: none;
+
+        //     &:hover{
+        //         background-color: #2980b9;
+        //     }
+        // }
+
+        span{
+            margin: 8px 0 0 0;
+
+            @media(min-width:769px){
+                margin: 0 0 0 16px;
+            }
+        }
+    }
+
+    &__calendar{
+
+        position: relative;
+
+        input {
+            width: 100%;
+            font-size: 16px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            position: relative;
+            height: 47px;
+            padding: 0 24px;
+            z-index: 1;
+            background-image: url('../images/icon-calendar.svg');
+            background-size: 25px;
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            outline: none;
+
+            @media(min-width:769px){
+                height: 50px;
+            }
+        }
+
+        label {
+            position: absolute;
+            top: 12px;
+            left: 10px;
+            font-size: 16px;
+            color: gray;
+            pointer-events: none;
+            transition: 0.2s ease all;
+            background: white;
+            padding: 0 10px;
+            z-index: 2;
+
+            &.active {
+                top: -9px;
+                left: 15px;
+                font-size: 12px;
+                color: black;
+            }
+        }
+    }
+
+}
+
+
+
+// CUSTOM CALENDAR
+
+#ui-datepicker-div{
+
+    padding: 24px;
+    border: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    font-family: inherit;
+
+    .ui-datepicker {
+        background: #fff;
+        border: 1px solid #3498db;
+        padding: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 2;
+    }
+    
+    .ui-datepicker-header {
+        background: white;
+        color: #fff;
+        border: 0;
+        margin: 0 0 12px 0;
+        padding: 0;
+    }
+
+    .ui-datepicker-title{
+        display: flex;
+        gap: 8px;    
+    }
+    
+    .ui-datepicker-title select {
+        color: black;
+    }
+    
+    .ui-state-default, 
+    .ui-widget-content .ui-state-default, 
+    .ui-widget-header .ui-state-default {
+        border: 1px solid $snow;
+        background: $snow;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 7px 0;
+    }
+
+    .ui-state-active,
+    .ui-datepicker-days-cell-over{
+        border: 1px solid black;
+        background: black;
+        color: white;
+    }
+
+    
+    .ui-datepicker-current-day,
+    .ui-datepicker-today{
+        border: 1px solid transparent !important;
+        background: transparent !important;
+        color: black !important;
+    }
+
+    td a.ui-state-default:hover{
+        background-color: black !important;
+        color: white;
+    }
+    
+    .ui-icon-circle-triangle-e {
+        background-position: -34px -2px;
+    }
+
+    .ui-icon-circle-triangle-w {
+        background-position: -100px -2px;
+    }
+
+    .ui-datepicker-buttonpane{
+        display: none;
+    }
+
+    td {
+        padding: 2px !important;
+    }
+
+    th{
+        font-weight: normal;
+    }
+
+    .ui-datepicker-title select {
+        color: #000;
+        width: 47%;
+        padding: 4px 8px;
+        border-radius: 4px;
+        border: 1px solid #929292;
+        font-weight: normal;
+        font-size: 15px;
+    }
+
+    table{
+        margin: 0;
+    }
+}
+

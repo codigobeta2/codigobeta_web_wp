@@ -1,0 +1,76 @@
+
+.btn{
+
+    $self: &;
+
+    border:1px solid black;
+    height:45px;
+    padding: 0 32px;
+    border-radius: 4px;
+    align-items: center;
+    display: inline-flex;
+    justify-content:center;
+    width: max-content;
+    background-color: transparent;  
+    cursor: pointer;
+    font-size: inherit;
+    width: 90%;
+    text-decoration: none;
+
+    @media(min-width: 769px){
+        height:48px;
+        width: auto;
+    }
+
+    &:hover{
+        background-color: black;
+        color: white;
+        opacity: 0.8;
+        transition: all 250ms;
+    }
+
+    &-fill{
+
+        &--black{
+            background-color: black;
+            color: white;
+
+            &:hover{
+                opacity: 0.8;
+                transition: all 250ms;
+            }
+        }
+
+        &--lime{
+            background-color: #25D366;
+            border: 1px solid #25D366;
+            color: white;
+
+            &:hover{
+                background-color: #25D366;
+                border: 1px solid #25D366;
+                opacity: 0.8;
+                transition: all 250ms;
+            }
+        }
+    }
+
+    &-size{
+
+        &--w100{
+            width: 100%;
+        }
+    }
+}
+
+
+// button
+
+button.btn{
+
+    height: 47px;
+
+    @media(min-width: 769px){
+        height: 50px;
+    }
+}

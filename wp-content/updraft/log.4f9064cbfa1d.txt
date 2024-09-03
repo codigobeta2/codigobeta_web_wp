@@ -1,0 +1,14 @@
+0000.000 (1) Opened log file at time: Tue, 03 Sep 2024 13:59:30 +0000 on http://localhost:8888
+0000.000 (1) Opened log file at time: Tue, 03 Sep 2024 13:59:30 +0000 on http://localhost:8888
+0000.002 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.4 WP: 6.6.1 PHP: 7.4.33 (apache2handler, Darwin MacBook-Air-de-Daniel.local 23.4.0 Darwin Kernel Version 23.4.0: Wed Feb 21 21:44:06 PST 2024; root:xnu-10063.101.15~2/RELEASE_ARM64_T8103 arm64) MySQL: 5.7.39 (max packet size=33554432) WPLANG: es_ES Server: Apache/2.4.54 (Unix) OpenSSL/1.0.2u PHP/7.4.33 mod_wsgi/3.5 Python/2.7.18 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 59M | 25M) multisite: N openssl: OpenSSL 1.0.2u  20 Dec 2019 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.003 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.4 WP: 6.6.1 PHP: 7.4.33 (apache2handler, Darwin MacBook-Air-de-Daniel.local 23.4.0 Darwin Kernel Version 23.4.0: Wed Feb 21 21:44:06 PST 2024; root:xnu-10063.101.15~2/RELEASE_ARM64_T8103 arm64) MySQL: 5.7.39 (max packet size=33554432) WPLANG: es_ES Server: Apache/2.4.54 (Unix) OpenSSL/1.0.2u PHP/7.4.33 mod_wsgi/3.5 Python/2.7.18 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 59M | 31M) multisite: N openssl: OpenSSL 1.0.2u  20 Dec 2019 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.003 (1) Free space on disk containing Updraft's temporary directory: 85307.9 MB
+0000.003 (1) Free space on disk containing Updraft's temporary directory: 85307.9 MB
+0000.003 (1) Requesting backup semaphore lock (4f9064cbfa1d)
+0000.004 (1) Requesting backup semaphore lock (4f9064cbfa1d)
+0000.004 (1) [Debug] Lock option (updraft_lock_4f9064cbfa1d, wp_options) was created in the database
+0000.004 (1) [Info] Lock (updraft_lock_4f9064cbfa1d, wp_options) acquired after initialising the database
+0000.005 (1) This backup task (4f9064cbfa1d) is either complete or began over 2 days ago: ending (1725371970.0007, ) (existing jobdata keys: )
+0000.006 (1) Lock option (updraft_lock_4f9064cbfa1d, wp_options) failed to be created in the database (could already exist)
+0000.006 (1) Failed to gain semaphore lock (4f9064cbfa1d) - another resumption for this job is apparently already active
+0000.007 (1) Failed to get backup job lock; possible overlapping resumptions - will abort this instance

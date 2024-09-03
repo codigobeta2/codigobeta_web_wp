@@ -1,0 +1,113 @@
+.dropdown {
+
+    position: relative;
+
+    @media (min-width: 992px) {
+       
+        flex-direction: row;
+    }
+
+    & > a{
+        
+        display: flex;
+        gap: 4px;
+
+        &:after{
+
+            content: '';
+            position: absolute;
+            height: 50px;
+            width: 100%;
+            left: 0;
+        }
+
+        span{
+
+            &.arrow{
+                display: block;
+                height:15px;
+                width:15px;
+                background-image: url('../images/arrow-down-white.svg');
+                background-size: 11px;
+                background-repeat: no-repeat;
+                background-position: center bottom;
+                margin: 5px 0 0 0;
+            }
+        }
+
+       
+    }
+
+    &__submenu{
+
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+        position: relative;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+        width: auto;
+        top:0;
+        background-color: $snow;
+        padding: 16px;
+        color: black;
+        margin: 16px 0 16px 0;
+
+        @media (min-width: 992px) {
+            position: absolute;
+            box-shadow:  #0000002e 0 16px 16px;
+            padding: 32px 32px 19px 32px;
+            background-color: white;
+            width: 200px;
+            left: -32px;
+            top:48px;
+            margin: 0;
+        }
+
+        &:after{
+
+            content:'';
+            position: absolute;
+            bottom: -13px;
+            left: 0;
+            width: 100%;
+            border-bottom: 13px solid white;
+            display: none;
+
+            @media (min-width: 992px) {
+                display: block;
+            }
+        }
+
+        & > li{
+
+            & > a{
+                display: block;
+                text-decoration: none;
+                margin: 0 0 24px 0;
+                width: max-content;
+
+                &:hover{
+                    font-weight: 600;
+                }
+            }
+
+            &:last-child{
+
+                a{
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    &.open{
+
+        span.arrow{
+            transform:rotate(180deg);
+            margin: 8px 0 0 0;
+        }
+    }
+}

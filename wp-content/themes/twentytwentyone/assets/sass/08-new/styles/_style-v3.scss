@@ -1,0 +1,58 @@
+
+@media(min-width:992px){
+
+    .header{
+
+        &__desktop{
+    
+            & > nav{
+    
+                & > ul{
+    
+                    justify-content: center;
+                    right: -32px; // Este valor cambiará en función del contenido de los botones
+                    gap: 32px;
+    
+                    li{
+                        
+                        &.logo{
+                            position: relative;
+                            width: max-content;
+                            left: 0;
+                            margin: 0 24px;
+                        }
+
+                        &:nth-child(1) {
+                            order: 4;
+                        }
+
+                        &:nth-child(2) {
+                            order: 1;
+                        }
+
+                        &:nth-child(3) {
+                            order: 2;
+                        }
+
+                        &:nth-child(4) {
+                            order: 3;
+                        }
+
+                        &:nth-child(5) {
+                            order: 5;
+                        }
+
+                        &:nth-child(6) {
+                            order: 6;
+                        }
+
+                        &:nth-child(7) {
+                            order: 7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

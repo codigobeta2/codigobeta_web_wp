@@ -1,0 +1,649 @@
+.header {
+
+    padding: 0;
+    max-width: 100%;
+
+    &-topbar{
+        background-color: #cdcdcd2b;
+        height: 0;
+        transition: top 250ms;
+        top:0;
+        position: relative;
+        margin:0 0 0 0;
+
+        @media(min-width:769px){
+            height: 35px;
+	    transition: all 250ms;
+        }
+
+        &.hidden{
+            transition: 250ms all;
+            top:-35px;
+            margin: 0 0 -35px 0;
+        }
+    }
+
+    &__desktop {
+
+        width: calc(100% - 40px);
+        height: 100%;
+        position: fixed;
+        left: calc(-100% + 40px);
+        top: 0;
+        transition: all 200ms;
+        z-index: 21;
+       
+
+        @media(min-width: 992px) {
+            width: 100%;
+            height: 120px;
+            position: relative;
+            left: 0;
+        }
+
+        &-container{
+
+            width: calc(100% - 40px);
+            //background-color: white;
+            height: 100%;
+            position: fixed;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            transition: height 250ms, box-shadow 250ms;
+            flex-direction: column;
+
+            @media(min-width:992px){
+                height: 120px;
+                width: 100%;
+            }
+
+            &-fixed{
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: 1200px;
+                width: 100%;
+                padding: 48px 12px;
+                height: 100%;
+                background-color: white;
+
+                @media(min-width:992px){
+                    flex-direction: row;
+                    padding: 0 24px;
+                    background-color: inherit;
+                }
+
+                &-left{
+
+                    width: 100%;
+                    padding: 0 0 0 16px;
+
+                    @media(min-width:992px){
+                        width: 300px;
+                        padding: 0;
+                    }
+
+                    .logo {
+                        
+                        display: block;
+
+                        a{
+                            width: 190px;
+                            height:24px;
+                            background-image:url('https://www.portfoliodaniel.es/wp-content/uploads/2024/08/logo-codigobeta-black.png');
+                            background-repeat: no-repeat;
+                            background-size: 100%;
+                            background-position:center;
+                            transition: all 250ms;
+                            display: block;
+
+                            @media(min-width: 992px) {
+                                width: 282px;
+                                height:33px;
+                                background-image:url('https://www.portfoliodaniel.es/wp-content/uploads/2024/08/logo-codigobeta-black.png');
+                            }
+                        }
+                    }
+                }
+        
+                &-right{
+    
+                    width:100%;
+                    display: flex;
+                    justify-content: flex-start;
+
+                    @media(min-width:992px){
+                        width:calc(100% - 300px);
+                        justify-content: flex-end;
+                    }
+    
+                    & > nav.primary-navigation{
+    
+                        width: 100%;
+
+                        ul.menu-wrapper {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 24px;
+                            list-style: none;
+                            margin: 0;
+                            width: 100%;
+                            margin: 48px 0 0 0;
+                            position: relative;
+                            font-size: 19px;
+                
+                            @media(min-width: 992px) {
+                                flex-direction: row;
+                                margin: 0 auto;
+                                justify-content: flex-end;
+                                align-items: center;
+                            }
+                
+                            li {
+                
+                                padding: 0 0 0 16px;
+
+                                @media(min-width:992px){
+                                    padding: 0;
+                                }
+
+
+                                a {
+                                    color: inherit;
+                                    text-decoration: none;
+                                    position: relative;
+                                    font-weight: 600;
+                                }
+            
+                                &.current-menu-item{
+                                       
+                                    position: relative;
+                                    
+                                    a{
+                                        font-weight: bold;
+                                    }
+                                    
+                                    &:after{
+        
+                                        content:'';
+                                        position: absolute;
+                                        left:0;
+                                        border-bottom: 2px solid black !important;
+                                        width: 100%;
+                                        bottom: -2px;
+                                        display: none;
+
+                                        @media(min-width:992px){
+                                            display: block;
+                                        }
+                                    }
+                                }
+                
+                                &.button{
+            
+                                    a{
+                                        background-color: white;
+                                        color: black;
+                                        height: 37px;
+                                        display: flex;
+                                        align-items: center;
+                                        padding: 0 24px;
+                                        width: max-content;
+                                        border-radius: 4px;
+                                    }
+                                }
+
+                                &.lang-item{
+                                    
+                                    position: relative;
+                                    top: 20px;
+                                    font-size: 13px;
+                                    color: #a8a8a8;
+
+                                    @media(min-width:992px){
+                                        position: absolute;
+                                        top: -78px;
+                                    }
+
+                                    &:hover{
+
+                                        a{
+                                            text-decoration: underline;
+                                        }
+                                    }
+
+                                    &.hidden{
+                                        display: none;
+                                    }
+
+                                    &.current-lang{
+
+                                        a{
+                                            text-decoration: underline;
+                                        }
+                                    }
+
+                                    &:last-child{
+                                        right: 0;
+
+                                        @media(min-width:992px){
+                                            right: 130px;
+                                        }
+
+                                        &:after{
+                                            content: '';
+                                            position: relative;
+                                            right: -11px;
+
+                                            @media(min-width:992px){
+                                                content: '|';
+                                            }
+                                        }
+                                    }
+                                }
+
+                               
+                            }
+                            
+                            // WORDPRESS SUBMENU
+
+                            .sub-menu{
+                                display: none;
+                                position: relative;
+                                padding: 24px 0 8px 0;
+                                width: 100%;
+                                box-shadow:  none;
+                                top: -34px;
+                                border: 16px solid $snow;
+                                background-color: $snow;
+                                margin: 0 0 -34px 0;
+                                right: 0;
+                                color: black;
+                                font-size: 16px;
+
+                                @media(min-width:992px){
+                                    top: 25px;
+                                    padding: 20px 0 0 0;
+                                    box-shadow:  #0000002e 0px 37px 16px;
+                                    width: 300px;
+                                    border: 0;
+                                    background-color: transparent;
+                                    margin: 0 0 0 -24px;
+                                    position: absolute;
+                                }
+
+                                @media(min-width:1600px){
+                                    right: auto;
+                                }
+
+                                &:after{
+                                    content: "";
+                                    position: absolute;
+                                    bottom: -33px;
+                                    left: 0;
+                                    width: 100%;
+                                    border-bottom: 33px solid #fff;
+                                    display: none;
+
+                                    @media(min-width:992px){
+                                        display: block;
+                                    }
+                                }
+
+                                li{
+                                    background-color: transparent;
+                                    padding: 24px 0 0 0;
+
+                                    @media(min-width:992px){
+                                        padding: 16px 24px 0 24px;
+                                        background-color: white;
+                                    }
+
+                                    &:after{
+                                        border-bottom: none !important;
+                                    }
+
+                                    &:first-child{
+                                        padding: 32px 24px 0 24px;
+                                    }
+                                }
+                            }
+
+                            .menu-item-has-children{
+
+                                display: flex;
+                                flex-direction: column;
+                                padding: 0;
+                                position: relative;
+                                cursor: pointer;
+                                margin: -17px 0 0 0;
+
+                                @media(min-width:992px){
+                                    flex-direction: row;
+                                    margin: 0;
+                                }
+
+                                & > a{
+                                    pointer-events: none;
+                                    z-index:9;
+                                    border: 16px solid transparent;
+                                    background-color: transparent;
+                                    border-bottom: 0;
+
+                                    @media(min-width:992px){
+                                        border: 0;
+                                    }
+                                }
+
+                                &:hover{
+
+                                    .sub-menu{
+                                        display: block;
+                                    }
+                                }
+
+                                .icon-plus{
+                                    display: none;
+                                }
+
+                                .sub-menu-toggle{
+                                    background-color: transparent;
+                                    border: 0;
+                                    position: absolute;
+                                    right: 7px;
+                                    z-index:9;
+                                    top: 16px;
+
+                                    @media(min-width:992px){
+                                        position: relative;
+                                        right: 0;
+                                        top: auto;
+                                    }
+                                }
+
+                                .icon-minus{
+                                    width:20px;
+                                    height:20px;
+                                    background-image: url('https://www.portfoliodaniel.es/wp-content/uploads/2024/08/arrow-menu-black.svg');
+                                    background-repeat: no-repeat;
+                                    background-size: 12px;
+                                    display: block;
+                                    display: flex;
+                                    margin: 9px 9px 0 0;
+
+                                    @media(min-width:992px){
+                                        margin: 0 -3px -7px 5px;
+                                        width: 12px;
+                                        height: 9px;
+                                        background-size: 12px;
+                                    }
+
+                                    svg{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    
+                }
+            }
+
+            
+        }
+       
+
+        &.open {
+            left: 0;
+            transition: all 500ms;
+            box-shadow:  #0000002e 0 0 16px;
+
+            ul{
+
+                li{
+                    
+                    &.button{
+
+                        a{
+                            background-color: black;
+                            color: white;
+                        }
+                        
+                    }
+                }
+            }
+        }     
+        
+        .close {
+
+            display: block;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+
+            @media(min-width: 992px) {
+                display: none;
+            }
+
+            img{
+                height: 20px;
+            }
+        }
+
+        & ~ .backdrop {
+            background-color: #ffffffd3;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            display: none;
+            z-index: 20;
+        }
+
+        &.open ~ .backdrop {
+            display: block;
+        }
+
+        
+    }
+
+    &__mobile {
+
+        display: block;
+        height:90px;
+
+        @media(min-width: 992px) {
+            display: none;
+        }
+
+        &-container{
+
+            display: flex;
+            height:90px;
+            position:fixed;
+            background-color: transparent;
+            width: 100%;
+            padding: 0 12px;
+            align-items: center;
+            transition: all 250ms;
+            z-index:10;
+            transition: height 250ms;
+
+            @media(min-width:769px){
+                padding: 0 24px;
+            }
+
+            &-left {
+                width: 60px;
+                height: 25px;
+               
+                span.icon-menu{
+                    position: absolute;
+                    left: 10px;
+                    width:30px;
+                    height:30px;
+                    background-image: url('https://www.portfoliodaniel.es/wp-content/uploads/2024/08/icon-menu.svg');
+                    background-size: cover;
+                    margin-top: -4px;
+                    display: flex;
+                    align-items: center;
+        
+                    @media(min-width:769px) {
+                        left: 24px;
+                    }
+                }
+            }
+    
+            &-center {
+                width: calc(100% - 120px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                span.mobile-logo{
+                    height:25px;
+                    background-image:url('https://www.portfoliodaniel.es/wp-content/uploads/2024/08/logo-codigobeta-black.png');
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-position:center;
+                    transition: all 250ms;
+                    display: block;
+                    width: 190px;
+                    position: relative;
+
+                    a{
+                        width: 100%;
+                        height:100%;
+                        position: absolute;
+                    }
+                }
+            }
+    
+            &-right {
+                width: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 4px;
+            }
+        }
+    }
+
+    &__color-bar{
+        width: 100%; 
+        height: 5px; 
+        background: linear-gradient(to right, #7947ff, #00BFFF, #FFD700, #FFD700);
+
+       
+    }
+
+    &.sticky{
+
+        .header{
+        
+            &__desktop{
+
+                &-container{
+                    
+                    @media(min-width:992px){
+                        height: 90px;
+                        transition: height 250ms, box-shadow 250ms;
+                        box-shadow:  #0000002e 0 0 16px;
+                        background-color: #fff;
+                        top: 0;
+                    }
+
+                    &-fixed{
+
+                        &-left{
+
+                            .logo{
+
+                                a{
+                                    background-image:url('https://www.portfoliodaniel.es/wp-content/uploads/2024/08/logo-codigobeta-black.png');
+                                    width: 190px;
+                                    transition: all 250ms;
+
+                                    @media(min-width:992px){
+                                        width: 242px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    ul{
+                        color: black;
+
+                        li{
+
+                            &.active{
+                           
+                                a{
+                                    &:after{
+                                        border-bottom: 2px solid black;
+                                    }
+                                }
+                            }
+
+                            
+                            &.button{
+
+                                a{
+                                    background-color: black;
+                                    color: white;
+                                }
+                            }
+
+                            .icon-minus{
+                                background-image: url('https://www.portfoliodaniel.es/wp-content/uploads/2024/08/arrow-menu-black.svg');
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__mobile{
+
+                &-container{
+
+                    height: 70px;
+                    box-shadow:  #0000002e 0 0 16px;
+                    background-color: white;
+                    transition: height 250ms;
+
+                    &-left{
+
+                        span.icon-menu{
+                            background-image: url('https://www.portfoliodaniel.es/wp-content/uploads/2024/08/icon-menu.svg');
+                        }
+                    }
+
+                    &-center{
+
+                        span.mobile-logo{
+                            background-image: url('https://www.portfoliodaniel.es/wp-content/uploads/2024/08/logo-codigobeta-black.png');
+                        }
+                    }
+                }
+            }
+        }
+
+        .dropdown>a span.arrow{
+            background-image: url('https://www.portfoliodaniel.es/wp-content/uploads/2024/08/arrow-down-black.svg');
+        }
+    }
+
+
+    
+}
+
+
+// forced
+
+#wpadminbar{
+    z-index: 10 !important;
+}

@@ -1,0 +1,116 @@
+// CUSTOM PLUGIN COOKIES
+
+.cky-consent-container .cky-consent-bar{
+    border:0 !important;
+    box-shadow:  #0000002e 0 0 16px !important;
+    border-radius: 0 !important;
+    padding: 24px !important;
+
+    @media(min-width:769px){
+        padding: 32px !important;
+    }
+}
+
+.cky-notice-btn-wrapper{
+    gap: 8px;
+    margin-top: 24px !important;
+}
+
+.cky-consent-container{
+    width: 100% !important;
+    max-width: 530px !important;
+}
+
+.cky-btn{
+    border: 1px solid black !important;
+    border-radius: 4px !important;
+    height: 48px;
+    padding: 0;
+    font-weight: 500 !important;
+
+    &:hover{
+        background-color: black !important;
+        color: white !important;
+    }
+}
+
+.cky-prefrence-btn-wrapper{
+    padding: 32px 32px 32px 32px !important;
+    gap: 8px;
+}
+
+.cky-modal{
+    border-radius: 0 !important;
+    border:0 !important;
+
+}
+
+.cky-preference-center{
+    border-radius: 0 !important;
+}
+
+.cky-preference-header {
+    padding: 32px 32px 16px 32px !important;
+}
+
+.cky-preference-body-wrapper{
+    padding: 0 32px !important;
+}
+
+button.cky-show-desc-btn:not(:hover):not(:active){
+
+    color: black !important;
+    text-decoration: underline;
+
+    &:hover{
+        color: black!important;
+    }
+}
+
+button.cky-show-desc-btn{
+    &:hover{
+        color: black !important;
+        text-decoration: underline !important;
+    }
+}
+
+.cky-accordion-item .cky-accordion-header{
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 16px !important;
+}
+
+.cky-accordion-header .cky-always-active{
+    color: #00a48e !important;
+}
+
+.cky-audit-table{
+    border-radius: 0 !important;
+    background-color: $snow !important;
+    padding: 16px 24px !important;
+    font-size: 14px !important;
+}
+
+.cky-overlay{
+    opacity: 0.5 !important;
+}
+
+.cky-custom-brand-logo-wrapper, 
+.cky-notice .cky-title, 
+.cky-notice-des, 
+.cky-notice-btn-wrapper{
+    padding: 0 !important;
+}
+
+.cky-preference-header .cky-btn-close img {
+    margin: 0;
+    height: 15px !important;
+    width: 15px !important;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.cky-btn-revisit-wrapper{
+    z-index: 21 !important;
+}

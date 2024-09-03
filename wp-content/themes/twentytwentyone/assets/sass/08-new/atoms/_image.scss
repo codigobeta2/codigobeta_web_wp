@@ -1,0 +1,47 @@
+.image{
+
+    img{
+        width: 100%;
+    }
+}
+
+// CUSTOM
+
+.mi-custom--max-height{
+
+    .image img {
+        object-fit: cover;
+        max-height: 75vw;
+
+        @media(min-width:769px){
+            max-height: 800px;
+        }
+    }
+}
+
+.mi-custom--height-100vh{
+
+    .image img {
+        object-fit: cover;
+        height: 60vw;
+
+        @media(min-width:769px){
+            height: 100vh;
+        }
+    }
+}
+
+.mi-custom--full-width{
+
+    .container{
+        max-width:100%;
+
+        .row{
+            padding: 0 !important;
+        }
+    }
+}
+
+.mi-custom--container-width{
+
+}

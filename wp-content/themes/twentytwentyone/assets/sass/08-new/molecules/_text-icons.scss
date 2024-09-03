@@ -1,0 +1,93 @@
+.text-icons{
+
+
+    &__element{
+
+        text-align:center;
+        max-width: 450px;
+        margin: 0 auto;
+
+        &-icons{
+
+            display: flex;
+            justify-content:center;
+            gap: 4px;
+
+            img{
+
+                height: 20px;
+                margin: 0 1px;
+                
+                &.disabled{
+                    opacity: 0.15;
+                }
+            }
+
+            &.star-1{
+
+                img{
+                    opacity:0.1;
+
+                    &:nth-child(1){
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &.star-2{
+
+                img{
+                    opacity:0.1;
+
+                    &:nth-child(1),
+                    &:nth-child(2){
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &.star-3{
+
+                img{
+                    opacity:0.1;
+
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3){
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &.star-4{
+
+                img{
+                    opacity:0.1;
+
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:nth-child(4){
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &.star-5{
+
+                img{
+                    opacity:1;
+                }
+            }
+        }
+
+        &-description{
+            margin: 16px 0 0 0;
+
+            .text{
+                margin: 16px 0 0 0;
+            }
+        }
+
+    }
+}

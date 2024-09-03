@@ -1,0 +1,367 @@
+0000.001 () Opened log file at time: Tue, 03 Sep 2024 13:59:10 +0000 on http://localhost:8888
+0000.001 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.4 WP: 6.6.1 PHP: 7.4.33 (apache2handler, Darwin MacBook-Air-de-Daniel.local 23.4.0 Darwin Kernel Version 23.4.0: Wed Feb 21 21:44:06 PST 2024; root:xnu-10063.101.15~2/RELEASE_ARM64_T8103 arm64) MySQL: 5.7.39 (max packet size=33554432) WPLANG: es_ES Server: Apache/2.4.54 (Unix) OpenSSL/1.0.2u PHP/7.4.33 mod_wsgi/3.5 Python/2.7.18 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 40.6M | 6.5M) multisite: N openssl: OpenSSL 1.0.2u  20 Dec 2019 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.001 () Free space on disk containing Updraft's temporary directory: 86706.9 MB
+0000.029 () Restore setup, now closing connection and starting restore over AJAX.
+0000.002 () Opened log file at time: Tue, 03 Sep 2024 13:59:11 +0000 on http://localhost:8888
+0000.002 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.4 WP: 6.6.1 PHP: 7.4.33 (apache2handler, Darwin MacBook-Air-de-Daniel.local 23.4.0 Darwin Kernel Version 23.4.0: Wed Feb 21 21:44:06 PST 2024; root:xnu-10063.101.15~2/RELEASE_ARM64_T8103 arm64) MySQL: 5.7.39 (max packet size=33554432) WPLANG: es_ES Server: Apache/2.4.54 (Unix) OpenSSL/1.0.2u PHP/7.4.33 mod_wsgi/3.5 Python/2.7.18 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 37.3M | 4.5M) multisite: N openssl: OpenSSL 1.0.2u  20 Dec 2019 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.002 () Free space on disk containing Updraft's temporary directory: 86707 MB
+0000.017 () Ensuring WP_Filesystem is setup for a restore
+0000.018 () WP_Filesystem is setup and ready for a restore
+0000.022 () Restore job started. Entities to restore: plugins, themes, db. Restore options: {"updraft_restorer_charset":"utf8","updraft_restorer_replacesiteurl":"1","include_unspecified_tables":false,"tables_to_restore":["wp_options","wp_users","wp_usermeta","wp_commentmeta","wp_comments","wp_links","wp_postmeta","wp_posts","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_terms","wp_actionscheduler_actions","wp_actionscheduler_claims","wp_actionscheduler_groups","wp_actionscheduler_logs","wp_addonlibrary_addons","wp_addonlibrary_categories","wp_cky_banners","wp_cky_cookie_categories","wp_cky_cookies","wp_e_events","wp_frmt_form_entry","wp_frmt_form_entry_meta","wp_frmt_form_reports","wp_frmt_form_views","wp_gdpr_cc_options","wp_rcb_asset_seo_redirect","wp_rcb_blocker_thumbnails","wp_rcb_consent","wp_rcb_revision","wp_rcb_revision_independent","wp_rcb_scan","wp_rcb_scan_markup","wp_rcb_stats","wp_rcb_stats_buttons_clicked","wp_rcb_stats_custom_bypass","wp_rcb_template","wp_rcb_template_translation","wp_real_queue","wp_wpmailsmtp_debug_events","wp_wpmailsmtp_tasks_meta"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.026 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.027 () Entity: db
+0000.027 () restore_backup(backup_file=backup_2024-09-03-1202_WORDPRESS_BASE_4f9064cbfa1d-db.gz, type=db, info=a:0:{}, last_one=)
+0000.027 () Descomprimiendo la copia de seguridad... (backup_2024-09-03-1202_WORDPRESS_BASE_4f9064cbfa1d-db.gz, 1 Mb)
+0000.028 () Database successfully unpacked
+0000.029 () Restaurando la base de datos... (en sitios grandes podría tardar mucho tiempo - si obtiene errores de exceso de tiempo de ejecución de comandos (timeout), lo que puede pasar si su proveedor de alojamiento (hosting) tiene configurado su alojamiento con recursos limitados, entonces debe usar un método diferente como phpMyAdmin)
+0000.029 () Using direct MySQL access; value of use_mysqli is: 1
+0000.030 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0000.076 () Max packet size: 32 MB
+0000.076 () Entering maintenance mode
+0000.076 () Activando el modo de mantenimiento&#8230;
+0000.088 () Backup of: https://www.codigobeta.es
+0000.093 () Content URL: https://www.codigobeta.es/wp-content
+0000.093 () Uploads URL: https://www.codigobeta.es/wp-content/uploads
+0000.093 () Old table prefix: wp_
+0000.093 () Old ABSPATH: /home/codigobe/public_html/
+0000.093 () UpdraftPlus plugin slug: updraftplus/updraftplus.php
+0000.093 () Site information: multisite=0
+0000.093 () Site information: sql_mode=NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.094 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+0000.094 () New table prefix: 72_
+0000.095 () Processing table (InnoDB): wp_options - will restore as: 72_options
+0000.182 () Atomic restore: dropping original table (wp_options)
+0000.203 () Atomic restore: renaming new table (72_options) to final table name (wp_options)
+0000.205 () Restoring prior UD configuration (table: wp_options; keys: 102)
+0000.271 () Search and replacing table: wp_options: rows: 708
+0000.322 () Incomplete object detected in database: FS_Plugin; Search and replace will be skipped for these entries
+0000.331 () Incomplete object detected in database: Elementor\Core\Logger\Items\JS; Search and replace will be skipped for these entries
+0000.331 () Incomplete object detected in database: Elementor\Core\Logger\Items\PHP; Search and replace will be skipped for these entries
+0000.364 () Processing table (InnoDB): wp_users - will restore as: 72_users
+0000.375 () Atomic restore: dropping original table (wp_users)
+0000.377 () Atomic restore: renaming new table (72_users) to final table name (wp_users)
+0000.379 () Search and replacing table: wp_users: rows: 1
+0000.379 () Processing table (InnoDB): wp_usermeta - will restore as: 72_usermeta
+0000.388 () Atomic restore: dropping original table (wp_usermeta)
+0000.390 () Atomic restore: renaming new table (72_usermeta) to final table name (wp_usermeta)
+0000.390 () Search and replacing table: wp_usermeta: rows: 27
+0000.391 () Processing table (InnoDB): wp_commentmeta - will restore as: 72_commentmeta
+0000.401 () Atomic restore: dropping original table (wp_commentmeta)
+0000.404 () Atomic restore: renaming new table (72_commentmeta) to final table name (wp_commentmeta)
+0000.405 () Search and replacing table: wp_commentmeta: rows: 0
+0000.405 () Processing table (InnoDB): wp_comments - will restore as: 72_comments
+0000.421 () Atomic restore: dropping original table (wp_comments)
+0000.430 () Atomic restore: renaming new table (72_comments) to final table name (wp_comments)
+0000.433 () Search and replacing table: wp_comments: rows: 1
+0000.433 () Processing table (InnoDB): wp_links - will restore as: 72_links
+0000.441 () Atomic restore: dropping original table (wp_links)
+0000.444 () Atomic restore: renaming new table (72_links) to final table name (wp_links)
+0000.445 () Search and replacing table: wp_links: rows: 0
+0000.445 () Processing table (InnoDB): wp_postmeta - will restore as: 72_postmeta
+0000.730 () Atomic restore: dropping original table (wp_postmeta)
+0000.732 () Atomic restore: renaming new table (72_postmeta) to final table name (wp_postmeta)
+0000.739 () Search and replacing table: wp_postmeta: rows: 798
+0001.826 () Processing table (InnoDB): wp_posts - will restore as: 72_posts
+0001.892 () Database queries processed: 50 in 1.86 seconds
+0002.053 () Atomic restore: dropping original table (wp_posts)
+0002.056 () Atomic restore: renaming new table (72_posts) to final table name (wp_posts)
+0002.057 () Skipping search/replace on GUID column in posts table
+0002.057 () Search and replacing table: wp_posts: rows: 1122
+0002.739 () Processing table (InnoDB): wp_term_relationships - will restore as: 72_term_relationships
+0002.748 () Atomic restore: dropping original table (wp_term_relationships)
+0002.750 () Atomic restore: renaming new table (72_term_relationships) to final table name (wp_term_relationships)
+0002.750 () Skipping this table: data in this table (wp_term_relationships) should not be search/replaced
+0002.750 () Processing table (InnoDB): wp_term_taxonomy - will restore as: 72_term_taxonomy
+0002.760 () Atomic restore: dropping original table (wp_term_taxonomy)
+0002.762 () Atomic restore: renaming new table (72_term_taxonomy) to final table name (wp_term_taxonomy)
+0002.763 () Search and replacing table: wp_term_taxonomy: rows: 31
+0002.764 () Processing table (InnoDB): wp_termmeta - will restore as: 72_termmeta
+0002.772 () Atomic restore: dropping original table (wp_termmeta)
+0002.773 () Atomic restore: renaming new table (72_termmeta) to final table name (wp_termmeta)
+0002.774 () Search and replacing table: wp_termmeta: rows: 10
+0002.775 () Processing table (InnoDB): wp_terms - will restore as: 72_terms
+0002.784 () Atomic restore: dropping original table (wp_terms)
+0002.785 () Atomic restore: renaming new table (72_terms) to final table name (wp_terms)
+0002.786 () Search and replacing table: wp_terms: rows: 31
+0002.787 () Processing table (InnoDB): wp_actionscheduler_actions - will restore as: 72_actionscheduler_actions
+0002.798 () Atomic restore: dropping original table (wp_actionscheduler_actions)
+0002.798 () Atomic restore: renaming new table (72_actionscheduler_actions) to final table name (wp_actionscheduler_actions)
+0002.799 () Search and replacing table: wp_actionscheduler_actions: rows: 9
+0002.800 () Incomplete object detected in database: ActionScheduler_SimpleSchedule; Search and replace will be skipped for these entries
+0002.800 () Incomplete object detected in database: ActionScheduler_IntervalSchedule; Search and replace will be skipped for these entries
+0002.800 () Processing table (InnoDB): wp_actionscheduler_claims - will restore as: 72_actionscheduler_claims
+0002.807 () Atomic restore: dropping original table (wp_actionscheduler_claims)
+0002.807 () Atomic restore: renaming new table (72_actionscheduler_claims) to final table name (wp_actionscheduler_claims)
+0002.809 () Search and replacing table: wp_actionscheduler_claims: rows: 0
+0002.809 () Processing table (InnoDB): wp_actionscheduler_groups - will restore as: 72_actionscheduler_groups
+0002.817 () Atomic restore: dropping original table (wp_actionscheduler_groups)
+0002.817 () Atomic restore: renaming new table (72_actionscheduler_groups) to final table name (wp_actionscheduler_groups)
+0002.819 () Search and replacing table: wp_actionscheduler_groups: rows: 2
+0002.819 () Processing table (InnoDB): wp_actionscheduler_logs - will restore as: 72_actionscheduler_logs
+0002.826 () Atomic restore: dropping original table (wp_actionscheduler_logs)
+0002.826 () Atomic restore: renaming new table (72_actionscheduler_logs) to final table name (wp_actionscheduler_logs)
+0002.828 () Search and replacing table: wp_actionscheduler_logs: rows: 22
+0002.829 () Processing table (InnoDB): wp_addonlibrary_addons - will restore as: 72_addonlibrary_addons
+0002.844 () Atomic restore: dropping original table (wp_addonlibrary_addons)
+0002.844 () Atomic restore: renaming new table (72_addonlibrary_addons) to final table name (wp_addonlibrary_addons)
+0002.846 () Search and replacing table: wp_addonlibrary_addons: rows: 29
+0002.868 () Processing table (InnoDB): wp_addonlibrary_categories - will restore as: 72_addonlibrary_categories
+0002.876 () Database queries processed: 100 in 2.84 seconds
+0002.876 () Atomic restore: dropping original table (wp_addonlibrary_categories)
+0002.876 () Atomic restore: renaming new table (72_addonlibrary_categories) to final table name (wp_addonlibrary_categories)
+0002.877 () Search and replacing table: wp_addonlibrary_categories: rows: 1
+0002.878 () Processing table (InnoDB): wp_cky_banners - will restore as: 72_cky_banners
+0002.885 () Atomic restore: dropping original table (wp_cky_banners)
+0002.885 () Atomic restore: renaming new table (72_cky_banners) to final table name (wp_cky_banners)
+0002.887 () Search and replacing table: wp_cky_banners: rows: 2
+0002.889 () Processing table (InnoDB): wp_cky_cookie_categories - will restore as: 72_cky_cookie_categories
+0002.897 () Atomic restore: dropping original table (wp_cky_cookie_categories)
+0002.897 () Atomic restore: renaming new table (72_cky_cookie_categories) to final table name (wp_cky_cookie_categories)
+0002.898 () Search and replacing table: wp_cky_cookie_categories: rows: 5
+0002.898 () Processing table (InnoDB): wp_cky_cookies - will restore as: 72_cky_cookies
+0002.904 () Atomic restore: dropping original table (wp_cky_cookies)
+0002.905 () Atomic restore: renaming new table (72_cky_cookies) to final table name (wp_cky_cookies)
+0002.906 () Search and replacing table: wp_cky_cookies: rows: 0
+0002.906 () Processing table (InnoDB): wp_e_events - will restore as: 72_e_events
+0002.914 () Atomic restore: dropping original table (wp_e_events)
+0002.915 () Atomic restore: renaming new table (72_e_events) to final table name (wp_e_events)
+0002.916 () Search and replacing table: wp_e_events: rows: 8
+0002.916 () Processing table (InnoDB): wp_frmt_form_entry - will restore as: 72_frmt_form_entry
+0002.924 () Atomic restore: dropping original table (wp_frmt_form_entry)
+0002.924 () Atomic restore: renaming new table (72_frmt_form_entry) to final table name (wp_frmt_form_entry)
+0002.925 () Search and replacing table: wp_frmt_form_entry: rows: 1
+0002.925 () Processing table (InnoDB): wp_frmt_form_entry_meta - will restore as: 72_frmt_form_entry_meta
+0002.933 () Atomic restore: dropping original table (wp_frmt_form_entry_meta)
+0002.934 () Atomic restore: renaming new table (72_frmt_form_entry_meta) to final table name (wp_frmt_form_entry_meta)
+0002.935 () Search and replacing table: wp_frmt_form_entry_meta: rows: 5
+0002.935 () Processing table (InnoDB): wp_frmt_form_reports - will restore as: 72_frmt_form_reports
+0002.943 () Atomic restore: dropping original table (wp_frmt_form_reports)
+0002.943 () Atomic restore: renaming new table (72_frmt_form_reports) to final table name (wp_frmt_form_reports)
+0002.944 () Search and replacing table: wp_frmt_form_reports: rows: 1
+0002.944 () Processing table (InnoDB): wp_frmt_form_views - will restore as: 72_frmt_form_views
+0002.950 () Atomic restore: dropping original table (wp_frmt_form_views)
+0002.950 () Atomic restore: renaming new table (72_frmt_form_views) to final table name (wp_frmt_form_views)
+0002.951 () Search and replacing table: wp_frmt_form_views: rows: 3
+0002.951 () Processing table (InnoDB): wp_gdpr_cc_options - will restore as: 72_gdpr_cc_options
+0002.957 () Atomic restore: dropping original table (wp_gdpr_cc_options)
+0002.958 () Atomic restore: renaming new table (72_gdpr_cc_options) to final table name (wp_gdpr_cc_options)
+0002.958 () Search and replacing table: wp_gdpr_cc_options: rows: 27
+0002.959 () Processing table (InnoDB): wp_rcb_asset_seo_redirect - will restore as: 72_rcb_asset_seo_redirect
+0002.967 () Atomic restore: dropping original table (wp_rcb_asset_seo_redirect)
+0002.967 () Atomic restore: renaming new table (72_rcb_asset_seo_redirect) to final table name (wp_rcb_asset_seo_redirect)
+0002.968 () Search and replacing table: wp_rcb_asset_seo_redirect: rows: 1
+0002.969 () Processing table (InnoDB): wp_rcb_blocker_thumbnails - will restore as: 72_rcb_blocker_thumbnails
+0002.976 () Atomic restore: dropping original table (wp_rcb_blocker_thumbnails)
+0002.976 () Atomic restore: renaming new table (72_rcb_blocker_thumbnails) to final table name (wp_rcb_blocker_thumbnails)
+0002.977 () Search and replacing table: wp_rcb_blocker_thumbnails: rows: 0
+0002.977 () Processing table (InnoDB): wp_rcb_consent - will restore as: 72_rcb_consent
+0002.986 () Atomic restore: dropping original table (wp_rcb_consent)
+0002.986 () Atomic restore: renaming new table (72_rcb_consent) to final table name (wp_rcb_consent)
+0002.987 () Search and replacing table: wp_rcb_consent: rows: 0
+0002.987 () Processing table (InnoDB): wp_rcb_revision - will restore as: 72_rcb_revision
+0002.994 () Atomic restore: dropping original table (wp_rcb_revision)
+0002.994 () Atomic restore: renaming new table (72_rcb_revision) to final table name (wp_rcb_revision)
+0002.995 () Search and replacing table: wp_rcb_revision: rows: 4
+0002.997 () Processing table (InnoDB): wp_rcb_revision_independent - will restore as: 72_rcb_revision_independent
+0003.005 () Atomic restore: dropping original table (wp_rcb_revision_independent)
+0003.005 () Atomic restore: renaming new table (72_rcb_revision_independent) to final table name (wp_rcb_revision_independent)
+0003.009 () Search and replacing table: wp_rcb_revision_independent: rows: 0
+0003.009 () Processing table (InnoDB): wp_rcb_scan - will restore as: 72_rcb_scan
+0003.018 () Atomic restore: dropping original table (wp_rcb_scan)
+0003.018 () Atomic restore: renaming new table (72_rcb_scan) to final table name (wp_rcb_scan)
+0003.019 () Search and replacing table: wp_rcb_scan: rows: 180
+0003.037 () Processing table (InnoDB): wp_rcb_scan_markup - will restore as: 72_rcb_scan_markup
+0003.046 () Atomic restore: dropping original table (wp_rcb_scan_markup)
+0003.046 () Atomic restore: renaming new table (72_rcb_scan_markup) to final table name (wp_rcb_scan_markup)
+0003.047 () Search and replacing table: wp_rcb_scan_markup: rows: 26
+0003.048 () Processing table (InnoDB): wp_rcb_stats - will restore as: 72_rcb_stats
+0003.056 () Atomic restore: dropping original table (wp_rcb_stats)
+0003.056 () Atomic restore: renaming new table (72_rcb_stats) to final table name (wp_rcb_stats)
+0003.059 () Search and replacing table: wp_rcb_stats: rows: 0
+0003.059 () Processing table (InnoDB): wp_rcb_stats_buttons_clicked - will restore as: 72_rcb_stats_buttons_clicked
+0003.067 () Atomic restore: dropping original table (wp_rcb_stats_buttons_clicked)
+0003.067 () Atomic restore: renaming new table (72_rcb_stats_buttons_clicked) to final table name (wp_rcb_stats_buttons_clicked)
+0003.068 () Search and replacing table: wp_rcb_stats_buttons_clicked: rows: 0
+0003.068 () Processing table (InnoDB): wp_rcb_stats_custom_bypass - will restore as: 72_rcb_stats_custom_bypass
+0003.077 () Database queries processed: 150 in 3.05 seconds
+0003.078 () Atomic restore: dropping original table (wp_rcb_stats_custom_bypass)
+0003.078 () Atomic restore: renaming new table (72_rcb_stats_custom_bypass) to final table name (wp_rcb_stats_custom_bypass)
+0003.079 () Search and replacing table: wp_rcb_stats_custom_bypass: rows: 0
+0003.079 () Processing table (InnoDB): wp_rcb_template - will restore as: 72_rcb_template
+0003.086 () Atomic restore: dropping original table (wp_rcb_template)
+0003.086 () Atomic restore: renaming new table (72_rcb_template) to final table name (wp_rcb_template)
+0003.087 () Search and replacing table: wp_rcb_template: rows: 2
+0003.090 () Processing table (InnoDB): wp_rcb_template_translation - will restore as: 72_rcb_template_translation
+0003.098 () Atomic restore: dropping original table (wp_rcb_template_translation)
+0003.099 () Atomic restore: renaming new table (72_rcb_template_translation) to final table name (wp_rcb_template_translation)
+0003.100 () Search and replacing table: wp_rcb_template_translation: rows: 0
+0003.100 () Processing table (InnoDB): wp_real_queue - will restore as: 72_real_queue
+0003.107 () Atomic restore: dropping original table (wp_real_queue)
+0003.107 () Atomic restore: renaming new table (72_real_queue) to final table name (wp_real_queue)
+0003.108 () Search and replacing table: wp_real_queue: rows: 0
+0003.108 () Processing table (InnoDB): wp_wpmailsmtp_debug_events - will restore as: 72_wpmailsmtp_debug_events
+0003.114 () Atomic restore: dropping original table (wp_wpmailsmtp_debug_events)
+0003.115 () Atomic restore: renaming new table (72_wpmailsmtp_debug_events) to final table name (wp_wpmailsmtp_debug_events)
+0003.116 () Search and replacing table: wp_wpmailsmtp_debug_events: rows: 6
+0003.117 () Processing table (InnoDB): wp_wpmailsmtp_tasks_meta - will restore as: 72_wpmailsmtp_tasks_meta
+0003.122 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+0003.122 () Unlocking database and leaving maintenance mode
+0003.123 () Desactivando el modo de mantenimiento&#8230;
+0003.123 () Atomic restore: dropping original table (wp_wpmailsmtp_tasks_meta)
+0003.123 () Atomic restore: renaming new table (72_wpmailsmtp_tasks_meta) to final table name (wp_wpmailsmtp_tasks_meta)
+0003.124 () Search and replacing table: wp_wpmailsmtp_tasks_meta: rows: 2
+0003.124 () Finished: lines processed: 166 in 3.09 seconds
+0003.124 () Limpiando basura...
+0003.124 () Begin search and replace (updraftplus_restored_db)
+0003.124 () [Database-replace-site-url] Base de datos: busca y sustituye la URL del sitio
+0003.125 () Database search and replace: replace https://www.codigobeta.es in backup dump with http://localhost:8888
+0003.125 () Database search and replace: replace http://www.codigobeta.es in backup dump with http://localhost:8888
+0003.125 () Database search and replace: replace http://codigobeta.es in backup dump with http://localhost:8888
+0003.125 () Database search and replace: replace https://codigobeta.es in backup dump with http://localhost:8888
+0003.125 () Database search and replace: replace /home/codigobe/public_html in backup dump with /Applications/MAMP/htdocs/proyectos/codigobeta_web_wp
+0003.125 () Search and replacing table: wp_actionscheduler_actions: already done
+0003.125 () Search and replacing table: wp_actionscheduler_claims: already done
+0003.125 () Search and replacing table: wp_actionscheduler_groups: already done
+0003.125 () Search and replacing table: wp_actionscheduler_logs: already done
+0003.125 () Search and replacing table: wp_addonlibrary_addons: already done
+0003.125 () Search and replacing table: wp_addonlibrary_categories: already done
+0003.125 () Search and replacing table: wp_cky_banners: already done
+0003.125 () Search and replacing table: wp_cky_cookie_categories: already done
+0003.125 () Search and replacing table: wp_cky_cookies: already done
+0003.125 () Search and replacing table: wp_commentmeta: already done
+0003.125 () Search and replacing table: wp_comments: already done
+0003.125 () Search and replacing table: wp_e_events: already done
+0003.126 () Search and replacing table: wp_frmt_form_entry: already done
+0003.126 () Search and replacing table: wp_frmt_form_entry_meta: already done
+0003.126 () Search and replacing table: wp_frmt_form_reports: already done
+0003.126 () Search and replacing table: wp_frmt_form_views: already done
+0003.126 () Search and replacing table: wp_gdpr_cc_options: already done
+0003.126 () Search and replacing table: wp_links: already done
+0003.126 () Search and replacing table: wp_options: already done
+0003.126 () Search and replacing table: wp_postmeta: already done
+0003.126 () Search and replacing table: wp_posts: already done
+0003.126 () Search and replacing table: wp_rcb_asset_seo_redirect: already done
+0003.126 () Search and replacing table: wp_rcb_blocker_thumbnails: already done
+0003.126 () Search and replacing table: wp_rcb_consent: already done
+0003.126 () Search and replacing table: wp_rcb_revision: already done
+0003.126 () Search and replacing table: wp_rcb_revision_independent: already done
+0003.126 () Search and replacing table: wp_rcb_scan: already done
+0003.126 () Search and replacing table: wp_rcb_scan_markup: already done
+0003.126 () Search and replacing table: wp_rcb_stats: already done
+0003.126 () Search and replacing table: wp_rcb_stats_buttons_clicked: already done
+0003.126 () Search and replacing table: wp_rcb_stats_custom_bypass: already done
+0003.126 () Search and replacing table: wp_rcb_template: already done
+0003.126 () Search and replacing table: wp_rcb_template_translation: already done
+0003.126 () Search and replacing table: wp_real_queue: already done
+0003.126 () Search and replacing table: wp_term_relationships: already done
+0003.126 () Search and replacing table: wp_term_taxonomy: already done
+0003.126 () Search and replacing table: wp_termmeta: already done
+0003.126 () Search and replacing table: wp_terms: already done
+0003.127 () Search and replacing table: wp_usermeta: already done
+0003.127 () Search and replacing table: wp_users: already done
+0003.127 () Search and replacing table: wp_wpmailsmtp_debug_events: already done
+0003.127 () Search and replacing table: wp_wpmailsmtp_tasks_meta: already done
+0003.131 () Entity: plugins
+0003.131 () restore_backup(backup_file=backup_2024-09-03-1202_WORDPRESS_BASE_4f9064cbfa1d-plugins.zip, type=plugins, info=a:3:{s:4:"path";s:72:"/Applications/MAMP/htdocs/proyectos/codigobeta_web_wp/wp-content/plugins";s:11:"description";s:7:"Plugins";s:20:"singular_description";s:6:"Plugin";}, last_one=)
+0003.131 () Descomprimiendo la copia de seguridad... (backup_2024-09-03-1202_WORDPRESS_BASE_4f9064cbfa1d-plugins.zip, 29.8 MB)
+0003.132 () Unzipping backup_2024-09-03-1202_WORDPRESS_BASE_4f9064cbfa1d-plugins.zip to /Applications/MAMP/htdocs/proyectos/codigobeta_web_wp/wp-content/upgrade/e5f09b76/ using UpdraftPlus_ZipArchive, starting index 0
+0003.946 () ZipArchive returned an error (will try again with PclZip): incompatible_archive
+0003.946 () Unzipping backup_2024-09-03-1202_WORDPRESS_BASE_4f9064cbfa1d-plugins.zip to /Applications/MAMP/htdocs/proyectos/codigobeta_web_wp/wp-content/upgrade/e5f09b76/ using UpdraftPlus_PclZip, starting index 0
+0004.976 () Unzip progress: 1003 out of 10570 files (3.3 MB, plugins/duplicate-post/src/post-republisher.php)
+0005.026 () Unzip progress: 2005 out of 10570 files (19.8 MB, plugins/unlimited-elements-for-elementor/js/unitecreator_helper.js)
+0005.077 () Unzip progress: 3007 out of 10570 files (23.4 MB, plugins/elementor/includes/controls/number.php)
+0005.156 () Unzip progress: 4009 out of 10570 files (54 MB, plugins/elementor/assets/shapes/mountains.svg)
+0005.230 () Unzip progress: 5011 out of 10570 files (61.9 MB, plugins/cookie-law-info/lite/includes/class-notice.php)
+0005.272 () Unzip progress: 6017 out of 10570 files (69.3 MB, plugins/updraftplus/vendor/phpseclib/phpseclib/LICENSE)
+0005.315 () Unzip progress: 7019 out of 10570 files (76.5 MB, plugins/elementor/app/modules/import-export/processes/export.php)
+0005.448 () Unzip progress: 8021 out of 10570 files (88.6 MB, plugins/unlimited-elements-for-elementor/provider/freemius/templates/partials/index.php)
+0005.494 () Unzip progress: 9023 out of 10570 files (93.6 MB, plugins/unlimited-elements-for-elementor/vendor/twig/twig/src/TokenParser/MacroTokenParser.php)
+0005.556 () Unzip progress: 10025 out of 10570 files (96.9 MB, plugins/updraftplus/vendor/rackspace/php-opencloud/lib/OpenCloud/Common/Exceptions/IOError.php)
+0005.584 () Moving old data: filesystem method / updraft_dir is potentially possible
+0005.584 () Moving old data: can potentially use wp_filesystem method / -old
+0005.584 () Quitando de en medio los datos antiguos...
+0005.764 () Top-level entities being moved: index.php, akismet, updraftplus, hello.php
+0005.765 () Moviendo la copia de seguridad desempaquetada a su lugar...
+0006.410 () Top-level entities being moved: index.php, polylang, duplicate-post, elementor, updraftplus, unlimited-elements-for-elementor, svg-support, cookie-law-info
+0006.411 () Limpiando basura...
+0006.413 () Entity: themes
+0006.413 () restore_backup(backup_file=backup_2024-09-03-1202_WORDPRESS_BASE_4f9064cbfa1d-themes.zip, type=themes, info=a:3:{s:4:"path";s:71:"/Applications/MAMP/htdocs/proyectos/codigobeta_web_wp/wp-content/themes";s:11:"description";s:5:"Temas";s:20:"singular_description";s:4:"Tema";}, last_one=1)
+0006.413 () Descomprimiendo la copia de seguridad... (backup_2024-09-03-1202_WORDPRESS_BASE_4f9064cbfa1d-themes.zip, 48.9 MB)
+0006.413 () Unzipping backup_2024-09-03-1202_WORDPRESS_BASE_4f9064cbfa1d-themes.zip to /Applications/MAMP/htdocs/proyectos/codigobeta_web_wp/wp-content/upgrade/cf21ca38/ using UpdraftPlus_ZipArchive, starting index 0
+0011.695 () ZipArchive returned an error (will try again with PclZip): incompatible_archive
+0011.695 () Unzipping backup_2024-09-03-1202_WORDPRESS_BASE_4f9064cbfa1d-themes.zip to /Applications/MAMP/htdocs/proyectos/codigobeta_web_wp/wp-content/upgrade/cf21ca38/ using UpdraftPlus_PclZip, starting index 0
+0015.327 () Unzip progress: 1003 out of 65535 files (2.7 MB, themes/twentytwentyfour/patterns/text-faq.php)
+0015.368 () Unzip progress: 2007 out of 65535 files (4.2 MB, themes/twentytwentyone/node_modules/array.prototype.flat/shim.js)
+0015.406 () Unzip progress: 3011 out of 65535 files (6.8 MB, themes/twentytwentyone/node_modules/chokidar/LICENSE)
+0015.464 () Unzip progress: 4013 out of 65535 files (8 MB, themes/twentytwentyone/node_modules/kind-of/package.json)
+0015.499 () Unzip progress: 5015 out of 65535 files (8.9 MB, themes/twentytwentyone/node_modules/uri-js/LICENSE)
+0015.549 () Unzip progress: 6017 out of 65535 files (15.1 MB, themes/twentytwentyone/node_modules/ajv/package.json)
+0015.596 () Unzip progress: 7019 out of 65535 files (20.3 MB, themes/twentytwentyone/node_modules/tsconfig-paths/src/register.ts)
+0015.632 () Unzip progress: 8021 out of 65535 files (22.3 MB, themes/twentytwentyone/node_modules/core-js-pure/features/atob.js)
+0015.674 () Unzip progress: 9023 out of 65535 files (22.7 MB, themes/twentytwentyone/node_modules/core-js-pure/modules/web.url-search-params.constructor.js)
+0015.715 () Unzip progress: 10025 out of 65535 files (23.8 MB, themes/twentytwentyone/node_modules/@typescript-eslint/eslint-plugin/LICENSE)
+0015.766 () Unzip progress: 11027 out of 65535 files (24.5 MB, themes/twentytwentyone/node_modules/es-abstract/2020/IsNoTearConfiguration.js)
+0015.816 () Unzip progress: 12031 out of 65535 files (25.5 MB, themes/twentytwentyone/node_modules/core-js/stable/btoa.js)
+0015.854 () Unzip progress: 13033 out of 65535 files (25.8 MB, themes/twentytwentyone/node_modules/core-js/internals/function-uncurry-this-accessor.js)
+0015.898 () Unzip progress: 14035 out of 65535 files (26.2 MB, themes/twentytwentyone/node_modules/core-js/modules/esnext.array.to-sorted.js)
+0015.950 () Unzip progress: 15037 out of 65535 files (27.8 MB, themes/twentytwentyone/node_modules/@babel/plugin-syntax-import-meta/LICENSE)
+0015.993 () Unzip progress: 16039 out of 65535 files (29.4 MB, themes/twentytwentyone/node_modules/yaml/types/omap.js)
+0016.070 () Unzip progress: 17057 out of 65535 files (33 MB, themes/twentytwentyone/node_modules/object.assign/test/ses-compat.js)
+0016.124 () Unzip progress: 18059 out of 65535 files (34 MB, themes/twentytwentyone/node_modules/isexe/test/basic.js)
+0016.168 () Unzip progress: 19061 out of 65535 files (35.9 MB, themes/twentytwentyone/node_modules/autoprefixer/lib/hacks/border-image.js)
+0016.206 () Unzip progress: 20063 out of 65535 files (37.8 MB, themes/twentytwentyone/node_modules/@nodelib/fs.scandir/out/settings.spec.js)
+0016.248 () Unzip progress: 21065 out of 65535 files (37.9 MB, themes/twentytwentyone/node_modules/core-js-pure/full/math/hypot.js)
+0016.290 () Unzip progress: 22067 out of 65535 files (38 MB, themes/twentytwentyone/node_modules/core-js-pure/actual/instance/for-each.js)
+0016.330 () Unzip progress: 23071 out of 65535 files (38 MB, themes/twentytwentyone/node_modules/core-js-pure/features/string/from-code-point.js)
+0016.383 () Unzip progress: 24073 out of 65535 files (38.5 MB, themes/twentytwentyone/node_modules/array-includes/node_modules/get-intrinsic/.nycrc)
+0016.427 () Unzip progress: 25075 out of 65535 files (39.6 MB, themes/twentytwentyone/node_modules/@humanwhocodes/object-schema/tests/validation-strategy.js)
+0016.471 () Unzip progress: 26077 out of 65535 files (40.2 MB, themes/twentytwentyone/node_modules/core-js/stable/string/trim-start.js)
+0016.522 () Unzip progress: 27079 out of 65535 files (40.3 MB, themes/twentytwentyone/node_modules/core-js/full/set/symmetric-difference.js)
+0016.569 () Unzip progress: 28081 out of 65535 files (40.4 MB, themes/twentytwentyone/node_modules/core-js/features/reflect/index.js)
+0016.610 () Unzip progress: 29083 out of 65535 files (40.4 MB, themes/twentytwentyone/node_modules/core-js/es/symbol/to-string-tag.js)
+0016.650 () Unzip progress: 30085 out of 65535 files (40.9 MB, themes/twentytwentyone/node_modules/table/node_modules/is-fullwidth-code-point/index.d.ts)
+0016.690 () Unzip progress: 31087 out of 65535 files (43.1 MB, themes/twentytwentyone/node_modules/@babel/helper-module-transforms/lib/dynamic-import.js)
+0016.729 () Unzip progress: 32099 out of 65535 files (46.8 MB, themes/twentytwentyone/node_modules/stylelint/lib/rules/rangeContextNodeParser.js)
+0016.769 () Unzip progress: 33101 out of 65535 files (48.6 MB, themes/twentytwentyone/node_modules/is-boolean-object/node_modules/call-bind/LICENSE)
+0016.814 () Unzip progress: 34103 out of 65535 files (51.5 MB, themes/twentytwentyone/node_modules/run-applescript/node_modules/npm-run-path/index.js)
+0016.855 () Unzip progress: 35105 out of 65535 files (53.3 MB, themes/twentytwentyone/node_modules/caniuse-lite/data/regions/GL.js)
+0016.898 () Unzip progress: 36107 out of 65535 files (54.6 MB, themes/twentytwentyone/node_modules/caniuse-lite/data/features/streams.js)
+0016.939 () Unzip progress: 37109 out of 65535 files (55.6 MB, themes/twentytwentyone/node_modules/ajv/lib/dotjs/README.md)
+0016.999 () Unzip progress: 38111 out of 65535 files (58.3 MB, themes/twentytwentyone/assets/sass/05-blocks/heading/_style.scss)
+0017.041 () Unzip progress: 39113 out of 65535 files (59.2 MB, themes/twentytwentyone/node_modules/array.prototype.flat/node_modules/es-abstract/2019/DayFromYear.js)
+0017.087 () Unzip progress: 40115 out of 65535 files (59.6 MB, themes/twentytwentyone/node_modules/array.prototype.flat/node_modules/es-abstract/2018/ArrayCreate.js)
+0017.210 () Unzip progress: 41117 out of 65535 files (60.3 MB, themes/twentytwentyone/node_modules/object.values/node_modules/es-abstract/2017/HasOwnProperty.js)
+0017.299 () Unzip progress: 42119 out of 65535 files (60.7 MB, themes/twentytwentyone/node_modules/object.values/node_modules/es-abstract/2020/Set.js)
+0017.359 () Unzip progress: 43121 out of 65535 files (61.1 MB, themes/twentytwentyone/node_modules/object.hasown/node_modules/es-abstract/2015/SymbolDescriptiveString.js)
+0017.431 () Unzip progress: 44123 out of 65535 files (61.7 MB, themes/twentytwentyone/node_modules/object.hasown/node_modules/es-abstract/2021/ArrayCreate.js)
+0017.481 () Unzip progress: 45125 out of 65535 files (62.1 MB, themes/twentytwentyone/node_modules/object.hasown/node_modules/es-abstract/5/TimeFromYear.js)
+0017.531 () Unzip progress: 46127 out of 65535 files (62.3 MB, themes/twentytwentyone/node_modules/core-js-pure/features/string/virtual/strike.js)
+0017.583 () Unzip progress: 47129 out of 65535 files (62.9 MB, themes/twentytwentyone/node_modules/array-includes/node_modules/es-abstract/2019/IteratorClose.js)
+0017.646 () Unzip progress: 48131 out of 65535 files (63.3 MB, themes/twentytwentyone/node_modules/array-includes/node_modules/es-abstract/2018/GetSubstitution.js)
+0017.699 () Unzip progress: 49133 out of 65535 files (64 MB, themes/twentytwentyone/node_modules/object.entries/node_modules/es-abstract/2017/ToLength.js)
+0017.747 () Unzip progress: 50135 out of 65535 files (64.4 MB, themes/twentytwentyone/node_modules/object.entries/node_modules/es-abstract/2020/GetSubstitution.js)
+0017.797 () Unzip progress: 51137 out of 65535 files (65 MB, themes/twentytwentyone/node_modules/@typescript-eslint/utils/dist/ast-utils/predicates.js)
+0017.848 () Unzip progress: 52139 out of 65535 files (65.6 MB, themes/twentytwentyone/node_modules/@typescript-eslint/scope-manager/dist/lib/es2016.full.js)
+0017.929 () Unzip progress: 53141 out of 65535 files (67.6 MB, themes/twentytwentyone/node_modules/@typescript-eslint/eslint-plugin/docs/rules/prefer-readonly-parameter-types.md)
+0017.989 () Unzip progress: 54143 out of 65535 files (68.4 MB, themes/twentytwentyone/node_modules/core-js/features/array/virtual/some.js)
+0018.135 () Unzip progress: 55145 out of 65535 files (68.9 MB, themes/twentytwentyone/node_modules/@babel/runtime-corejs3/core-js/instance/pad-end.js)
+0018.227 () Unzip progress: 56147 out of 65535 files (70.7 MB, themes/twentytwentyone/node_modules/@babel/traverse/lib/path/evaluation.js.map)
+0018.288 () Unzip progress: 57149 out of 65535 files (72.2 MB, themes/twentytwentyone/node_modules/uri-js/dist/esnext/schemes/urn-uuid.d.ts)
+0018.365 () Unzip progress: 58151 out of 65535 files (73.5 MB, themes/twentytwentyone/node_modules/string.prototype.matchall/node_modules/es-abstract/2019/SpeciesConstructor.js)
+0018.431 () Unzip progress: 59153 out of 65535 files (73.9 MB, themes/twentytwentyone/node_modules/string.prototype.matchall/node_modules/es-abstract/2018/IsDataDescriptor.js)
+0018.514 () Unzip progress: 60155 out of 65535 files (74.5 MB, themes/twentytwentyone/node_modules/array.prototype.flatmap/node_modules/es-abstract/2017/RequireObjectCoercible.js)
+0018.571 () Unzip progress: 61157 out of 65535 files (74.9 MB, themes/twentytwentyone/node_modules/array.prototype.flatmap/node_modules/es-abstract/2020/HasProperty.js)
+0018.654 () Unzip progress: 62159 out of 65535 files (75.3 MB, themes/twentytwentyone/node_modules/object.fromentries/node_modules/es-abstract/2015/IsPropertyKey.js)
+0018.712 () Unzip progress: 63161 out of 65535 files (75.9 MB, themes/twentytwentyone/node_modules/object.fromentries/node_modules/es-abstract/2021/CreateIterResultObject.js)
+0018.770 () Unzip progress: 64163 out of 65535 files (76.2 MB, themes/twentytwentyone/node_modules/object.fromentries/node_modules/object-inspect/test/element.js)
+0018.818 () Unzip progress: 65165 out of 65535 files (77.2 MB, themes/twentytwentyone/node_modules/object.hasown/node_modules/es-abstract/2021/BigInt/remainder.js)
+0018.836 () Unzip progress: 65535 out of 65535 files (77.3 MB, themes/twentytwentyone/node_modules/aria-query/lib/etc/roles/dpub/docCreditRole.js)
+0018.881 () Moving old data: filesystem method / updraft_dir is potentially possible
+0018.881 () Moving old data: can potentially use wp_filesystem method / -old
+0018.881 () Quitando de en medio los datos antiguos...
+0018.953 () Top-level entities being moved: index.php, twentytwentyfour, twentytwentytwo, twentytwentythree
+0018.954 () Moviendo la copia de seguridad desempaquetada a su lugar...
+0022.949 () Top-level entities being moved: index.php, twentytwentyone, twentytwentyfour, twentytwentytwo, twentytwentythree
+0022.981 () Limpiando basura...
+0023.009 () Restore successful!
+0023.009 () Restore successful

@@ -1,0 +1,11 @@
+
+.text-dots {
+    // height: 154px;               /* Fija la altura del div */
+    overflow: hidden !important;            /* Oculta el texto desbordado */
+    display: -webkit-box;        /* Usa Flexbox */
+    -webkit-box-orient: vertical;/* Orientación vertical para el clamping */
+    -webkit-line-clamp: 6;       /* Clampa el texto a 6 líneas */
+    box-sizing: border-box;      /* Asegura que el padding esté incluido en la altura */
+    position: relative;          /* Necesario para los pseudo-elementos */
+}
+

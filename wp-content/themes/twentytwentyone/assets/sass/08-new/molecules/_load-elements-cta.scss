@@ -1,0 +1,27 @@
+.load-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+    justify-content:center;
+
+    @media(min-width:769px){
+        gap: 24px;
+    }
+
+    &__elements{
+        background-color: gray;
+        height: 200px;
+        width: calc(100% / 2 - 8px);
+        display: none; 
+
+        @media(min-width:769px){
+            width: calc(100% / 4 - 18px);
+        }
+    }
+
+    &__text{
+        display: none;
+    }
+    
+}
