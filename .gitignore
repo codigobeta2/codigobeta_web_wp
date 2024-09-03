@@ -1,0 +1,50 @@
+# Configuración local
+wp-config.php
+.env
+
+
+# Directorios y archivos generados por herramientas de desarrollo
+node_modules/
+bower_components/
+vendor/
+
+
+# Archivos de caché y temporales
+wp-content/cache/
+wp-content/uploads/
+*.css.map
+.sass-cache/
+.DS_Store
+Thumbs.db
+
+
+# Archivos y directorios que no se deben versionar
+*.log
+*.sql
+*.sql.gz
+*.tar
+*.zip
+
+
+# Archivos específicos de compilación
+# (Incluir solo si quieres versionar archivos CSS generados)
+# wp-content/themes/mi-tema/css/*.css
+
+
+# Ignorar archivos específicos de despliegue
+*.log   # Logs generados durante el proceso de despliegue
+
+
+# Ignorar archivos de configuración específicos del servidor
+# /config/
+
+
+# Opcional: Ignorar archivos generados automáticamente por el compilador de Sass
+*.sass-cache/
+*.scssc
+
+
+# Backup y archivos temporales
+*.bak
+*.swp
+*.swo
