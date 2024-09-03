@@ -8353,7 +8353,7 @@ button.cky-show-desc-btn:hover {
   padding: 0;
   height: 40px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   right: 0;
 }
@@ -8473,6 +8473,15 @@ button.cky-show-desc-btn:hover {
 @media (max-width: 769px) {
   .msv3-custom--container .container-fluid .slick-list {
     margin-left: -12px;
+  }
+}
+
+.msv3-custom--panoramic .slider-v3-box {
+  height: 55vw;
+}
+@media (min-width: 992px) {
+  .msv3-custom--panoramic .slider-v3-box {
+    height: 19vw;
   }
 }
 
