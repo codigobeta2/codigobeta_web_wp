@@ -4394,6 +4394,7 @@ html {
   font-family: "Quicksand", sans-serif !important;
   font-size: 16px;
   line-height: 24px;
+  border: 2px solid red;
 }
 
 html,body {
@@ -5387,6 +5388,7 @@ button.btn {
 @media (min-width: 769px) {
   .header-topbar {
     height: 35px;
+    transition: all 250ms;
   }
 }
 .header-topbar.hidden {
@@ -7942,7 +7944,7 @@ button.cky-show-desc-btn:hover {
 }
 @media (min-width: 992px) {
   .slider-container .spinner {
-    margin: 400px auto;
+    margin: 300px auto;
   }
 }
 .slider-container .custom-buttons button {
@@ -8478,23 +8480,6 @@ button.cky-show-desc-btn:hover {
 @media (max-width: 769px) {
   .msv3-custom--container .container-fluid .slick-list {
     margin-right: -12px;
-  }
-}
-
-.msv3-custom--panoramic .slider-v3-box {
-  height: 50vw !important;
-}
-@media (min-width: 992px) {
-  .msv3-custom--panoramic .slider-v3-box {
-    height: 19vw !important;
-  }
-}
-.msv3-custom--panoramic.msv3-custom--container .slider-v3-box {
-  height: 50vw !important;
-}
-@media (min-width: 992px) {
-  .msv3-custom--panoramic.msv3-custom--container .slider-v3-box {
-    height: 230px !important;
   }
 }
 
