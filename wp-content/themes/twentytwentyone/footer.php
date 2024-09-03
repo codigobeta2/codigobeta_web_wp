@@ -27,7 +27,7 @@
 				<div class="col">
 					<div class="footer">
 						<div class="footer__left">
-							<img src="https://www.portfoliodaniel.es/wp-content/uploads/2024/08/logo-codigobeta-black.png" alt="" width="248">
+							<img src="https://www.codigobetadaniel.es/wp-content/uploads/2024/08/logo-codigobeta-black.png" alt="" width="248">
 						</div>
 						<div class="footer__right">
 							<!-- footer secundario -->
@@ -59,7 +59,7 @@
 		
 	</footer><!-- #colophon -->
 	<div class="development">
-		Web desarrollada por <a href="https://www.portfoliodaniel.es" target="_blank" class="text-style--underline"> www.portfoliodaniel.es </a>
+		Web desarrollada por <a href="https://www.codigobetadaniel.es" target="_blank" class="text-style--underline"> www.codigobetadaniel.es </a>
 	</div>
 
 	<!-- contact -->

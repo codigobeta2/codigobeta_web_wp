@@ -3,7 +3,7 @@ jQuery(document).ready(function($) {
         var settings = $.extend({
             effect: 'fadeIn',
             threshold: 0,
-            loadingPlaceholder: 'https://www.portfoliodaniel.es/wp-content/uploads/2024/08/loading-black.gif',
+            loadingPlaceholder: 'https://www.codigobetadaniel.es/wp-content/uploads/2024/08/loading-black.gif',
             loadingClass: 'loading'
         }, options);
 
