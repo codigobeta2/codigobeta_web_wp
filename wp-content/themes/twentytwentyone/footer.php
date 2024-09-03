@@ -64,10 +64,10 @@
 
 	<!-- contact -->
 	<a id="whatsappLink" target="_blank" class="whatsapp">
-		<img src="http://localhost:8888/wp-content/uploads/2024/08/whatsapp-svgrepo-com.svg" alt="Conatcto por Whatsapp">
+		<img src="https://www.codigobeta.es/wp-content/uploads/2024/09/whatsapp-svgrepo-com.svg" alt="Conatcto por Whatsapp">
 	</a>
 	<a href="/contacto" class="icn-contact">
-		<img src="http://localhost:8888/wp-content/uploads/2024/08/email-svgrepo-com.svg" alt="Conatcto por Whatsapp">
+		<img src="https://www.codigobeta.es/wp-content/uploads/2024/09/icon-email-fill-white.svg" alt="Conatcto por Whatsapp">
 	</a>
 
 	<!----- JQUERY LIBS ----->
