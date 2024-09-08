@@ -1,7 +1,5 @@
 .card{
 
-    
-
     &__image{
 
         position:relative;
@@ -190,6 +188,21 @@
                 }
             }
             
+        }
+
+        &--2col{
+
+            .card{
+                width: 100%;
+
+                @media(min-width:600px){
+                    width: calc(100%/2 - 26px);
+                }
+
+                &__image{
+                    height: 300px;
+                }
+            }
         }
     }
 
