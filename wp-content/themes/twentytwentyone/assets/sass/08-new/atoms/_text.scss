@@ -46,6 +46,11 @@
   @media (max-width: 992px) {
 
 
+    .text-size--s{
+      font-size: 19px;
+      line-height: 24px; /* Mismos valores ajustados en la vista móvil */
+    }
+
     .text-size--m{
       font-size: 24px;
       line-height: 30px; /* Mismos valores ajustados en la vista móvil */
