@@ -1,3 +1,5 @@
+// Evitar errores console mobile
+
 (function() {
     const addEventListenerOriginal = EventTarget.prototype.addEventListener;
 
@@ -25,4 +27,6 @@
         addEventListenerOriginal.call(this, type, listener, options);
     };
 })();
+
+
 

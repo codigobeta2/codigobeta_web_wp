@@ -5439,7 +5439,6 @@ button.btn {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  transition: all 250ms;
   display: block;
 }
 @media (min-width: 992px) {
@@ -5821,7 +5820,6 @@ button.btn {
 .header.sticky .header__desktop-container-fixed-left .logo a {
   background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/09/logo-codigobeta-black.png");
   width: 190px;
-  transition: all 250ms;
 }
 @media (min-width: 992px) {
   .header.sticky .header__desktop-container-fixed-left .logo a {
@@ -6473,6 +6471,17 @@ button.btn {
   .card-group--5col .card {
     width: calc(20% - 26px);
   }
+}
+.card-group--2col .card {
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .card-group--2col .card {
+    width: calc(50% - 26px);
+  }
+}
+.card-group--2col .card__image {
+  height: 300px;
 }
 .card--center {
   text-align: center;
@@ -7368,6 +7377,7 @@ button.cky-show-desc-btn:hover {
   height: auto;
   display: block;
   visibility: hidden;
+  min-height: 150px;
 }
 .lazy-container {
   max-width: 100%;
