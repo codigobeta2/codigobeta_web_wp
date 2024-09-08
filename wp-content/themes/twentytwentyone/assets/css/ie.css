@@ -5127,13 +5127,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
   cursor: pointer;
   font-size: inherit;
-  width: 90%;
+  width: auto;
   text-decoration: none;
 }
 @media (min-width: 769px) {
   .btn {
     height: 48px;
-    width: auto;
   }
 }
 .btn:hover {
@@ -5351,6 +5350,10 @@ button.btn {
 }
 
 @media (max-width: 992px) {
+  .text-size--s {
+    font-size: 19px;
+    line-height: 24px; /* Mismos valores ajustados en la vista móvil */
+  }
   .text-size--m {
     font-size: 24px;
     line-height: 30px; /* Mismos valores ajustados en la vista móvil */
@@ -5777,6 +5780,7 @@ button.btn {
   transition: all 250ms;
   z-index: 10;
   transition: height 250ms;
+  top: 0;
 }
 @media (min-width: 769px) {
   .header__mobile-container {
@@ -6428,8 +6432,13 @@ button.btn {
   padding: 0 16px 0 0;
 }
 .card__info .btn {
-  margin: 24px 0 0 0;
+  margin: 16px 0 0 0;
   justify-content: center;
+}
+@media (min-width: 600px) {
+  .card__info .btn {
+    margin: 24px 0 0 0;
+  }
 }
 .card-group {
   display: flex;
@@ -6519,7 +6528,17 @@ button.btn {
   }
 }
 .card-group--2col .card__image {
-  height: 300px;
+  height: 57vw;
+}
+@media (min-width: 600px) {
+  .card-group--2col .card__image {
+    height: 27vw;
+  }
+}
+@media (min-width: 1199px) {
+  .card-group--2col .card__image {
+    height: 300px;
+  }
 }
 .card--center {
   text-align: center;
@@ -7409,7 +7428,12 @@ button.cky-show-desc-btn:hover {
   height: auto;
   display: block;
   visibility: hidden;
-  min-height: 150px;
+  min-height: 100px;
+}
+@media (min-width: 769px) {
+  .lazy {
+    min-height: 150px;
+  }
 }
 .lazy-container {
   max-width: 100%;
@@ -7751,7 +7775,7 @@ button.cky-show-desc-btn:hover {
   background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/09/logo-codigobeta-white.png");
 }
 .is-dark-header .header__mobile-container-left span.icon-menu {
-  background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/09/arrow-menu-black.svg");
+  background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/09/icon-menu-white.svg");
 }
 .is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-item a:after,
 .is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-item:after {

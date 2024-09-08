@@ -6,7 +6,11 @@
     height: auto;
     display: block;
     visibility: hidden;
-    min-height:150px;
+    min-height:100px;
+
+    @media(min-width: 769px){
+        min-height:150px;
+    }
 
     &-container{
         max-width: 100%;
