@@ -5465,11 +5465,15 @@ button.btn {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  overflow: auto;
+  height: 100%;
 }
 @media (min-width: 992px) {
   .header__desktop-container-fixed-right {
     width: calc(100% - 300px);
     justify-content: flex-end;
+    height: auto;
+    overflow: initial;
   }
 }
 .header__desktop-container-fixed-right > nav.primary-navigation {
@@ -5508,13 +5512,13 @@ button.btn {
   position: relative;
   font-weight: 600;
 }
-.header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-item {
+.header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-item, .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-parent {
   position: relative;
 }
-.header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-item a {
+.header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-item a, .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-parent a {
   font-weight: bold;
 }
-.header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-item:after {
+.header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-item:after, .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-parent:after {
   content: "";
   position: absolute;
   left: 0;
@@ -5524,7 +5528,7 @@ button.btn {
   display: none;
 }
 @media (min-width: 992px) {
-  .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-item:after {
+  .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-item:after, .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-parent:after {
     display: block;
   }
 }
@@ -5542,7 +5546,7 @@ button.btn {
   position: relative;
   top: 20px;
   font-size: 13px;
-  color: #a8a8a8;
+  color: rgba(169, 169, 169, 0.4705882353);
 }
 @media (min-width: 992px) {
   .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.lang-item {
@@ -5636,7 +5640,12 @@ button.btn {
   border-bottom: none !important;
 }
 .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper .sub-menu li:first-child {
-  padding: 32px 32px 0 32px;
+  padding: 32px 0 0 0;
+}
+@media (min-width: 992px) {
+  .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper .sub-menu li:first-child {
+    padding: 32px 32px 0 32px;
+  }
 }
 .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper .menu-item-has-children {
   display: flex;
@@ -6094,13 +6103,11 @@ button.btn {
   display: flex;
   align-items: center;
   position: relative;
-  font-size: 19px;
-  line-height: 26px;
+  font-size: 24px;
+  line-height: 30px;
 }
 @media (min-width: 769px) {
   .accordion-title {
-    font-size: 24px;
-    line-height: 30px;
     padding: 16px 24px;
   }
 }
@@ -6251,14 +6258,21 @@ button.btn {
 }
 .box-images--col2 {
   gap: 32px;
+  flex-direction: column;
 }
 @media (min-width: 769px) {
   .box-images--col2 {
     gap: 64px;
+    flex-direction: row;
   }
 }
 .box-images--col2 .box-images__element {
-  width: calc(50% - 32px);
+  width: 100%;
+}
+@media (min-width: 769px) {
+  .box-images--col2 .box-images__element {
+    width: calc(50% - 32px);
+  }
 }
 @media (max-width: 768px) {
   .box-images--col2 .box-images__element img {
@@ -6328,23 +6342,26 @@ button.btn {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 13px;
+  font-size: 11px;
 }
 @media (min-width: 769px) {
   .breadcrumbs {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 .breadcrumbs-item {
   margin: 0 16px 0 0;
 }
-.breadcrumbs-item:last-child {
-  margin: 0 0 0 0;
-}
-.breadcrumbs-item:last-child:before {
+.breadcrumbs-item:before {
   content: ">";
   position: relative;
   left: -8px;
+}
+.breadcrumbs-item:last-child {
+  margin: 0 0 0 0;
+}
+.breadcrumbs-item:first-child:before {
+  content: "";
 }
 .breadcrumbs-item a {
   text-decoration: none;
@@ -6421,13 +6438,8 @@ button.btn {
   padding: 0 16px 0 0;
 }
 .card__info .btn {
-  margin: 16px 0 0 0;
+  margin: 24px 0 0 0;
   justify-content: center;
-}
-@media (min-width: 600px) {
-  .card__info .btn {
-    margin: 24px 0 0 0;
-  }
 }
 .card-group {
   display: flex;
@@ -6469,7 +6481,7 @@ button.btn {
   }
 }
 .card-group--icon .card__image {
-  height: 130px;
+  height: 150px;
 }
 @media (min-width: 992px) {
   .card-group--icon .card__image {
@@ -6506,27 +6518,6 @@ button.btn {
 @media (min-width: 992px) {
   .card-group--5col .card {
     width: calc(20% - 26px);
-  }
-}
-.card-group--2col .card {
-  width: 100%;
-}
-@media (min-width: 600px) {
-  .card-group--2col .card {
-    width: calc(50% - 26px);
-  }
-}
-.card-group--2col .card__image {
-  height: 57vw;
-}
-@media (min-width: 600px) {
-  .card-group--2col .card__image {
-    height: 27vw;
-  }
-}
-@media (min-width: 1199px) {
-  .card-group--2col .card__image {
-    height: 300px;
   }
 }
 .card--center {
@@ -7751,7 +7742,7 @@ button.cky-show-desc-btn:hover {
 }
 
 .is-dark-header .breadcrumbs {
-  color: #cbcbcb;
+  color: rgba(255, 255, 255, 0.4705882353);
 }
 @media (min-width: 992px) {
   .is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper {
@@ -7777,6 +7768,14 @@ button.cky-show-desc-btn:hover {
   border-bottom: 2px solid white !important;
 }
 .is-dark-header .sticky .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-item a:after {
+  border-bottom: 2px solid black !important;
+}
+.is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-parent a:after,
+.is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-parent:after {
+  border-bottom: 2px solid white !important;
+  width: calc(100% - 15px);
+}
+.is-dark-header .sticky .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-parent:after {
   border-bottom: 2px solid black !important;
 }
 .is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper .menu-item-has-children .icon-minus {

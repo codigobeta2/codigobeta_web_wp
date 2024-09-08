@@ -105,14 +105,20 @@
     &--col2{
 
         gap: 32px;
+        flex-direction: column;
 
         @media(min-width: 769px){
             gap: 64px;
+            flex-direction: row;
         }
 
         .box-images__element{
 
-            width: calc(50% - 32px);
+            width: 100%;
+
+            @media(min-width: 769px){
+                width: calc(50% - 32px);
+            }
 
             img{
                 @media(max-width: 768px){
