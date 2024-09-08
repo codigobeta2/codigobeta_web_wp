@@ -7782,9 +7782,6 @@ button.cky-show-desc-btn:hover {
   left: 0;
 }
 
-.is-dark-header .breadcrumbs {
-  color: rgba(255, 255, 255, 0.4705882353);
-}
 @media (min-width: 992px) {
   .is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper {
     color: white;
@@ -9031,12 +9028,12 @@ button.cky-show-desc-btn:hover {
   display: flex;
   padding: 140px 0 48px 0;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 @media (min-width: 769px) {
   .header-title__content {
-    height: 520px;
-    padding: 140px 0 80px 0;
+    height: 490px;
+    padding: 140px 0 64px 0;
   }
 }
 .header-title__content-title {
