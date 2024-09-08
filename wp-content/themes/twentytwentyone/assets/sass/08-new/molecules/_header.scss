@@ -297,7 +297,7 @@
                                     padding: 24px 0 0 0;
 
                                     @media(min-width:992px){
-                                        padding: 16px 24px 0 24px;
+                                        padding: 16px 32px 0 32px;
                                         background-color: white;
                                     }
 
@@ -306,7 +306,7 @@
                                     }
 
                                     &:first-child{
-                                        padding: 32px 24px 0 24px;
+                                        padding: 32px 32px 0 32px;
                                     }
                                 }
                             }
@@ -645,5 +645,5 @@
 // forced
 
 #wpadminbar{
-    z-index: 10 !important;
+    z-index: 22 !important;
 }
