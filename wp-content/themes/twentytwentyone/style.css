@@ -6181,18 +6181,12 @@ button.btn {
   width: calc(50% - 12px);
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 @media (min-width: 769px) {
   .box-images__element {
     width: calc(33.3333333333% - 22px);
   }
-}
-.box-images__element a {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
 }
 .box-images__element img {
   width: 100%;
@@ -6227,6 +6221,25 @@ button.btn {
     margin: 16px 0 0 0;
     text-decoration: underline;
   }
+}
+.box-images__element-mask {
+  background-color: rgba(255, 255, 255, 0.9490196078);
+  position: absolute;
+  bottom: -290px;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: all 250ms;
+}
+.box-images__element-mask > * {
+  margin: 16px 0 0 0;
+}
+.box-images__element:hover .box-images__element-mask {
+  bottom: 0;
+  transition: all 250ms;
 }
 .box-images--col2 {
   gap: 32px;
