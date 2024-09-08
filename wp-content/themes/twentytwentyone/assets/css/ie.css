@@ -6213,17 +6213,17 @@ button.btn {
 }
 .box-images__element img {
   width: 100%;
-  height: 40vw;
+  height: 60vw;
   object-fit: cover;
 }
 @media (min-width: 769px) {
   .box-images__element img {
-    height: 25vw;
+    height: 28vw;
   }
 }
 @media (min-width: 1200px) {
   .box-images__element img {
-    height: 290px;
+    height: 340px;
   }
 }
 .box-images__element figcaption {
@@ -6248,15 +6248,25 @@ button.btn {
 .box-images__element-mask {
   background-color: rgba(255, 255, 255, 0.9490196078);
   position: absolute;
-  bottom: -290px;
+  bottom: -60vw;
   width: 100%;
   height: 100%;
   padding: 48px 32px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   transition: all 250ms;
   align-items: center;
+}
+@media (min-width: 769px) {
+  .box-images__element-mask {
+    bottom: -28vw;
+  }
+}
+@media (min-width: 1200px) {
+  .box-images__element-mask {
+    bottom: -340px;
+  }
 }
 .box-images__element-mask > * {
   margin: 16px 0 0 0;
@@ -6288,7 +6298,7 @@ button.btn {
 }
 @media (max-width: 768px) {
   .box-images--col2 .box-images__element img {
-    height: 50vw;
+    height: 60vw;
   }
 }
 
@@ -6554,7 +6564,7 @@ button.btn {
 }
 @media (min-width: 1199px) {
   .card-group--2col .card__image {
-    height: 300px;
+    height: 350px;
   }
 }
 .card--center {
