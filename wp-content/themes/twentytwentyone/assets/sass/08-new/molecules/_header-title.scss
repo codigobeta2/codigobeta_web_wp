@@ -13,6 +13,7 @@
         padding: 140px 0 48px 0;
         flex-direction: column;
         justify-content: flex-end;
+        position: relative;
 
         @media(min-width:769px){
             height: 490px;
@@ -43,7 +44,7 @@
             position: absolute;
             height: 320px;
             bottom: 0;
-            right: 10vw;
+            right: 0;
             display: none;
 
             @media(min-width:1199px){
