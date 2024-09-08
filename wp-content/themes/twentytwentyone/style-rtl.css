@@ -6428,8 +6428,13 @@ button.btn {
   padding: 0 0 0 16px;
 }
 .card__info .btn {
-  margin: 24px 0 0 0;
+  margin: 16px 0 0 0;
   justify-content: center;
+}
+@media (min-width: 600px) {
+  .card__info .btn {
+    margin: 24px 0 0 0;
+  }
 }
 .card-group {
   display: flex;
@@ -6471,7 +6476,7 @@ button.btn {
   }
 }
 .card-group--icon .card__image {
-  height: 150px;
+  height: 130px;
 }
 @media (min-width: 992px) {
   .card-group--icon .card__image {
@@ -6508,6 +6513,27 @@ button.btn {
 @media (min-width: 992px) {
   .card-group--5col .card {
     width: calc(20% - 26px);
+  }
+}
+.card-group--2col .card {
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .card-group--2col .card {
+    width: calc(50% - 26px);
+  }
+}
+.card-group--2col .card__image {
+  height: 57vw;
+}
+@media (min-width: 600px) {
+  .card-group--2col .card__image {
+    height: 27vw;
+  }
+}
+@media (min-width: 1199px) {
+  .card-group--2col .card__image {
+    height: 300px;
   }
 }
 .card--center {
