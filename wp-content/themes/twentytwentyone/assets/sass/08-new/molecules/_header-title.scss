@@ -12,11 +12,11 @@
         display: flex;
         padding: 140px 0 48px 0;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-end;
 
         @media(min-width:769px){
-            height: 520px;
-            padding: 140px 0 80px 0;
+            height: 490px;
+            padding: 140px 0 64px 0;
         }
 
         &-title{
