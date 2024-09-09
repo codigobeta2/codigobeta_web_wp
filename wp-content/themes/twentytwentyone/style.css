@@ -7778,41 +7778,59 @@ button.cky-show-desc-btn:hover {
 }
 
 @media (min-width: 992px) {
-  .is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper {
-    color: white;
-  }
-}
-.is-dark-header .sticky .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper {
-  color: black;
-}
-@media (min-width: 992px) {
   .is-dark-header .header__desktop-container-fixed-left .logo a {
     background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/09/logo-codigobeta-white.png");
   }
 }
-.is-dark-header .header__mobile-container-center span.mobile-logo {
-  background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/09/logo-codigobeta-white.png");
+@media (min-width: 992px) {
+  .is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper {
+    color: white;
+  }
+}
+.is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper .menu-item-has-children .icon-minus {
+  background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/09/arrow-menu-black.svg") !important;
+}
+@media (min-width: 992px) {
+  .is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper .menu-item-has-children .icon-minus {
+    background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/09/arrow-menu-white.svg") !important;
+  }
+}
+.is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper .current-menu-item:after {
+  border-bottom: 2px solid white !important;
+}
+.is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper .current-menu-item a:after {
+  border-bottom: 2px solid white !important;
+}
+.is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper .current-menu-parent:after {
+  border-bottom: 2px solid white !important;
+  width: calc(100% - 15px);
+}
+.is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper .current-menu-parent a:after {
+  border-bottom: 2px solid white !important;
+  width: calc(100% - 15px);
 }
 .is-dark-header .header__mobile-container-left span.icon-menu {
   background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/09/icon-menu-white.svg");
 }
-.is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-item a:after,
-.is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-item:after {
-  border-bottom: 2px solid white !important;
+.is-dark-header .header__mobile-container-center span.mobile-logo {
+  background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/09/logo-codigobeta-white.png");
 }
-.is-dark-header .sticky .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-item a:after {
+@media (min-width: 992px) {
+  .is-dark-header .header.sticky .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper {
+    color: black;
+  }
+}
+.is-dark-header .header.sticky .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper .menu-item-has-children .icon-minus {
+  background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/09/arrow-menu-black.svg") !important;
+}
+.is-dark-header .header.sticky .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper .current-menu-item:after {
   border-bottom: 2px solid black !important;
 }
-.is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-parent a:after,
-.is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-parent:after {
-  border-bottom: 2px solid white !important;
-  width: calc(100% - 15px);
-}
-.is-dark-header .sticky .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.current-menu-parent:after {
+.is-dark-header .header.sticky .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper .current-menu-item a:after {
   border-bottom: 2px solid black !important;
 }
-.is-dark-header .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper .menu-item-has-children .icon-minus {
-  background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/09/arrow-menu-white.svg");
+.is-dark-header .header.sticky .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper .current-menu-parent:after {
+  border-bottom: 2px solid black !important;
 }
 .is-dark-header .outstanding-header .btn {
   border: 1px solid white;
