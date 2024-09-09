@@ -8511,13 +8511,6 @@ button.cky-show-desc-btn:hover {
   height: 100%;
   width: 100%;
 }
-.slider-v3-box a {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
 
 .msv3-custom--container .container-fluid {
   max-width: 1200px;
@@ -8574,11 +8567,49 @@ button.cky-show-desc-btn:hover {
 
 .msv3-custom--panoramic .slider-v3-box {
   height: 55vw;
+  position: relative;
 }
 @media (min-width: 992px) {
   .msv3-custom--panoramic .slider-v3-box {
     height: 20vw;
   }
+}
+.msv3-custom--panoramic .slider-v3-box-mask {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: -55vw;
+  background-color: rgba(255, 255, 255, 0.9490196078);
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 250ms;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .msv3-custom--panoramic .slider-v3-box-mask {
+    bottom: -20vw;
+  }
+}
+.msv3-custom--panoramic .slider-v3-box-mask > * {
+  margin: 16px 0 0 0;
+}
+.msv3-custom--panoramic .slider-v3-box-mask > *:first-child {
+  margin: 0;
+}
+.msv3-custom--panoramic .slider-v3-box-mask-description {
+  display: none;
+}
+@media (min-width: 500px) {
+  .msv3-custom--panoramic .slider-v3-box-mask-description {
+    display: block;
+  }
+}
+.msv3-custom--panoramic .slider-v3-box:hover .slider-v3-box-mask {
+  bottom: 0 !important;
+  transition: all 250ms;
 }
 
 .slider-v4 {
