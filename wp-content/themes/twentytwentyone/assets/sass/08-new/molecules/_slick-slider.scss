@@ -593,20 +593,13 @@
             height: 30vw;
         }
 
-        
         img{
             object-fit: cover;
             height: 100%;
             width: 100%;
         }
 
-        a{
-            position: absolute;
-            left: 0;
-            top:0;
-            width:100%;
-            height:100%;
-        }
+        
     }
 }
 .msv3-custom--container {
@@ -672,6 +665,7 @@
                 height: 330px;
             }
     
+           
             
         }
 
@@ -688,9 +682,55 @@
     .slider-v3-box {
 
         height: 55vw;
+        position: relative;
 
         @media(min-width:992px){
             height: 20vw;
+        }
+
+        &-mask{
+            position: absolute;
+            height: 100%;
+            width:100%;
+            bottom:-55vw;
+            background-color: #fffffff2;
+            padding: 48px 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 250ms;
+            align-items: center;
+            text-align:center;
+
+            @media(min-width:992px){
+                bottom:-20vw;
+            }
+
+            & > *{
+                margin: 16px 0 0 0;
+
+                &:first-child{
+                    margin: 0;
+                }
+            }
+
+            &-description{
+
+                display: none;
+
+                @media(min-width:500px){
+                    display: block;
+                }
+            }
+        }
+
+        &:hover{
+
+            .slider-v3-box-mask{
+                bottom: 0 !important;
+                transition: all 250ms;
+            }
+
         }
     }
 }
