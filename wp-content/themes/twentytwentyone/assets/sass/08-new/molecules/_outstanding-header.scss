@@ -306,6 +306,13 @@
         background-color: black;
         z-index: -1;
     }
+
+    &.custom-clients{
+
+        height: 100vh;
+
+        .outstanding-header__content {
+            height: 100vh;
+        }
+    }
 }
-
-

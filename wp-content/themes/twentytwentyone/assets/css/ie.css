@@ -5588,7 +5588,7 @@ button.btn {
 }
 @media (min-width: 992px) {
   .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.lang-item:last-child {
-    right: 130px;
+    right: 70px;
   }
 }
 .header__desktop-container-fixed-right > nav.primary-navigation ul.menu-wrapper li.lang-item:last-child:after {
@@ -7853,6 +7853,9 @@ button.cky-show-desc-btn:hover {
   height: 100px;
   background-color: black;
   z-index: -1;
+}
+.is-dark-header.custom-clients,.is-dark-header.custom-clients .outstanding-header__content {
+  height: 100vh;
 }
 
 .popup__content {
