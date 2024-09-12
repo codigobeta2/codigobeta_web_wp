@@ -724,29 +724,42 @@ wp_enqueue_script(
 add_action('wp_enqueue_scripts', 'custom_theme_scripts');
 
 
-function custom_menu_args($args) {
+function filter_menu_items_by_language($items, $args) {
     // Lista de slugs de las páginas comunes
     $common_page_slugs = array('contacto'); // Reemplaza con los slugs de las páginas
 
-    // Comprueba si estamos en una de las páginas comunes
+    // Verifica si estamos en una de las páginas comunes
     if (is_page($common_page_slugs)) {
         // Verifica el idioma actual
-        if (pll_current_language() == 'en') {
-            // Cambia el menú según el idioma
-            if ($args['theme_location'] == 'primary') {
-                $args['menu'] = 'mainmenu'; // Nombre del menú principal en español
-            } elseif ($args['theme_location'] == 'secondary') {
-                $args['menu'] = 'mainmenu-secondary'; // Nombre del menú secundario en español
+        $current_language = pll_current_language();
+        
+        // Cambia los nombres de los menús según el idioma
+        if ($current_language == 'en') {
+            if ($args->theme_location == 'primary') {
+                // Modifica los elementos del menú principal en español
+                $menu_name = 'mainmenu';
+            } elseif ($args->theme_location == 'secondary') {
+                // Modifica los elementos del menú secundario en español
+                $menu_name = 'mainmenu-secondary';
             }
-        } elseif (pll_current_language() == 'es') {
-            if ($args['theme_location'] == 'primary') {
-                $args['menu'] = 'mainmenu-en'; // Nombre del menú principal en inglés
-            } elseif ($args['theme_location'] == 'secondary') {
-                $args['menu'] = 'mainmenu-secondary-en'; // Nombre del menú secundario en inglés
+        } elseif ($current_language == 'es') {
+            if ($args->theme_location == 'primary') {
+                // Modifica los elementos del menú principal en inglés
+                $menu_name = 'mainmenu-en';
+            } elseif ($args->theme_location == 'secondary') {
+                // Modifica los elementos del menú secundario en inglés
+                $menu_name = 'mainmenu-secondary-en';
             }
+        }
+
+        // Obtén el menú correspondiente
+        $menu = wp_get_nav_menu_object($menu_name);
+        if ($menu) {
+            // Reemplaza los elementos del menú
+            $items = wp_get_nav_menu_items($menu->term_id);
         }
     }
 
-    return $args;
+    return $items;
 }
-add_filter('wp_nav_menu_args', 'custom_menu_args');
+add_filter('wp_get_nav_menu_items', 'filter_menu_items_by_language', 10, 2);
