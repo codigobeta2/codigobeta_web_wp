@@ -722,33 +722,3 @@ wp_enqueue_script(
 	
 }
 add_action('wp_enqueue_scripts', 'custom_theme_scripts');
-
-
-function custom_menu_args($args) {
-    // Lista de slugs de las páginas comunes
-    $common_page_slugs = array('contacto'); // Reemplaza con los slugs de las páginas
-
-    // Comprueba si estamos en una de las páginas comunes
-    if (is_page($common_page_slugs)) {
-        // Verifica el idioma actual
-        $current_language = pll_current_language();
-        
-        // Cambia el menú en función del idioma y la ubicación
-        if ($current_language == 'en') {
-            if ($args['theme_location'] == 'primary') {
-                $args['menu'] = 'mainmenu'; // Nombre del menú en español
-            } elseif ($args['theme_location'] == 'secondary') {
-                $args['menu'] = 'mainmenu-secondary'; // Nombre del menú secundario en español
-            }
-        } elseif ($current_language == 'es') {
-            if ($args['theme_location'] == 'primary') {
-                $args['menu'] = 'mainmenu-en'; // Nombre del menú en inglés
-            } elseif ($args['theme_location'] == 'secondary') {
-                $args['menu'] = 'mainmenu-secondary-en'; // Nombre del menú secundario en inglés
-            }
-        }
-    }
-
-    return $args;
-}
-add_filter('wp_nav_menu_args', 'custom_menu_args');
