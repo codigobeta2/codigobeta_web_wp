@@ -7776,6 +7776,12 @@ button.cky-show-desc-btn:hover {
   top: -35px;
   left: 0;
 }
+.outstanding-header.custom-clients {
+  height: 100vh;
+}
+.outstanding-header.custom-clients .outstanding-header__content {
+  height: 100vh;
+}
 
 @media (min-width: 992px) {
   .is-dark-header .header__desktop-container-fixed-left .logo a {
@@ -7863,12 +7869,6 @@ button.cky-show-desc-btn:hover {
   height: 100px;
   background-color: black;
   z-index: -1;
-}
-.is-dark-header.custom-clients {
-  height: 100vh;
-}
-.is-dark-header.custom-clients .outstanding-header__content {
-  height: 100vh;
 }
 
 .popup__content {
