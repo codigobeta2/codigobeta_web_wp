@@ -7782,6 +7782,20 @@ button.cky-show-desc-btn:hover {
 .outstanding-header.custom-clients .outstanding-header__content {
   height: 100vh;
 }
+.outstanding-header.custom-clients .outstanding-header__content-box .container-fluid,
+.outstanding-header.custom-clients .outstanding-header__content-box .row,
+.outstanding-header.custom-clients .outstanding-header__content-box .col,
+.outstanding-header.custom-clients .outstanding-header__content-box .module-slider-v1,
+.outstanding-header.custom-clients .outstanding-header__content-box .slider-container,
+.outstanding-header.custom-clients .outstanding-header__content-box .slider-v1,
+.outstanding-header.custom-clients .outstanding-header__content-box .slick-track {
+  height: 100%;
+}
+.outstanding-header.custom-clients .outstanding-header__content-box .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (min-width: 992px) {
   .is-dark-header .header__desktop-container-fixed-left .logo a {

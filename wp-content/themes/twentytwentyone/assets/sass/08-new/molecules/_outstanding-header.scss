@@ -92,6 +92,25 @@
         .outstanding-header__content {
             height: 100vh;
         }
+
+        .outstanding-header__content-box{
+            
+            .container-fluid,
+            .row,
+            .col,
+            .module-slider-v1,
+            .slider-container,
+            .slider-v1,
+            .slick-track{
+                height: 100%;
+            }
+
+            .slick-slide{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
     }
 }
 
