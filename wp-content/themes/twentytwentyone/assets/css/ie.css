@@ -7799,6 +7799,9 @@ button.cky-show-desc-btn:hover {
   justify-content: center;
   align-items: center;
 }
+.outstanding-header.custom-clients .outstanding-header__content-box .image-text__right img {
+  height: auto;
+}
 
 @media (min-width: 992px) {
   .is-dark-header .header__desktop-container-fixed-left .logo a {
