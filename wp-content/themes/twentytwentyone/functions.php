@@ -732,31 +732,29 @@ function filter_menu_items_by_language($items, $args) {
     if (is_page($common_page_slugs)) {
         // Verifica el idioma actual
         $current_language = pll_current_language();
-        
+        $menu_name = '';
+
         // Cambia los nombres de los menús según el idioma
         if ($current_language == 'en') {
             if ($args->theme_location == 'primary') {
-                // Modifica los elementos del menú principal en español
-                $menu_name = 'mainmenu';
+                $menu_name = 'mainmenu'; // Nombre del menú principal en español
             } elseif ($args->theme_location == 'secondary') {
-                // Modifica los elementos del menú secundario en español
-                $menu_name = 'mainmenu-secondary';
+                $menu_name = 'mainmenu-secondary'; // Nombre del menú secundario en español
             }
         } elseif ($current_language == 'es') {
             if ($args->theme_location == 'primary') {
-                // Modifica los elementos del menú principal en inglés
-                $menu_name = 'mainmenu-en';
+                $menu_name = 'mainmenu-en'; // Nombre del menú principal en inglés
             } elseif ($args->theme_location == 'secondary') {
-                // Modifica los elementos del menú secundario en inglés
-                $menu_name = 'mainmenu-secondary-en';
+                $menu_name = 'mainmenu-secondary-en'; // Nombre del menú secundario en inglés
             }
         }
 
-        // Obtén el menú correspondiente
-        $menu = wp_get_nav_menu_object($menu_name);
-        if ($menu) {
-            // Reemplaza los elementos del menú
-            $items = wp_get_nav_menu_items($menu->term_id);
+        // Si se ha definido un nombre de menú, reemplaza los elementos del menú
+        if (!empty($menu_name)) {
+            $menu = wp_get_nav_menu_object($menu_name);
+            if ($menu) {
+                $items = wp_get_nav_menu_items($menu->term_id);
+            }
         }
     }
 
