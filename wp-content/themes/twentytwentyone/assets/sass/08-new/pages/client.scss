@@ -15,8 +15,8 @@
     .image-text__right img {
         position: absolute;
         width: auto;
-        height: 600px;
-        margin-top: -100px;
+        height: 550px;
+        margin-top: -90px;
     }
 
     .outstanding-header__content-box {
@@ -27,7 +27,7 @@
     }
 
     .outstanding-header__content,
-    .outstanding-header {
+    &.outstanding-header {
         height: 500px;
     }
 }
