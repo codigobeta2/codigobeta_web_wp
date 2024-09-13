@@ -31,8 +31,10 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 7000,
+        autoplaySpeed: 2000,
         adaptiveHeight: true,
+        fade: true,
+        cssEase: 'linear',
         responsive: [
             {
                 breakpoint: 768,
