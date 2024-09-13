@@ -190,10 +190,26 @@
                 }
             }
 
-            
+            &.desktop{
+
+                display: none;
+
+                @media(min-width:769px){
+                    display: block;
+                }
+            }
+
+            &.mobile{
+
+                display: block;
+
+                @media(min-width:769px){
+                    display: none;
+                }
+            }
         }
 
-        .text.block{
+        .text-block{
 
             .btn-group{
                 display: flex;

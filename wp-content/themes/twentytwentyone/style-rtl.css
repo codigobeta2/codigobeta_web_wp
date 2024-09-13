@@ -7879,15 +7879,31 @@ button.cky-show-desc-btn:hover {
   list-style: disc;
   text-align: right;
 }
-.outstanding-header.custom-clients .text.block .btn-group {
+.outstanding-header.custom-clients .text-block__description.desktop {
+  display: none;
+}
+@media (min-width: 769px) {
+  .outstanding-header.custom-clients .text-block__description.desktop {
+    display: block;
+  }
+}
+.outstanding-header.custom-clients .text-block__description.mobile {
+  display: block;
+}
+@media (min-width: 769px) {
+  .outstanding-header.custom-clients .text-block__description.mobile {
+    display: none;
+  }
+}
+.outstanding-header.custom-clients .text-block .btn-group {
   display: flex;
   gap: 16px;
 }
-.outstanding-header.custom-clients .text.block .btn-group .btn {
+.outstanding-header.custom-clients .text-block .btn-group .btn {
   width: 100%;
 }
 @media (min-width: 769px) {
-  .outstanding-header.custom-clients .text.block .btn-group .btn {
+  .outstanding-header.custom-clients .text-block .btn-group .btn {
     width: auto;
   }
 }
