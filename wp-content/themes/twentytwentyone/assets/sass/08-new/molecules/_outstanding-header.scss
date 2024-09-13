@@ -88,16 +88,20 @@
     &.custom-clients{
 
         height: auto;
+        min-height: 100%;
 
         @media(min-width:992px){
             height: calc(100vh - 35px);
+            min-height: 800px;
         }
 
         .outstanding-header__content {
             height: auto;
+            min-height: 100%;
 
             @media(min-width:992px){
                 height: calc(100vh - 35px);
+                min-height: 800px;
             }
         }
 
@@ -105,9 +109,11 @@
             
             height: auto;
             position: relative;
+            min-height: 100%;
 
             @media(min-width:992px){
                 height: calc(100vh - 35px);
+                min-height: 800px;
                 position: absolute;
             }
 
@@ -148,7 +154,7 @@
                 position:relative; 
                 z-index:1;
                 max-width:1200px;
-                padding:64px 24px;
+                padding:112px 24px 64px 24px;
 
                 @media(min-width:992px){
                     padding:0 24px;
