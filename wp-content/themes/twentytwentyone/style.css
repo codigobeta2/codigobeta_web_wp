@@ -9375,8 +9375,8 @@ button.cky-show-desc-btn:hover {
 .client .image-text__right img {
   position: absolute;
   width: auto;
-  height: 600px;
-  margin-top: -100px;
+  height: 550px;
+  margin-top: -90px;
 }
 .client .outstanding-header__content-box {
   position: absolute;
@@ -9384,8 +9384,7 @@ button.cky-show-desc-btn:hover {
   height: 500px;
   padding: 64px 0 0 0;
 }
-.client .outstanding-header__content,
-.client .outstanding-header {
+.client .outstanding-header__content, .client.outstanding-header {
   height: 500px;
 }
 
