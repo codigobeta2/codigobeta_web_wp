@@ -7777,10 +7777,28 @@ button.cky-show-desc-btn:hover {
   left: 0;
 }
 .outstanding-header.custom-clients {
-  height: calc(100vh - 35px);
+  height: auto;
+}
+@media (min-width: 992px) {
+  .outstanding-header.custom-clients {
+    height: calc(100vh - 35px);
+  }
 }
 .outstanding-header.custom-clients .outstanding-header__content {
-  height: calc(100vh - 35px);
+  height: auto;
+}
+@media (min-width: 992px) {
+  .outstanding-header.custom-clients .outstanding-header__content {
+    height: calc(100vh - 35px);
+  }
+}
+.outstanding-header.custom-clients .outstanding-header__content-box {
+  height: auto;
+}
+@media (min-width: 992px) {
+  .outstanding-header.custom-clients .outstanding-header__content-box {
+    height: calc(100vh - 35px);
+  }
 }
 .outstanding-header.custom-clients .outstanding-header__content-box .container-fluid,
 .outstanding-header.custom-clients .outstanding-header__content-box .row,
@@ -7920,12 +7938,7 @@ button.cky-show-desc-btn:hover {
   }
 }
 .is-client-header .outstanding-header__content .outstanding-header__content-box .module-slider-v1 .custom-buttons button.next {
-  background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/08/arrow-right-black.svg") !important;
-}
-@media (min-width: 1500px) {
-  .is-client-header .outstanding-header__content .outstanding-header__content-box .module-slider-v1 .custom-buttons button.next {
-    background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/08/arrow-right-white.svg") !important;
-  }
+  background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/08/arrow-right-white.svg") !important;
 }
 .is-client-header .outstanding-header__content .outstanding-header__content-box .module-slider-v1 .slick-dots li.slick-active button:before,
 .is-client-header .outstanding-header__content .outstanding-header__content-box .module-slider-v1 .slick-dots li button:before {
