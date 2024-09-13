@@ -137,12 +137,7 @@
                 object-fit: inherit;
                 width: auto;
                 margin: 0 auto;
-                max-width: 100%;
-                max-width: 450px;
-
-                @media(min-width:992px){
-                    max-width:100%;
-                }
+                max-width: 100%;                
             }
 
             .image-text{
@@ -174,6 +169,23 @@
             overflow: hidden;
         }
 
+        .text-block__description{
+
+            ul{
+                font-size: 19px;
+                font-weight: 800;
+
+                li{
+                    margin: 0 0 8px 0;
+                    font-weight: 600;
+                }
+            }
+
+            .btn-group{
+                display: flex;
+                gap: 16px;
+            }
+        }
     }
 }
 

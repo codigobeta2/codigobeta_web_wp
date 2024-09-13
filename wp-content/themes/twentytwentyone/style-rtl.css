@@ -5117,6 +5117,14 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.8;
   transition: all 250ms;
 }
+.btn-fill--white {
+  background-color: white;
+  color: black;
+}
+.btn-fill--white:hover {
+  opacity: 0.8;
+  transition: all 250ms;
+}
 .btn-fill--lime {
   background-color: #25D366;
   border: 1px solid #25D366;
@@ -7825,12 +7833,6 @@ button.cky-show-desc-btn:hover {
   width: auto;
   margin: 0 auto;
   max-width: 100%;
-  max-width: 450px;
-}
-@media (min-width: 992px) {
-  .outstanding-header.custom-clients .outstanding-header__content-box .image-text__right img {
-    max-width: 100%;
-  }
 }
 .outstanding-header.custom-clients .outstanding-header__content-box .image-text {
   position: relative;
@@ -7858,6 +7860,18 @@ button.cky-show-desc-btn:hover {
 }
 .outstanding-header.custom-clients .module-slider-v1 {
   overflow: hidden;
+}
+.outstanding-header.custom-clients .text-block__description ul {
+  font-size: 19px;
+  font-weight: 800;
+}
+.outstanding-header.custom-clients .text-block__description ul li {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+.outstanding-header.custom-clients .text-block__description .btn-group {
+  display: flex;
+  gap: 16px;
 }
 
 @media (min-width: 992px) {
