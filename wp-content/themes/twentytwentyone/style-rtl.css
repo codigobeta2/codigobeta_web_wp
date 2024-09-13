@@ -7828,11 +7828,16 @@ button.cky-show-desc-btn:hover {
   align-items: center;
 }
 .outstanding-header.custom-clients .outstanding-header__content-box .image-text__right img {
-  height: auto;
+  height: 220px;
   object-fit: inherit;
   width: auto;
   margin: 0 auto;
   max-width: 100%;
+}
+@media (min-width: 500px) {
+  .outstanding-header.custom-clients .outstanding-header__content-box .image-text__right img {
+    height: auto;
+  }
 }
 .outstanding-header.custom-clients .outstanding-header__content-box .image-text {
   position: relative;
@@ -7877,7 +7882,6 @@ button.cky-show-desc-btn:hover {
   margin: 0 0 8px 0;
   font-weight: 600;
   list-style: disc;
-  text-align: right;
 }
 .outstanding-header.custom-clients .text-block__description.desktop {
   display: none;
@@ -7895,10 +7899,15 @@ button.cky-show-desc-btn:hover {
     display: none;
   }
 }
+.outstanding-header.custom-clients .text-block {
+  width: 100%;
+  text-align: right;
+}
 .outstanding-header.custom-clients .text-block .btn-group {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin: 32px 0 0 0;
 }
 @media (min-width: 769px) {
   .outstanding-header.custom-clients .text-block .btn-group {
@@ -7907,7 +7916,6 @@ button.cky-show-desc-btn:hover {
 }
 .outstanding-header.custom-clients .text-block .btn-group .btn {
   width: 100%;
-  margin: 32px 0 0 0;
 }
 @media (min-width: 769px) {
   .outstanding-header.custom-clients .text-block .btn-group .btn {

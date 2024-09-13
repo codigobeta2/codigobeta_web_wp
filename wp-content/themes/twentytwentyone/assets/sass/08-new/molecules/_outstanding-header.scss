@@ -133,11 +133,15 @@
             }
 
             .image-text__right img{
-                height: auto;
+                height: 220px;
                 object-fit: inherit;
                 width: auto;
                 margin: 0 auto;
-                max-width: 100%;                
+                max-width: 100%;    
+                
+                @media(min-width:500px){
+                    height: auto;
+                }
             }
 
             .image-text{
@@ -186,7 +190,7 @@
                     margin: 0 0 8px 0;
                     font-weight: 600;
                     list-style: disc;
-                    text-align:left;
+                    
                 }
             }
 
@@ -211,10 +215,14 @@
 
         .text-block{
 
+            width: 100%;
+            text-align:left;
+
             .btn-group{
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
+                margin: 32px 0 0 0;
 
                 @media(min-width:769px){
                     flex-direction: row;
@@ -223,7 +231,6 @@
                 .btn{
 
                     width: 100%;
-                    margin: 32px 0 0 0;
 
                     @media(min-width:769px){
                         width: auto;
