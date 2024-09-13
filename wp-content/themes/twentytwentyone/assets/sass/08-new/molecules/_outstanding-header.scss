@@ -111,9 +111,24 @@
                 justify-content: center;
                 align-items: center;
             }
-            
+
             .image-text__right img{
                 height: auto;
+            }
+
+            .image-text{
+                position:relative; 
+                z-index:1;
+                max-width:1200px;
+                padding:0 24px;
+            }
+
+            .image-text + img{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
             }
         }
     }
