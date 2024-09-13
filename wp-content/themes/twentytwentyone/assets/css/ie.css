@@ -7877,18 +7877,34 @@ button.cky-show-desc-btn:hover {
   overflow: hidden;
 }
 .outstanding-header.custom-clients .text-block__description ul {
-  font-size: 19px;
+  font-size: 16px;
+  line-height: 19px;
   font-weight: 800;
   padding: 0 0 0 22px;
+}
+@media (min-width: 769px) {
+  .outstanding-header.custom-clients .text-block__description ul {
+    font-size: 19px;
+    line-height: 24px;
+  }
 }
 .outstanding-header.custom-clients .text-block__description ul li {
   margin: 0 0 8px 0;
   font-weight: 600;
   list-style: disc;
+  text-align: left;
 }
-.outstanding-header.custom-clients .text-block__description .btn-group {
+.outstanding-header.custom-clients .text.block .btn-group {
   display: flex;
   gap: 16px;
+}
+.outstanding-header.custom-clients .text.block .btn-group .btn {
+  width: 100%;
+}
+@media (min-width: 769px) {
+  .outstanding-header.custom-clients .text.block .btn-group .btn {
+    width: auto;
+  }
 }
 
 @media (min-width: 992px) {
