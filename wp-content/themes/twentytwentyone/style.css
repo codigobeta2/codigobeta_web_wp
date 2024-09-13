@@ -9379,7 +9379,10 @@ button.cky-show-desc-btn:hover {
   margin-top: -100px;
 }
 .client .outstanding-header__content-box {
-  height: none;
+  position: absolute;
+  top: 0;
+  height: 500px;
+  padding: 64px 0 0 0;
 }
 .client .outstanding-header__content,
 .client .outstanding-header {
