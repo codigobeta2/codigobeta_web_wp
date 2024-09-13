@@ -9360,5 +9360,18 @@ button.cky-show-desc-btn:hover {
   }
 }
 .client .card__image + .card__info {
-  margin: 24px 0 0 0;
+  margin: 32px 0 0 0;
+}
+.client .image-text__right img {
+  position: absolute;
+  width: auto;
+  height: 600px;
+  margin-top: -100px;
+}
+.client .outstanding-header__content-box {
+  height: none;
+}
+.client .outstanding-header__content,
+.client .outstanding-header {
+  height: 500px;
 }

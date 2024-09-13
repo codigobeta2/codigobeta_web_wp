@@ -9,6 +9,22 @@
     }
 
     .card__image + .card__info {
-        margin: 24px 0 0 0;
+        margin: 32px 0 0 0;
+    }
+
+    .image-text__right img {
+        position: absolute;
+        width: auto;
+        height: 600px;
+        margin-top: -100px;
+    }
+
+    .outstanding-header__content-box {
+        height: none;
+    }
+
+    .outstanding-header__content,
+    .outstanding-header {
+        height: 500px;
     }
 }
