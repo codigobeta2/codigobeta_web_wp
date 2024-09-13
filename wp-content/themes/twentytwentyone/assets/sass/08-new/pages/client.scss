@@ -1,0 +1,14 @@
+.client{
+
+    .card-group--icon .card__image{
+        height: 170px;
+
+        @media(min-width:769px){
+            height: 200px;
+        }
+    }
+
+    .card__image + .card__info {
+        margin: 24px 0 0 0;
+    }
+}

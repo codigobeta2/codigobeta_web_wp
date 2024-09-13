@@ -4436,7 +4436,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .u-px-contain {
-  padding: 0 12px !important;
+  padding: 0 16px !important;
 }
 
 @media (min-width: 769px) {
@@ -9338,6 +9338,18 @@ button.cky-show-desc-btn:hover {
 
 .page-legal a {
   text-decoration: underline !important;
+}
+
+.client .card-group--icon .card__image {
+  height: 170px;
+}
+@media (min-width: 769px) {
+  .client .card-group--icon .card__image {
+    height: 200px;
+  }
+}
+.client .card__image + .card__info {
+  margin: 24px 0 0 0;
 }
 
 /*# sourceMappingURL=ie.css.map */
