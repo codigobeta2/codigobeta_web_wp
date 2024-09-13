@@ -7812,6 +7812,22 @@ button.cky-show-desc-btn:hover {
   position: absolute;
   top: 0;
   left: 0;
+  display: none;
+}
+@media (min-width: 1500px) {
+  .outstanding-header.custom-clients .outstanding-header__content-box .image-text + img {
+    display: block;
+  }
+}
+.outstanding-header.custom-clients .custom-buttons button.prev {
+  background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/08/arrow-right-black.svg") !important;
+}
+.outstanding-header.custom-clients .custom-buttons button.next {
+  background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/08/arrow-right-white.svg") !important;
+}
+.outstanding-header.custom-clients .slick-dots li.slick-active button:before,
+.outstanding-header.custom-clients .slick-dots li button:before {
+  color: black;
 }
 
 @media (min-width: 992px) {
