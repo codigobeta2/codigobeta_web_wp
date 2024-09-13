@@ -172,20 +172,41 @@
         .text-block__description{
 
             ul{
-                font-size: 19px;
+                font-size: 16px;
+                line-height:19px;
                 font-weight: 800;
                 padding: 0 0 0 22px;
+
+                @media(min-width:769px){
+                    font-size: 19px;
+                    line-height:24px;
+                }
 
                 li{
                     margin: 0 0 8px 0;
                     font-weight: 600;
                     list-style: disc;
+                    text-align:left;
                 }
             }
+
+            
+        }
+
+        .text.block{
 
             .btn-group{
                 display: flex;
                 gap: 16px;
+
+                .btn{
+
+                    width: 100%;
+
+                    @media(min-width:769px){
+                        width: auto;
+                    }
+                }
             }
         }
     }
