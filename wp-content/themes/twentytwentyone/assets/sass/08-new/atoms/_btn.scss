@@ -40,6 +40,16 @@
             }
         }
 
+        &--white{
+            background-color: white;
+            color: black;
+
+            &:hover{
+                opacity: 0.8;
+                transition: all 250ms;
+            }
+        }
+
         &--lime{
             background-color: #25D366;
             border: 1px solid #25D366;
