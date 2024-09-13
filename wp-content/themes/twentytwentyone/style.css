@@ -7908,14 +7908,14 @@ button.cky-show-desc-btn:hover {
   z-index: -1;
 }
 
-.is-client-header .custom-buttons button.prev {
+.is-client-header .outstanding-header__content .outstanding-header__content-box .module-slider-v1 .custom-buttons button.prev {
   background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/08/arrow-right-black.svg") !important;
 }
-.is-client-header .custom-buttons button.next {
+.is-client-header .outstanding-header__content .outstanding-header__content-box .module-slider-v1 .custom-buttons button.next {
   background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/08/arrow-right-white.svg") !important;
 }
-.is-client-header .slick-dots li.slick-active button:before,
-.is-client-header .slick-dots li button:before {
+.is-client-header .outstanding-header__content .outstanding-header__content-box .module-slider-v1 .slick-dots li.slick-active button:before,
+.is-client-header .outstanding-header__content .outstanding-header__content-box .module-slider-v1 .slick-dots li button:before {
   color: black;
 }
 
