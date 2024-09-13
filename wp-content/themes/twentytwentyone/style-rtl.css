@@ -7864,10 +7864,12 @@ button.cky-show-desc-btn:hover {
 .outstanding-header.custom-clients .text-block__description ul {
   font-size: 19px;
   font-weight: 800;
+  padding: 0 22px 0 0;
 }
 .outstanding-header.custom-clients .text-block__description ul li {
   margin: 0 0 8px 0;
   font-weight: 600;
+  list-style: disc;
 }
 .outstanding-header.custom-clients .text-block__description .btn-group {
   display: flex;
