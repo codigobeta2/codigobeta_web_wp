@@ -7800,6 +7800,19 @@ button.cky-show-desc-btn:hover {
 .outstanding-header.custom-clients .outstanding-header__content-box .image-text__right img {
   height: auto;
 }
+.outstanding-header.custom-clients .outstanding-header__content-box .image-text {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  padding: 0 24px;
+}
+.outstanding-header.custom-clients .outstanding-header__content-box .image-text + img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 @media (min-width: 992px) {
   .is-dark-header .header__desktop-container-fixed-left .logo a {
