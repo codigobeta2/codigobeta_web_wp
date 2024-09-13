@@ -7912,10 +7912,17 @@ button.cky-show-desc-btn:hover {
 }
 .outstanding-header.custom-clients .text-block .btn-group {
   display: flex;
+  flex-direction: column;
   gap: 16px;
+}
+@media (min-width: 769px) {
+  .outstanding-header.custom-clients .text-block .btn-group {
+    flex-direction: row;
+  }
 }
 .outstanding-header.custom-clients .text-block .btn-group .btn {
   width: 100%;
+  margin: 32px 0 0 0;
 }
 @media (min-width: 769px) {
   .outstanding-header.custom-clients .text-block .btn-group .btn {
