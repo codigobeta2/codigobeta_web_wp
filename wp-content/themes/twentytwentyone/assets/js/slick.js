@@ -34,7 +34,7 @@
         autoplaySpeed: 2000,
         adaptiveHeight: true,
         fade: false,
-        cssEase: 'ease',
+        cssEase: 'linear',
         responsive: [
             {
                 breakpoint: 768,
