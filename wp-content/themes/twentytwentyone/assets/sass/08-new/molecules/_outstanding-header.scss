@@ -368,16 +368,16 @@
 
 .is-client-header{
 
-    .custom-buttons button.prev {
+    .outstanding-header__content .outstanding-header__content-box .module-slider-v1 .custom-buttons button.prev {
         background-image: url('https://www.codigobeta.es/wp-content/uploads/2024/08/arrow-right-black.svg') !important;
     }
 
-    .custom-buttons button.next {
+    .outstanding-header__content .outstanding-header__content-box .module-slider-v1 .custom-buttons button.next {
         background-image: url('https://www.codigobeta.es/wp-content/uploads/2024/08/arrow-right-white.svg') !important;
     }
 
-    .slick-dots li.slick-active button:before,
-    .slick-dots li button:before{
+    .outstanding-header__content .outstanding-header__content-box .module-slider-v1 .slick-dots li.slick-active button:before,
+    .outstanding-header__content .outstanding-header__content-box .module-slider-v1 .slick-dots li button:before{
         color: black;
     }
 }
