@@ -88,20 +88,16 @@
     &.custom-clients{
 
         height: auto;
-        min-height: 100%;
 
         @media(min-width:992px){
             height: calc(100vh - 35px);
-            min-height: 800px;
         }
 
         .outstanding-header__content {
             height: auto;
-            min-height: 100%;
 
             @media(min-width:992px){
                 height: calc(100vh - 35px);
-                min-height: 800px;
             }
         }
 
@@ -109,11 +105,9 @@
             
             height: auto;
             position: relative;
-            min-height: 100%;
 
             @media(min-width:992px){
                 height: calc(100vh - 35px);
-                min-height: 800px;
                 position: absolute;
             }
 
