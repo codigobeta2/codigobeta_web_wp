@@ -7794,10 +7794,12 @@ button.cky-show-desc-btn:hover {
 }
 .outstanding-header.custom-clients .outstanding-header__content-box {
   height: auto;
+  position: relative;
 }
 @media (min-width: 992px) {
   .outstanding-header.custom-clients .outstanding-header__content-box {
     height: calc(100vh - 35px);
+    position: absolute;
   }
 }
 .outstanding-header.custom-clients .outstanding-header__content-box .container-fluid,
@@ -7808,7 +7810,19 @@ button.cky-show-desc-btn:hover {
 .outstanding-header.custom-clients .outstanding-header__content-box .slider-v1,
 .outstanding-header.custom-clients .outstanding-header__content-box .slick-list,
 .outstanding-header.custom-clients .outstanding-header__content-box .slick-track {
-  height: 100%;
+  height: auto;
+}
+@media (min-width: 992px) {
+  .outstanding-header.custom-clients .outstanding-header__content-box .container-fluid,
+  .outstanding-header.custom-clients .outstanding-header__content-box .row,
+  .outstanding-header.custom-clients .outstanding-header__content-box .col,
+  .outstanding-header.custom-clients .outstanding-header__content-box .module-slider-v1,
+  .outstanding-header.custom-clients .outstanding-header__content-box .slider-container,
+  .outstanding-header.custom-clients .outstanding-header__content-box .slider-v1,
+  .outstanding-header.custom-clients .outstanding-header__content-box .slick-list,
+  .outstanding-header.custom-clients .outstanding-header__content-box .slick-track {
+    height: 100%;
+  }
 }
 .outstanding-header.custom-clients .outstanding-header__content-box .slick-slide {
   display: flex;
@@ -7817,12 +7831,27 @@ button.cky-show-desc-btn:hover {
 }
 .outstanding-header.custom-clients .outstanding-header__content-box .image-text__right img {
   height: auto;
+  object-fit: inherit;
+  width: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  max-width: 450px;
+}
+@media (min-width: 992px) {
+  .outstanding-header.custom-clients .outstanding-header__content-box .image-text__right img {
+    max-width: 100%;
+  }
 }
 .outstanding-header.custom-clients .outstanding-header__content-box .image-text {
   position: relative;
   z-index: 1;
   max-width: 1200px;
-  padding: 0 24px;
+  padding: 64px 24px;
+}
+@media (min-width: 992px) {
+  .outstanding-header.custom-clients .outstanding-header__content-box .image-text {
+    padding: 0 24px;
+  }
 }
 .outstanding-header.custom-clients .outstanding-header__content-box .image-text + img {
   width: 100%;

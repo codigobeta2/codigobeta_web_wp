@@ -104,9 +104,11 @@
         .outstanding-header__content-box{
             
             height: auto;
+            position: relative;
 
             @media(min-width:992px){
                 height: calc(100vh - 35px);
+                position: absolute;
             }
 
             .container-fluid,
@@ -117,7 +119,11 @@
             .slider-v1,
             .slick-list,
             .slick-track{
-                height: 100%;
+                height: auto;
+
+                @media(min-width:992px){
+                    height: 100%;
+                }
             }
 
             .slick-slide{
@@ -128,13 +134,26 @@
 
             .image-text__right img{
                 height: auto;
+                object-fit: inherit;
+                width: auto;
+                margin: 0 auto;
+                max-width: 100%;
+                max-width: 450px;
+
+                @media(min-width:992px){
+                    max-width:100%;
+                }
             }
 
             .image-text{
                 position:relative; 
                 z-index:1;
                 max-width:1200px;
-                padding:0 24px;
+                padding:64px 24px;
+
+                @media(min-width:992px){
+                    padding:0 24px;
+                }
             }
 
             .image-text + img{
