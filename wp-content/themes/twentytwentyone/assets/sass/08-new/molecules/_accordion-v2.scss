@@ -1,0 +1,78 @@
+.accordion-v2 {
+  
+    &-item {
+      border: 1px solid black;
+      margin-bottom: -1px;
+  
+      &:first-child {
+        .accordion-v2-content {
+          display: block;
+        }
+      }
+      
+      &.active {
+        .accordion-v2-content {
+          display: block;
+        }
+        
+        .accordion-v2-title {
+          padding: 16px;
+  
+          @media(min-width:769px){
+            padding: 24px;
+          }
+          
+          span {
+            transform: rotate(-90deg);
+          }
+        }
+      } 
+    }
+    
+    &-title {
+      padding: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      position: relative;
+      font-size: 16px;
+      line-height: 24px;
+  
+      @media(min-width:769px){
+        font-size: 19px;
+        line-height: 27px;
+        padding: 16px 24px;
+      }
+      
+      .arrow {
+        height: 15px;
+        position: absolute;
+        right: 10px;
+      }
+  
+      span{
+        height: 18px;
+        width: 17px;
+        position: absolute;
+        right: 13px;
+        background-image: url('https://www.portfoliodaniel.es/wp-content/uploads/2024/08/arrow-right-black.svg');
+        background-size: 15px;
+        transform: rotate(90deg);
+        background-repeat: no-repeat;
+  
+        @media(min-width:769px){
+          right: 16px;
+        }
+      }
+    }
+    
+    &-content {
+      padding: 0 37px 16px 16px;
+      display: none; // Contenido oculto por defecto
+  
+      @media(min-width:769px){
+        padding: 0 48px 24px 24px;
+      }
+    }
+  }
+  
