@@ -3,13 +3,17 @@
     ul{
         
         li{
-            font-size: 19px;
+            font-size: 16px;
             display: block;
             gap: 8px;
             margin: 0 0 12px 0;
             position: relative;
-            padding: 0 0 0 24px;
+            padding: 0 0 0 19px;
 
+            @media(min-width:769px){
+                font-size: 19px;
+                padding: 0 0 0 24px;
+            }
 
             &:last-child{
                 margin: 0;
