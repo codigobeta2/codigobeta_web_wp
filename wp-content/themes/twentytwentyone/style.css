@@ -9443,7 +9443,7 @@ button.cky-show-desc-btn:hover {
   width: 15px;
 }
 .tooltip-box-content {
-  margin: 24px 0 0 0;
+  margin: 16px 0 0 0;
 }
 .tooltip:hover .tooltip-box {
   display: block;
@@ -9458,9 +9458,8 @@ button.cky-show-desc-btn:hover {
 
 .tooltip-list ul li {
   font-size: 19px;
-  display: flex;
-  gap: 16px;
-  align-items: center;
+  display: block;
+  gap: 8px;
   margin: 0 0 8px 0;
   position: relative;
   padding: 0 0 0 24px;
@@ -9474,16 +9473,19 @@ button.cky-show-desc-btn:hover {
   position: absolute;
   left: 0;
   line-height: 4px;
-  margin: -24px 0 0 0;
+  top: 0;
 }
 .tooltip-list .tooltip {
   font-size: 16px;
 }
 .tooltip-list .tooltip-button {
-  padding: 0 8px;
-  height: 28px;
-  border-radius: 28px;
+  padding: 0 6px;
+  height: 24px;
+  border-radius: 24px;
   font-size: 16px;
+  font-family: monospace;
+  margin: 0 0 0 8px;
+  left: 0;
 }
 
 .module_tooltip_list {
