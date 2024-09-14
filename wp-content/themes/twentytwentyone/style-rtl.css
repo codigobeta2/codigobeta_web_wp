@@ -6056,11 +6056,6 @@ button.btn {
   border: 2px solid blue;
 }
 
-@media (max-width: 768px) {
-  .text-block {
-    text-align: center;
-  }
-}
 .text-block > * {
   margin: 16px 0 0 0;
 }
@@ -8317,26 +8312,22 @@ button.cky-show-desc-btn:hover {
 .header-article__left > * {
   margin: 8px 0 0 0;
 }
-@media (min-width: 992px) {
-  .header-article__left > * {
-    margin: 16px 0 0 0;
-  }
-}
 .header-article__left > *:first-child {
   margin: 0;
 }
 .header-article__right {
   width: 100%;
+  text-align: center;
 }
 @media (min-width: 992px) {
   .header-article__right {
     width: 50%;
+    text-align: right;
   }
 }
 .header-article__right img {
   position: relative;
   z-index: 1;
-  width: 40vw;
   margin-top: 0;
   max-width: 300px;
 }
@@ -8350,6 +8341,7 @@ button.cky-show-desc-btn:hover {
     margin-top: -100px;
     position: absolute;
     max-width: 100%;
+    width: 40vw;
   }
 }
 @media (min-width: 1199px) {
