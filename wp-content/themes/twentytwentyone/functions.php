@@ -709,7 +709,7 @@ wp_enqueue_script(
         true
     );
 
-wp_enqueue_script(
+	wp_enqueue_script(
         'general-script',
         get_template_directory_uri() . '/assets/js/general.js',
         array('jquery'), // Dependencia de jQuery
@@ -717,7 +717,13 @@ wp_enqueue_script(
         true
     );
 
-
+	wp_enqueue_script(
+        'tooltip-script',
+        get_template_directory_uri() . '/assets/js/tooltip.js',
+        array('jquery'), // Dependencia de jQuery
+        wp_get_theme()->get('Version'),
+        true
+    );
 	
 	
 }
