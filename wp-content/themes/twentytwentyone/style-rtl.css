@@ -8007,6 +8007,9 @@ button.cky-show-desc-btn:hover {
   }
 }
 
+.is-dark-header .header__desktop {
+  background-color: black;
+}
 @media (min-width: 992px) {
   .is-dark-header .header__desktop-container-fixed-left .logo a {
     background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/09/logo-codigobeta-white.png");
@@ -9450,7 +9453,7 @@ button.cky-show-desc-btn:hover {
   font-size: 19px;
   display: block;
   gap: 8px;
-  margin: 0 0 8px 0;
+  margin: 0 0 12px 0;
   position: relative;
   padding: 0 24px 0 0;
 }
@@ -9463,19 +9466,21 @@ button.cky-show-desc-btn:hover {
   position: absolute;
   right: 0;
   line-height: 4px;
-  top: 0;
+  top: -3px;
 }
 .tooltip-list .tooltip {
   font-size: 16px;
 }
 .tooltip-list .tooltip-button {
-  padding: 0 6px;
-  height: 24px;
+  padding: 0 4px;
+  height: 20px;
+  width: 20px;
   border-radius: 24px;
-  font-size: 16px;
+  font-size: 14px;
   font-family: monospace;
-  margin: 0 8px 0 0;
-  right: 0;
+  margin: 0 6px 0 0;
+  position: relative;
+  top: -1px;
 }
 
 .module_tooltip_list {
