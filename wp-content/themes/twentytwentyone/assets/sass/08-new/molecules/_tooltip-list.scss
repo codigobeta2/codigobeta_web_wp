@@ -1,0 +1,49 @@
+.tooltip-list{
+
+    ul{
+        
+        li{
+            font-size: 19px;
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin: 0 0 8px 0;
+            position: relative;
+            padding: 0 0 0 24px;
+
+
+            &:last-child{
+                margin: 0;
+            }
+
+            &:before{
+                content: ".";
+                font-size: 43px;
+                position: absolute;
+                left: 0;
+                line-height: 4px;
+                margin:-24px 0 0 0;
+            }
+        }
+    }
+
+    .tooltip{
+
+        font-size: 16px;
+
+        &-button{
+            padding: 0 8px;
+            height: 28px;
+            border-radius: 28px;
+            font-size: 16px;
+        }
+    }
+   
+}
+
+// CUSTOM
+
+.module_tooltip_list{
+
+    z-index: 20;
+}

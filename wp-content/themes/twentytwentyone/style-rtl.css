@@ -5208,6 +5208,7 @@ button.btn {
   background-image: url("https://www.portfoliodaniel.es/wp-content/uploads/2024/08/arrow-right-white.svg");
 }
 .color-mode--white .accordion-v2-title,
+.color-mode--white .accordion-v2-content,
 .color-mode--white .accordion-v2-content p {
   font-weight: 600;
 }
@@ -9384,6 +9385,99 @@ button.cky-show-desc-btn:hover {
   position: absolute;
   top: -35px;
   right: 0;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip-box {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 32px;
+  z-index: 1000;
+  width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.1803921569) 0 0 16px;
+}
+@media (max-width: 768px) {
+  .tooltip-box {
+    position: fixed;
+    top: 0 !important;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+  }
+}
+@media (min-width: 992px) {
+  .tooltip-box {
+    width: 650px;
+  }
+}
+.tooltip-box-header {
+  font-size: 19px;
+}
+.tooltip-box-header button {
+  position: absolute;
+  left: 24px;
+  border: 0;
+  background-color: transparent;
+  display: inline-block;
+}
+@media (min-width: 769px) {
+  .tooltip-box-header button {
+    display: none;
+  }
+}
+.tooltip-box-header button img {
+  width: 15px;
+}
+.tooltip-box-content {
+  margin: 24px 0 0 0;
+}
+.tooltip:hover .tooltip-box {
+  display: block;
+}
+.tooltip + .tooltip {
+  margin: 0 24px 0 0;
+}
+
+.module_tooltip {
+  z-index: 20;
+}
+
+.tooltip-list ul li {
+  font-size: 19px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin: 0 0 8px 0;
+  position: relative;
+  padding: 0 24px 0 0;
+}
+.tooltip-list ul li:last-child {
+  margin: 0;
+}
+.tooltip-list ul li:before {
+  content: ".";
+  font-size: 43px;
+  position: absolute;
+  right: 0;
+  line-height: 4px;
+  margin: -24px 0 0 0;
+}
+.tooltip-list .tooltip {
+  font-size: 16px;
+}
+.tooltip-list .tooltip-button {
+  padding: 0 8px;
+  height: 28px;
+  border-radius: 28px;
+  font-size: 16px;
+}
+
+.module_tooltip_list {
+  z-index: 20;
 }
 
 .page-404__content {
