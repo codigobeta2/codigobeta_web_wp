@@ -8294,6 +8294,46 @@ button.cky-show-desc-btn:hover {
   bottom: -7px;
 }
 
+.header-article {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 64px;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .header-article {
+    flex-direction: row;
+  }
+}
+.header-article__left {
+  width: 50%;
+}
+.header-article_right {
+  width: 50%;
+}
+.header-article_right img {
+  position: relative;
+  z-index: 1;
+  width: 40vw;
+  margin-top: 0;
+}
+@media (min-width: 992px) {
+  .header-article_right img {
+    margin-top: -100px;
+    position: absolute;
+  }
+}
+@media (min-width: 1199px) {
+  .header-article_right img {
+    width: 670px;
+  }
+}
+
+.module_article_header {
+  margin-top: -155px !important;
+  padding-top: 290px !important;
+}
+
 .slider-container .spinner {
   display: block;
   margin: 100px auto;
