@@ -5201,6 +5201,16 @@ button.btn {
 .color-mode--white .slick-dots li button:before {
   color: white;
 }
+.color-mode--white .accordion-v2-item {
+  border: 1px solid #9c9c9c;
+}
+.color-mode--white .accordion-v2-title span {
+  background-image: url("https://www.portfoliodaniel.es/wp-content/uploads/2024/08/arrow-right-white.svg");
+}
+.color-mode--white .accordion-v2-title,
+.color-mode--white .accordion-v2-content p {
+  font-weight: 600;
+}
 
 .custom-scrollbar::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);

@@ -77,6 +77,18 @@
                 color: white;
             }
 
+            .accordion-v2-item {
+                border: 1px solid #9c9c9c;
+            }
+
+            .accordion-v2-title span{
+                background-image: url('https://www.portfoliodaniel.es/wp-content/uploads/2024/08/arrow-right-white.svg');
+            }
+
+            .accordion-v2-title,
+            .accordion-v2-content p{
+                font-weight: 600;
+            }
         }
     }
 }
