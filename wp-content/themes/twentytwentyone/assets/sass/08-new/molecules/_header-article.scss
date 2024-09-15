@@ -69,4 +69,14 @@
     @media(min-width:992px){
         padding-top: 290px !important;
     }
+
+    &:before{
+        content: "";
+        height: 35px;
+        background-color: #252525;
+        width: 100%;
+        position: fixed;
+        top:0;
+        left: 0;
+    }
 }

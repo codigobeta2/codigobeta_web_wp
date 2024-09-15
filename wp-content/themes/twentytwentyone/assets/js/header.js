@@ -31,9 +31,9 @@ $(document).ready(function(){
 
     function hiddenCompanyUserOptions() {
         if ($(window).scrollTop() >= 1) {
-            $(".header-topbar").addClass("hidden");
+            $(".header-topbar, .module_article_header").addClass("hidden");
         } else {
-            $(".header-topbar").removeClass("hidden");
+            $(".header-topbar, .module_article_header").removeClass("hidden");
         }
     }
     hiddenCompanyUserOptions();
