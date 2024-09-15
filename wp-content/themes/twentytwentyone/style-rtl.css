@@ -7915,15 +7915,15 @@ button.cky-show-desc-btn:hover {
 }
 @media (min-width: 500px) {
   .outstanding-header.custom-clients .outstanding-header__content-box .image-text__right img {
-    height: 536px;
-    width: auto;
+    height: auto;
   }
 }
 .outstanding-header.custom-clients .outstanding-header__content-box .image-text {
   position: relative;
   z-index: 1;
   max-width: 1200px;
-  padding: 112px 24px 64px 24px;
+  padding: 64px 24px 64px 24px;
+  width: 100%;
 }
 @media (min-width: 992px) {
   .outstanding-header.custom-clients .outstanding-header__content-box .image-text {
