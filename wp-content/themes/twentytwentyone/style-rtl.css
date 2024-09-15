@@ -5086,7 +5086,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn {
   border: 1px solid black;
   height: 45px;
-  padding: 0 32px;
+  padding: 0 24px;
   border-radius: 4px;
   align-items: center;
   display: inline-flex;
@@ -5101,6 +5101,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 769px) {
   .btn {
     height: 48px;
+    padding: 0 32px;
   }
 }
 .btn:hover {
@@ -7922,7 +7923,7 @@ button.cky-show-desc-btn:hover {
   position: relative;
   z-index: 1;
   max-width: 1200px;
-  padding: 96px 24px 64px 24px;
+  padding: 96px 48px 64px 48px;
   width: 100%;
 }
 @media (min-width: 992px) {
