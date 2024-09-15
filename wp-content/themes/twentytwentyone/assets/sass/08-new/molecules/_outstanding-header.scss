@@ -139,7 +139,7 @@
             }
 
             .image-text__right img{
-                height: 220px;
+                height: 180px;
                 object-fit: inherit;
                 width: auto;
                 margin: 0 auto;
@@ -150,11 +150,13 @@
                 }
             }
 
+           
+
             .image-text{
                 position:relative; 
                 z-index:1;
                 max-width:1200px;
-                padding:64px 24px 64px 24px;
+                padding:96px 24px 64px 24px;
                 width: 100%;
 
                 @media(min-width:992px){
@@ -194,9 +196,13 @@
                 }
 
                 li{
-                    margin: 0 0 8px 0;
+                    margin: 0 0 6px 0;
                     font-weight: 600;
                     list-style: disc;
+
+                    @media(min-width:769px){
+                        margin: 0 0 8px 0;
+                    }
                     
                 }
             }
@@ -227,12 +233,12 @@
 
             .btn-group{
                 display: flex;
-                flex-direction: column;
+                
                 gap: 16px;
                 margin: 32px 0 0 0;
 
                 @media(min-width:769px){
-                    flex-direction: row;
+                    
                 }
 
                 .btn{
@@ -244,6 +250,8 @@
                     }
                 }
             }
+
+           
         }
     }
 }
