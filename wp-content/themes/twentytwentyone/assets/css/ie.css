@@ -5821,7 +5821,7 @@ button.btn {
 }
 .header__mobile-container-left span.icon-menu {
   position: absolute;
-  left: 10px;
+  left: 15px;
   width: 30px;
   height: 30px;
   background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/09/icon-menu.svg");
@@ -7919,7 +7919,7 @@ button.cky-show-desc-btn:hover {
   align-items: center;
 }
 .outstanding-header.custom-clients .outstanding-header__content-box .image-text__right img {
-  height: 220px;
+  height: 180px;
   object-fit: inherit;
   width: auto;
   margin: 0 auto;
@@ -7934,7 +7934,7 @@ button.cky-show-desc-btn:hover {
   position: relative;
   z-index: 1;
   max-width: 1200px;
-  padding: 64px 24px 64px 24px;
+  padding: 96px 24px 64px 24px;
   width: 100%;
 }
 @media (min-width: 992px) {
@@ -7971,9 +7971,14 @@ button.cky-show-desc-btn:hover {
   }
 }
 .outstanding-header.custom-clients .text-block__description ul li {
-  margin: 0 0 8px 0;
+  margin: 0 0 6px 0;
   font-weight: 600;
   list-style: disc;
+}
+@media (min-width: 769px) {
+  .outstanding-header.custom-clients .text-block__description ul li {
+    margin: 0 0 8px 0;
+  }
 }
 .outstanding-header.custom-clients .text-block__description.desktop {
   display: none;
@@ -7997,14 +8002,8 @@ button.cky-show-desc-btn:hover {
 }
 .outstanding-header.custom-clients .text-block .btn-group {
   display: flex;
-  flex-direction: column;
   gap: 16px;
   margin: 32px 0 0 0;
-}
-@media (min-width: 769px) {
-  .outstanding-header.custom-clients .text-block .btn-group {
-    flex-direction: row;
-  }
 }
 .outstanding-header.custom-clients .text-block .btn-group .btn {
   width: 100%;
@@ -8362,8 +8361,14 @@ button.cky-show-desc-btn:hover {
   top: 0;
   left: 0;
   transition: all 250ms;
+  display: none;
 }
-.module_article_header:before.hidden:before {
+@media (min-width: 992px) {
+  .module_article_header:before {
+    display: block;
+  }
+}
+.module_article_header.hidden:before {
   top: -35px;
   transition: all 250ms;
 }
