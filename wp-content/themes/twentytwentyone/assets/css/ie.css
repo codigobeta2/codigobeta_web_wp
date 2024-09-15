@@ -8014,9 +8014,6 @@ button.cky-show-desc-btn:hover {
   }
 }
 
-.is-dark-header .header__desktop {
-  background-color: black;
-}
 @media (min-width: 992px) {
   .is-dark-header .header__desktop-container-fixed-left .logo a {
     background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/09/logo-codigobeta-white.png");
