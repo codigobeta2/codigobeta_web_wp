@@ -8286,7 +8286,7 @@ button.cky-show-desc-btn:hover {
 .header-article {
   display: flex;
   flex-direction: column-reverse;
-  gap: 48px;
+  gap: 32px;
   align-items: center;
 }
 @media (min-width: 992px) {
@@ -8323,7 +8323,7 @@ button.cky-show-desc-btn:hover {
   position: relative;
   z-index: 1;
   margin-top: 0;
-  max-width: 300px;
+  max-width: 250px;
 }
 @media (min-width: 769px) {
   .header-article__right img {
@@ -8346,7 +8346,7 @@ button.cky-show-desc-btn:hover {
 
 .module_article_header {
   margin-top: -155px !important;
-  padding-top: 150px !important;
+  padding-top: 170px !important;
 }
 @media (min-width: 992px) {
   .module_article_header {
