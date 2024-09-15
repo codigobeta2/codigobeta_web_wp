@@ -8356,11 +8356,16 @@ button.cky-show-desc-btn:hover {
 .module_article_header:before {
   content: "";
   height: 35px;
-  background-color: #252525;
+  background-color: rgba(0, 0, 0, 0.1411764706);
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
+  transition: all 250ms;
+}
+.module_article_header:before.hidden:before {
+  top: -35px;
+  transition: all 250ms;
 }
 
 .slider-container .spinner {

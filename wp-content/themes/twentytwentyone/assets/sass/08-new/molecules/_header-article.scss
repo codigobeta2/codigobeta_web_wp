@@ -73,10 +73,18 @@
     &:before{
         content: "";
         height: 35px;
-        background-color: #252525;
+        background-color: #00000024;
         width: 100%;
         position: fixed;
         top:0;
         left: 0;
+        transition: all 250ms;
+
+        &.hidden{
+            &:before{
+                top:-35px;
+                transition: all 250ms;
+            }
+        }
     }
 }
