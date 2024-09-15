@@ -8353,6 +8353,15 @@ button.cky-show-desc-btn:hover {
     padding-top: 290px !important;
   }
 }
+.module_article_header:before {
+  content: "";
+  height: 35px;
+  background-color: #252525;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
 .slider-container .spinner {
   display: block;
