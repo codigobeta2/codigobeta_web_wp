@@ -113,4 +113,8 @@ button.cky-show-desc-btn{
 
 .cky-btn-revisit-wrapper{
     z-index: 21 !important;
+
+    @media(max-width:768px){
+        transform: scale(0.7);
+    }
 }
