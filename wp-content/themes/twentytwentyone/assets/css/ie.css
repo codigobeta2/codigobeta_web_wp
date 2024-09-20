@@ -6267,15 +6267,15 @@ button.btn {
     padding: 0 48px 24px 24px;
   }
 }
-.accordion-v2-content ul {
+.accordion-v2-content ul, .accordion-v2-content ol {
   padding: 0 0 0 20px;
   margin: 8px 0 16px 0;
 }
-.accordion-v2-content ul li {
+.accordion-v2-content ul li, .accordion-v2-content ol li {
   margin: 0 0 8px 0;
   list-style: disc;
 }
-.accordion-v2-content ul li:last-child {
+.accordion-v2-content ul li:last-child, .accordion-v2-content ol li:last-child {
   margin: 0;
 }
 
