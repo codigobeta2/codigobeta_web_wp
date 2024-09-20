@@ -73,6 +73,21 @@
       @media(min-width:769px){
         padding: 0 48px 24px 24px;
       }
+
+      ul{
+
+        padding: 0 0 0 20px;
+        margin: 8px 0 16px 0;
+
+        li{
+          margin: 0 0 8px 0;
+          list-style: disc;
+
+          &:last-child{
+            margin: 0;
+          }
+        }
+      }
     }
   }
   
