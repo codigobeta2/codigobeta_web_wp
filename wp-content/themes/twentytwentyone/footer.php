@@ -58,10 +58,7 @@
 		</div> 
 		
 	</footer><!-- #colophon -->
-	<div class="development">
-		Web desarrollada por <a href="https://www.codigobeta.es" target="_blank" class="text-style--underline"> www.codigobeta.es </a>
-	</div>
-
+	
 	<!-- contact -->
 	<a id="whatsappLink" target="_blank" class="whatsapp">
 		<img src="https://www.codigobeta.es/wp-content/uploads/2024/09/whatsapp-svgrepo-com.svg" alt="Conatcto por Whatsapp">
