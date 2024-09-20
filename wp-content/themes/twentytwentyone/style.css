@@ -6258,6 +6258,17 @@ button.btn {
     padding: 0 48px 24px 24px;
   }
 }
+.accordion-v2-content ul {
+  padding: 0 0 0 20px;
+  margin: 8px 0 16px 0;
+}
+.accordion-v2-content ul li {
+  margin: 0 0 8px 0;
+  list-style: disc;
+}
+.accordion-v2-content ul li:last-child {
+  margin: 0;
+}
 
 .box-images {
   display: flex;
