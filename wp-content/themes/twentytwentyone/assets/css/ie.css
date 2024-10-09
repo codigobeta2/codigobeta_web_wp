@@ -9474,7 +9474,7 @@ button.cky-show-desc-btn:hover {
 }
 .header-title__content img {
   position: absolute;
-  height: 320px;
+  height: 320px !important;
   bottom: 0;
   right: 0;
   display: none;
