@@ -32,48 +32,46 @@
         &-image{
 
         }
+    }
 
-        &.separator{
+    &.separator{
 
-            gap: 80px !important;
-    
-            @media(min-width:769px){
-                gap: 112px !important;
-            }
-    
-            .grid-col{
-    
-                position: relative;
-    
-                &:first-child{
-    
-                    &:before{
-                        content: url('https://www.codigobeta.es/wp-content/uploads/2024/08/icn-detail-dots-vertical.svg');
-                        width: 2px;
-                        position: absolute;
-                        height: 80%;
-                        left: -57px;
-                        overflow: hidden;
-                        top: 0;
-                        bottom: 0;
-                        margin: auto;
-    
-                        @media(max-width:768px){
-                            content: url('https://www.codigobeta.es/wp-content/uploads/2024/08/icn-detail-dots.png');
-                            width: 100%;
-                            height:20px;
-                            left:0;
-                            top:-53px;
-                            bottom: auto;
-                        }
+        gap: 80px !important;
+
+        @media(min-width:769px){
+            gap: 112px !important;
+        }
+
+        .grid-col{
+
+            position: relative;
+
+            &:last-child{
+
+                &:before{
+                    content: url('https://www.codigobeta.es/wp-content/uploads/2024/08/icn-detail-dots-vertical.svg');
+                    width: 2px;
+                    position: absolute;
+                    height: 80%;
+                    left: -57px;
+                    overflow: hidden;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+
+                    @media(max-width:768px){
+                        content: url('https://www.codigobeta.es/wp-content/uploads/2024/08/icn-detail-dots.png');
+                        width: 100%;
+                        height:20px;
+                        left:0;
+                        top:-53px;
+                        bottom: auto;
                     }
-                    
                 }
+                
             }
         }
     }
-
-    
 
     &:last-child{
         margin: 0;
