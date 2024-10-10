@@ -7342,18 +7342,18 @@ button.cky-show-desc-btn:hover {
 .grid-col {
   width: 100%;
 }
-.grid.separator {
+.grid-col.separator {
   gap: 80px !important;
 }
 @media (min-width: 769px) {
-  .grid.separator {
+  .grid-col.separator {
     gap: 112px !important;
   }
 }
-.grid.separator .grid-col {
+.grid-col.separator .grid-col {
   position: relative;
 }
-.grid.separator .grid-col:first-child:before {
+.grid-col.separator .grid-col:first-child:before {
   content: url("https://www.codigobeta.es/wp-content/uploads/2024/08/icn-detail-dots-vertical.svg");
   width: 2px;
   position: absolute;
@@ -7365,7 +7365,7 @@ button.cky-show-desc-btn:hover {
   margin: auto;
 }
 @media (max-width: 768px) {
-  .grid.separator .grid-col:first-child:before {
+  .grid-col.separator .grid-col:first-child:before {
     content: url("https://www.codigobeta.es/wp-content/uploads/2024/08/icn-detail-dots.png");
     width: 100%;
     height: 20px;
