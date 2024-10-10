@@ -724,6 +724,14 @@ wp_enqueue_script(
         wp_get_theme()->get('Version'),
         true
     );
+
+	wp_enqueue_script(
+        'form7-script',
+        get_template_directory_uri() . '/assets/js/form-7.js',
+        array('jquery'), // Dependencia de jQuery
+        wp_get_theme()->get('Version'),
+        true
+    );
 	
 	
 }
