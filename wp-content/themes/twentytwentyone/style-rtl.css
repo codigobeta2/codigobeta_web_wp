@@ -5979,6 +5979,22 @@ button.btn {
   color: white;
 }
 
+html[lang=es-ES] .icn-contact.client {
+  display: block;
+}
+
+html[lang=es-ES] .icn-contact.agency {
+  display: none;
+}
+
+html[lang=en-GB] .icn-contact.client {
+  display: none;
+}
+
+html[lang=en-GB] .icn-contact.agency {
+  display: block;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -7335,7 +7351,7 @@ button.cky-show-desc-btn:hover {
 }
 @media (min-width: 769px) {
   .grid.separator {
-    gap: 112px !important;
+    gap: 142px !important;
   }
 }
 .grid.separator > .grid-col {
@@ -7345,8 +7361,8 @@ button.cky-show-desc-btn:hover {
   content: url("https://www.codigobeta.es/wp-content/uploads/2024/08/icn-detail-dots-vertical.svg");
   width: 2px;
   position: absolute;
-  height: 80%;
-  right: -57px;
+  height: 60%;
+  right: -64px;
   overflow: hidden;
   top: 0;
   bottom: 0;
