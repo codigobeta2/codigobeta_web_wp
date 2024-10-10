@@ -63,7 +63,11 @@
 	<a id="whatsappLink" target="_blank" class="whatsapp">
 		<img src="https://www.codigobeta.es/wp-content/uploads/2024/09/whatsapp-svgrepo-com.svg" alt="Conatcto por Whatsapp">
 	</a>
-	<a href="/contacto" class="icn-contact">
+
+	<a href="/contacto" class="icn-contact client">
+		<img src="https://www.codigobeta.es/wp-content/uploads/2024/09/icon-email-fill-white.svg" alt="Conatcto por Whatsapp">
+	</a>
+	<a href="/agencias/contacto/" class="icn-contact agency">
 		<img src="https://www.codigobeta.es/wp-content/uploads/2024/09/icon-email-fill-white.svg" alt="Conatcto por Whatsapp">
 	</a>
 

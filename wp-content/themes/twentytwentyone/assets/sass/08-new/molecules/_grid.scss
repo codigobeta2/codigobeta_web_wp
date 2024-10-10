@@ -39,7 +39,7 @@
         gap: 80px !important;
 
         @media(min-width:769px){
-            gap: 112px !important;
+            gap: 142px !important;
         }
 
         & > .grid-col{
@@ -52,8 +52,8 @@
                     content: url('https://www.codigobeta.es/wp-content/uploads/2024/08/icn-detail-dots-vertical.svg');
                     width: 2px;
                     position: absolute;
-                    height: 80%;
-                    left: -57px;
+                    height: 60%;
+                    left: -64px;
                     overflow: hidden;
                     top: 0;
                     bottom: 0;
