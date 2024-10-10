@@ -6009,7 +6009,7 @@ button.btn {
 }
 
 html[lang=es-ES] .icn-contact.client {
-  display: block;
+  display: flex;
 }
 
 html[lang=es-ES] .icn-contact.agency,html[lang=en-GB] .icn-contact.client {
@@ -6017,7 +6017,7 @@ html[lang=es-ES] .icn-contact.agency,html[lang=en-GB] .icn-contact.client {
 }
 
 html[lang=en-GB] .icn-contact.agency {
-  display: block;
+  display: flex;
 }
 
 .container {
