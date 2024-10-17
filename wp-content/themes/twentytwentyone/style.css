@@ -9914,6 +9914,7 @@ button.cky-show-desc-btn:hover {
   margin-top: 32px !important;
   max-width: 1200px;
   padding: 0 12px !important;
+  display: none;
 }
 @media (min-width: 769px) {
   .single-post .entry-header {
@@ -9935,6 +9936,7 @@ button.cky-show-desc-btn:hover {
 .single-post .entry-header .post-thumbnail {
   margin: 0;
   width: 100%;
+  display: none;
 }
 .single-post .entry-content {
   margin: 0;

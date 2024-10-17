@@ -111,6 +111,7 @@
         margin-top: 32px !important;
         max-width: 1200px;
         padding: 0 12px !important;
+        display: none;
 
         @media(min-width:769px){
             margin-top: 64px !important;
@@ -131,6 +132,7 @@
         .post-thumbnail{
             margin: 0;
             width: 100%;
+            display: none;
         }
     }
 
