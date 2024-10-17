@@ -9857,7 +9857,7 @@ button.cky-show-desc-btn:hover {
   line-height: 24px;
   margin: 0 0 16px 0;
   max-width: 100%;
-  display: none;
+  display: none !important;
 }
 @media (min-width: 769px) {
   .blog .site-main article .entry-title {
