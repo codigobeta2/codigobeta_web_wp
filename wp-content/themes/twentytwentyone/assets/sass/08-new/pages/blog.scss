@@ -47,6 +47,7 @@
                 line-height:24px;
                 margin: 0 0 16px 0;
                 max-width: 100%;
+                display: none;
             
                 @media(min-width:769px){
                     overflow: hidden !important;          
@@ -87,13 +88,6 @@
 
                 p{
                     max-width: 100% !important;
-                    margin: 0 0 24px 0;
-                }
-
-                h3{
-                    font-size: 21px;
-                    line-height: 21px;
-                    margin: 0 0 8px 0;
                 }
             }
         }
@@ -137,7 +131,19 @@
     }
 
     .entry-content{
+        
         margin: 0;
+
+        p{
+            max-width: 100% !important;
+            margin: 0 0 24px 0;
+        }
+
+        h3{
+            font-size: 21px;
+            line-height: 21px;
+            margin: 0 0 8px 0;
+        }
     }
 
     .entry-footer{
