@@ -9867,6 +9867,7 @@ button.cky-show-desc-btn:hover {
   line-height: 24px;
   margin: 0 0 16px 0;
   max-width: 100%;
+  display: none;
 }
 @media (min-width: 769px) {
   .blog .site-main article .entry-title {
@@ -9899,12 +9900,6 @@ button.cky-show-desc-btn:hover {
 }
 .blog .site-main article .entry-content p {
   max-width: 100% !important;
-  margin: 0 0 24px 0;
-}
-.blog .site-main article .entry-content h3 {
-  font-size: 21px;
-  line-height: 21px;
-  margin: 0 0 8px 0;
 }
 
 .single-post .entry-title {
@@ -9940,6 +9935,15 @@ button.cky-show-desc-btn:hover {
 }
 .single-post .entry-content {
   margin: 0;
+}
+.single-post .entry-content p {
+  max-width: 100% !important;
+  margin: 0 0 24px 0;
+}
+.single-post .entry-content h3 {
+  font-size: 21px;
+  line-height: 21px;
+  margin: 0 0 8px 0;
 }
 .single-post .entry-footer {
   max-width: 1200px;
