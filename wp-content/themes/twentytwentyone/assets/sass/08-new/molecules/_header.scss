@@ -106,6 +106,19 @@
                             }
                         }
                     }
+
+                    .user{
+
+                        position: absolute;
+                        top: -29px; 
+                        color: #747474;
+                        font-weight: bold;
+
+                        &:before{
+                            content:url('https://www.codigobeta.es/wp-content/uploads/2024/10/access.png');
+                            margin: 0 2px 0 0;
+                        }
+                    }
                 }
         
                 &-right{

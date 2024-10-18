@@ -26,6 +26,9 @@ $home_url = esc_url( pll_home_url() );
 						<span class="close js-close-menu">
 							<img src="https://www.codigobeta.es/wp-content/uploads/2024/08/icon-close.svg" alt="">
 						</span>
+                        <a class="user" href="https://www.codigobeta.es/wp-login.php">
+                            Acceder
+                        </a>
 					</div>
 					<div class="header__desktop-container-fixed-right">
 						<?php get_template_part( 'template-parts/header/site-nav' ); ?>
