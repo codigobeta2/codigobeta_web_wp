@@ -9362,7 +9362,7 @@ button.cky-show-desc-btn:hover {
   }
 }
 
-.slide-diseno-paginas .image-text {
+.slide-diseno-paginas {
   background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/10/slide-header.png");
   background-repeat: no-repeat;
   background-position: right 10vw bottom;
@@ -9370,7 +9370,7 @@ button.cky-show-desc-btn:hover {
   background-size: 35vw;
 }
 .slide-diseno-paginas .image-text + img {
-  display: none;
+  display: none !important;
 }
 
 .tabs-horizontal {

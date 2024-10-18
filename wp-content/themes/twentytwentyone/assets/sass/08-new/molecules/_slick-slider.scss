@@ -998,17 +998,16 @@
 
 .slide-diseno-paginas{
 
+    background-image: url('https://www.codigobeta.es/wp-content/uploads/2024/10/slide-header.png');
+    background-repeat: no-repeat;
+    background-position: left 10vw bottom;
+    height: 100vh;
+    background-size: 35vw;
 
     .image-text{
-    
-        background-image: url('https://www.codigobeta.es/wp-content/uploads/2024/10/slide-header.png');
-        background-repeat: no-repeat;
-        background-position: left 10vw bottom;
-        height: 100vh;
-        background-size: 35vw;
 
         & + img{
-            display: none;
+            display: none !important;
         }
     }
 }
