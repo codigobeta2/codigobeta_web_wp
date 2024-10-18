@@ -5471,6 +5471,16 @@ button.btn {
     background-image: url("https://www.codigobeta.es/wp-content/uploads/2024/09/logo-codigobeta-black.png");
   }
 }
+.header__desktop-container-fixed-left .user {
+  position: absolute;
+  top: -29px;
+  color: #747474;
+  font-weight: bold;
+}
+.header__desktop-container-fixed-left .user:before {
+  content: url("https://www.codigobeta.es/wp-content/uploads/2024/10/access.png");
+  margin: 0 0 0 2px;
+}
 .header__desktop-container-fixed-right {
   width: 100%;
   display: flex;
