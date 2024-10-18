@@ -5441,7 +5441,7 @@ button.btn {
 }
 .header__desktop-container {
   width: calc(100% - 40px);
-  height: 100%;
+  height: calc(100% + 40px);
   position: fixed;
   display: flex;
   align-items: center;
@@ -7706,28 +7706,31 @@ button.cky-show-desc-btn:hover {
   opacity: 0.8;
 }
 
-.icn-contact {
-  background-color: black;
-  height: 60px;
-  width: 60px;
-  border-radius: 60px;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-  z-index: 9;
-}
 @media (min-width: 992px) {
+  .icn-contact {
+    background-color: black;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 9;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
   .icn-contact {
     display: flex;
   }
 }
-.icn-contact img {
-  height: 24px;
+@media (min-width: 992px) {
+  .icn-contact img {
+    height: 24px;
+  }
 }
-
 .elementor-element {
   width: 100% !important;
   max-width: 100% !important;
