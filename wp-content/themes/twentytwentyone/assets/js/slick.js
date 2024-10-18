@@ -30,7 +30,7 @@
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 7000,
         adaptiveHeight: true,
         fade: true,
