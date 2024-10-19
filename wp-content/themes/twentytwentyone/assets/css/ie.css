@@ -5508,7 +5508,7 @@ button.btn {
   font-weight: bold;
 }
 .header__desktop-container-fixed-left .user:before {
-  content: url("https://www.codigobeta.es/wp-content/uploads/2024/10/access.png");
+  content: url("https://www.codigobeta.es/wp-content/uploads/2024/10/slide-header-2.png");
   margin: 0 2px 0 0;
 }
 .header__desktop-container-fixed-right {
@@ -9359,6 +9359,10 @@ button.cky-show-desc-btn:hover {
 }
 .slide-diseno-paginas .image-text + img {
   display: none !important;
+}
+.slide-diseno-paginas .image-text .text-block__description {
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .tabs-horizontal {
