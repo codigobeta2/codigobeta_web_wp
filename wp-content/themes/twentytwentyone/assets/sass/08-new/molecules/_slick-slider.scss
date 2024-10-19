@@ -1003,6 +1003,11 @@
     background-position: left 10vw bottom;
     height: 100vh;
     background-size: 35vw;
+    min-height: auto;
+
+    @media(min-width:769px){
+        min-height:800px;
+    }
 
     .image-text{
 
@@ -1013,6 +1018,11 @@
         .text-block__description{
             font-size: 20px;
             line-height: 26px;
+        }
+
+        .btn{
+            font-size: 19px;
+            height: 56px;
         }
     }
 }
