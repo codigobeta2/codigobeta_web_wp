@@ -1006,7 +1006,7 @@
     min-height: auto;
 
     @media(min-width:769px){
-        min-height:800px;
+        min-height:900px;
     }
 
     @media(min-width:992px){
@@ -1030,10 +1030,28 @@
         }
 
         @media(max-width:992px){
-            
+
             .image-text__right{
                 display: none;
             }
+        }
+    }
+
+    @media(max-width:1199px){
+
+        background-image: none;
+
+        .image-text__right{
+            display: none;
+        }
+
+        .image-text--reverse {
+            flex-direction: row;
+        }
+
+        .image-text__left{
+            width: 100%;
+            max-width: 740px;
         }
     }
 }
