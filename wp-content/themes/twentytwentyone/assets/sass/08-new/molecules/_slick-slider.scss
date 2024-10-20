@@ -1052,6 +1052,29 @@
         .image-text__left{
             width: 100%;
             max-width: 740px;
+            padding: 0 0 0 64px;
+        }
+    }
+
+    @media(max-width:768px){
+
+        .image-text__left{
+            padding: 0;
+        }
+
+        .text-size--2xl{
+            font-size: 34px;
+            line-height: 44px;
+        }
+
+        .text-block__description {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        
+        .image-text .btn{
+            font-size: 16px;
+            height: 45px;
         }
     }
 }
