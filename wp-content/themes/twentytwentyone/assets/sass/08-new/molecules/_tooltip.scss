@@ -32,10 +32,12 @@
 
         &-header{
             font-size: 19px;
+            padding: 0 24px 0 0;
 
             button{
                 position: absolute;
                 right: 24px;
+                top: 24px;
                 border: 0;
                 background-color: transparent;
                 display: inline-block;

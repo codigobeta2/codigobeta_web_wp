@@ -6228,7 +6228,7 @@ button.btn {
   transform: rotate(90deg);
 }
 .accordion-v2-title {
-  padding: 16px;
+  padding: 16px 16px 16px 32px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -6257,6 +6257,7 @@ button.btn {
   background-size: 15px;
   transform: rotate(-90deg);
   background-repeat: no-repeat;
+  top: 20px;
 }
 @media (min-width: 769px) {
   .accordion-v2-title span {
@@ -9750,10 +9751,12 @@ button.cky-show-desc-btn:hover {
 }
 .tooltip-box-header {
   font-size: 19px;
+  padding: 0 0 0 24px;
 }
 .tooltip-box-header button {
   position: absolute;
   left: 24px;
+  top: 24px;
   border: 0;
   background-color: transparent;
   display: inline-block;
