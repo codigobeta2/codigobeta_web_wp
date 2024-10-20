@@ -71,6 +71,14 @@
             width: 100%;
         }
     }
+
+    &-fixed{
+
+        &--bottom{
+            position: fixed;
+            bottom: 44px;
+        }
+    }
 }
 
 

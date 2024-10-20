@@ -5170,6 +5170,10 @@ h1, h2, h3, h4, h5, h6 {
 .btn-size--w100 {
   width: 100%;
 }
+.btn-fixed--bottom {
+  position: fixed;
+  bottom: 44px;
+}
 
 button.btn {
   height: 47px;
@@ -9784,12 +9788,15 @@ button.cky-show-desc-btn:hover {
   margin: 0;
 }
 .tooltip-list ul li:before {
-  content: ".";
-  font-size: 43px;
+  content: "";
   position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(https://www.codigobeta.es/wp-content/uploads/2024/09/check.svg);
+  background-size: 18px;
+  background-repeat: no-repeat;
   left: 0;
-  line-height: 4px;
-  top: -3px;
+  top: 4px;
 }
 .tooltip-list .tooltip {
   font-size: 16px;
