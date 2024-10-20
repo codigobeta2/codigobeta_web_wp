@@ -9406,6 +9406,24 @@ button.cky-show-desc-btn:hover {
   .slide-diseno-paginas .image-text__left {
     width: 100%;
     max-width: 740px;
+    padding: 0 64px 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .slide-diseno-paginas .image-text__left {
+    padding: 0;
+  }
+  .slide-diseno-paginas .text-size--2xl {
+    font-size: 34px;
+    line-height: 44px;
+  }
+  .slide-diseno-paginas .text-block__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .slide-diseno-paginas .image-text .btn {
+    font-size: 16px;
+    height: 45px;
   }
 }
 
