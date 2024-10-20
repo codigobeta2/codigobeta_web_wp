@@ -5989,22 +5989,20 @@ button.btn {
   color: white;
 }
 
-html[lang=es-ES] .icn-contact.client {
-  display: flex;
+@media (min-width: 992px) {
+  html[lang=es-ES] .icn-contact.client {
+    display: flex;
+  }
+  html[lang=es-ES] .icn-contact.agency {
+    display: none;
+  }
+  html[lang=en-GB] .icn-contact.client {
+    display: none;
+  }
+  html[lang=en-GB] .icn-contact.agency {
+    display: flex;
+  }
 }
-
-html[lang=es-ES] .icn-contact.agency {
-  display: none;
-}
-
-html[lang=en-GB] .icn-contact.client {
-  display: none;
-}
-
-html[lang=en-GB] .icn-contact.agency {
-  display: flex;
-}
-
 .container {
   width: 100%;
   max-width: 1200px;
@@ -9418,8 +9416,8 @@ button.cky-show-desc-btn:hover {
     line-height: 44px;
   }
   .slide-diseno-paginas .text-block__description {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 16px !important;
+    line-height: 24px !important;
   }
   .slide-diseno-paginas .image-text .btn {
     font-size: 16px;
