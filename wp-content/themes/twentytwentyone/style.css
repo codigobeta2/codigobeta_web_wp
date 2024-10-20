@@ -9379,7 +9379,7 @@ button.cky-show-desc-btn:hover {
 }
 @media (min-width: 769px) {
   .slide-diseno-paginas {
-    min-height: 800px;
+    min-height: 900px;
   }
 }
 @media (min-width: 992px) {
@@ -9401,6 +9401,21 @@ button.cky-show-desc-btn:hover {
 @media (max-width: 992px) {
   .slide-diseno-paginas .image-text .image-text__right {
     display: none;
+  }
+}
+@media (max-width: 1199px) {
+  .slide-diseno-paginas {
+    background-image: none;
+  }
+  .slide-diseno-paginas .image-text__right {
+    display: none;
+  }
+  .slide-diseno-paginas .image-text--reverse {
+    flex-direction: row;
+  }
+  .slide-diseno-paginas .image-text__left {
+    width: 100%;
+    max-width: 740px;
   }
 }
 
