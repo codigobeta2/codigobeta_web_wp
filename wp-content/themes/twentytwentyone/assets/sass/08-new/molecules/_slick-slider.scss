@@ -184,6 +184,13 @@
             height:100%;
         }
     }
+
+    @media (max-width: 992px) {
+        .text-size--2xl {
+            font-size: 34px;
+            line-height: 44px;
+        }
+    }
 }
 .msv1-custom--container {
 
