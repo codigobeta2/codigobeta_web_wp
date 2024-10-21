@@ -5172,7 +5172,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn-fixed--bottom {
   position: fixed;
-  bottom: 44px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: max-content;
+  bottom: 32px;
 }
 
 button.btn {
@@ -9776,12 +9780,12 @@ button.cky-show-desc-btn:hover {
   gap: 8px;
   margin: 0 0 12px 0;
   position: relative;
-  padding: 0 0 0 19px;
+  padding: 0 0 0 24px;
 }
 @media (min-width: 769px) {
   .tooltip-list ul li {
     font-size: 19px;
-    padding: 0 0 0 24px;
+    padding: 0 0 0 32px;
   }
 }
 .tooltip-list ul li:last-child {
