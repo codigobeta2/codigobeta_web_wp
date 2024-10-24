@@ -74,14 +74,14 @@
 	<!----- JQUERY LIBS ----->
 	<!-- jquery 3.6.0 -->
 	<!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js" defer></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" defer></script>
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js" defer></script>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" async></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js" async></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" async></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js" async></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js" async></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" async></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" async></script>
 
 	
 </div><!-- #page -->
