@@ -4401,6 +4401,10 @@ html,body {
   background-color: transparent;
 }
 
+body {
+  border: 1px solid red;
+}
+
 a, button {
   color: inherit;
   text-decoration: none;
