@@ -5415,7 +5415,6 @@ button.btn {
 .header {
   padding: 0;
   max-width: 100%;
-  border: 2px solid red;
 }
 .header-topbar {
   background-color: rgba(205, 205, 205, 0.168627451);
