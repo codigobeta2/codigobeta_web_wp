@@ -4398,11 +4398,10 @@ html {
 
 html,body {
   overflow-x: hidden;
-  background-color: transparent;
 }
 
 body {
-  border: 1px solid red;
+  background-color: transparent;
 }
 
 a, button {
