@@ -76,3 +76,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+// Recuperar url
+
+document.addEventListener('DOMContentLoaded', function () {
+    var formHiddenField = document.querySelector('input[name="page_url"]');
+    if (formHiddenField) {
+        formHiddenField.value = window.location.href; // Captura la URL completa de la página
+    }
+});
