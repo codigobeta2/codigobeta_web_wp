@@ -736,3 +736,17 @@ wp_enqueue_script(
 	
 }
 add_action('wp_enqueue_scripts', 'custom_theme_scripts');
+
+
+
+function add_custom_scripts() {
+    echo '<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var formHiddenField = document.querySelector(\'input[name="page_url"]\');
+        if (formHiddenField) {
+            formHiddenField.value = window.location.href;
+        }
+    });
+    </script>';
+}
+add_action('wp_footer', 'add_custom_scripts');
